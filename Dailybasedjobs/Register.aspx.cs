@@ -18,22 +18,12 @@ namespace Dailybasedjobs
 
         }
 
-      
-        protected void btnsubmit_Click(object sender, EventArgs e)
+        protected void btncreate_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into Register(Username,FirstName,LastName,Email,Password,ConfrimPassword,Role) values('"+txtun.Text+"','" + txtfn.Text + "','" + Txtln.Text + "','" + Txtem.Text + "','" + Txtp.Text + "','" + Txtcp.Text + "','"+rbtRole.SelectedValue.ToString()+"')", con);
+            SqlCommand cmd = new SqlCommand("insert into Register(username,FirstName,LastName,Email,Password,ConfrimPassword,role) values('"+txtun.Text+"','" + txtfn.Text + "','" + txtln.Text + "','" + txtemail.Text + "','" + txtpwd.Text + "','" + txtcnfrmpswd.Text + "','"+rbtRole.SelectedValue.ToString()+"')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-        }
-        private void clear()
-
-        {
-
-            txtun.Text = "";
-
-            rbtRole.ClearSelection();
-
         }
     }
 }
