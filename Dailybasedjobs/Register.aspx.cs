@@ -20,9 +20,9 @@ namespace Dailybasedjobs
 
         protected void Unnamed_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into RegisterPage(FirstName,LastName,Email,Password,ConfirmPassword) values('" + txtfn.Text + "','" + Txtln.Text + "','" + Txtem.Text + "','" + Txtp.Text + "','" + Txtcp.Text + "')",con);
+            SqlCommand cmd = new SqlCommand("insert into Register(FirstName,LastName,Email,Password,ConfrimPassword) values('" + txtfn.Text + "','" + Txtln.Text + "','" + Txtem.Text + "','" + Txtp.Text + "','" + Txtcp.Text + "')",con);
             con.Open();
-            int i = cmd.ExecuteNonQuery();
+        cmd.ExecuteNonQuery();
             con.Close();
         }
     }

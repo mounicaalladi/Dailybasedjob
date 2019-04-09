@@ -186,7 +186,7 @@
 								<div class="dzSubscribe" action="http://job-board.dexignzone.com/xhtml/script/mailchamp.php" method="post">
 									<div class="dzSubscribeMsg"></div>
 									<div class="input-group">
-										<input name="dzEmail" required="required"  class="form-control" placeholder="Your Email Address" type="email">
+										<%--<input name="dzEmail" required="required"  class="form-control" placeholder="Your Email Address" type="email">--%>
 										<span class="input-group-btn">
 											<button name="submit" value="Submit" type="submit" class="site-button radius-xl">Subscribe</button>
 										</span> 
