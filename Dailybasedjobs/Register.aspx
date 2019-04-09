@@ -3,7 +3,42 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!DOCTYPE html>
+<html lang="en">
 
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta name="description" content="JobBoard - HTML Template" />
+	<meta property="og:title" content="JobBoard - HTML Template" />
+	<meta property="og:description" content="JobBoard - HTML Template" />
+	<meta property="og:image" content="social-image.png" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	
+	<!-- PAGE TITLE HERE -->
+	<title>JobBoard - HTML Template</title>
+	
+	<!-- MOBILE SPECIFIC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="http://job-board.dexignzone.com/xhtml/js/html5shiv.min.js"></script>
+	<script src="http://job-board.dexignzone.com/xhtml/js/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/templete.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
+	
 </head>
 <body id="bg">
 <div class="page-wraper">
@@ -165,23 +200,28 @@
 									<h4 class="font-weight-700 m-b5">PERSONAL INFORMATION</h4>
 									<p class="font-weight-600">If you have an account with us, please log in.</p>
 									<div class="form-group">
-										<label class="font-weight-700">First Name *</label>
-										<input name="dzName" required="" class="form-control" placeholder="First Name" type="text">
+                                        <asp:Label Text="FirstName" ID="lbfn" class="font-weight-700" runat="server" />
+										<%--<input name="dzName" required="" class="form-control" placeholder="First Name" type="text">--%>
+                                        <asp:TextBox ID="txtfn" class="form-control"  runat="server" />
 									</div>
 									<div class="form-group">
-										<label class="font-weight-700">Last Name *</label>
-										<input name="dzName" required="" class="form-control" placeholder="Last Name" type="text">
+										 <asp:Label Text="LastName" ID="Lbln" class="font-weight-700" runat="server" />
+										<asp:TextBox ID="Txtln" class="form-control"  runat="server" />
 									</div>
 									<div class="form-group">
-										<label class="font-weight-700">E-MAIL *</label>
-										<input name="dzName" required="" class="form-control" placeholder="Your Email Address" type="email">
+										 <asp:Label Text="Email" ID="Label1" class="font-weight-700" runat="server" />
+										<asp:TextBox ID="Txtem" class="form-control"  runat="server" />
 									</div>
 									<div class="form-group">
-										<label class="font-weight-700">Password *</label>
-										<input name="dzName" required="" class="form-control " placeholder="Type Password" type="password">
+										 <asp:Label Text="Password" ID="Label2" class="font-weight-700" runat="server" />
+										<asp:TextBox ID="Txtp" class="form-control"  runat="server" />
+									</div>
+                                    <div class="form-group">
+										<asp:Label Text="ConfrimPassword" ID="Label3" class="font-weight-700" runat="server" />
+										<asp:TextBox ID="Txtcp" class="form-control"  runat="server" />
 									</div>
 									<div class="text-left">
-										<button class="site-button button-lg outline outline-2">CREATE</button>
+                                        <asp:Button Text="Submit" class="site-button button-lg outline outline-2" OnClick="Unnamed_Click" runat="server" />
 									</div>
 								</form>
 							</div>
@@ -195,7 +235,7 @@
     </div>
     <!-- Content END-->
 	<!-- Modal Box -->
-	<div class="modal fade lead-form-modal" id="car-details" tabindex="-1" role="dialog" >
+	<%--<div class="modal fade lead-form-modal" id="car-details" tabindex="-1" role="dialog" >
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -234,107 +274,8 @@
 				</div>	
 			</div>
 		</div>
-	</div>
+	</div>--%>
 	<!-- Modal Box End -->
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-					<div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
-                        <div class="widget">
-                            <img src="images/logo-white.png" width="180" class="m-b15" alt=""/>
-							<p class="text-capitalize m-b20">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the.</p>
-                            <div class="subscribe-form m-b20">
-								<form class="dzSubscribe" action="http://job-board.dexignzone.com/xhtml/script/mailchamp.php" method="post">
-									<div class="dzSubscribeMsg"></div>
-									<div class="input-group">
-										<input name="dzEmail" required="required"  class="form-control" placeholder="Your Email Address" type="email">
-										<span class="input-group-btn">
-											<button name="submit" value="Submit" type="submit" class="site-button radius-xl">Subscribe</button>
-										</span> 
-									</div>
-								</form>
-							</div>
-							<ul class="list-inline m-a0">
-								<li><a href="javascript:void(0);" class="site-button white facebook circle "><i class="fa fa-facebook"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button white google-plus circle "><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button white linkedin circle "><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button white instagram circle "><i class="fa fa-instagram"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button white twitter circle "><i class="fa fa-twitter"></i></a></li>
-							</ul>
-                        </div>
-                    </div>
-					<div class="col-xl-5 col-lg-5 col-md-8 col-sm-8 col-12">
-                        <div class="widget border-0">
-                            <h5 class="m-b30 text-white">Frequently Asked Questions</h5>
-                            <ul class="list-2 list-line">
-                                <li><a href="javascript:void(0);">Privacy & Seurty</a></li>
-                                <li><a href="javascript:void(0);">Terms of Serice</a></li>
-                                <li><a href="javascript:void(0);">Communications</a></li>
-                                <li><a href="javascript:void(0);">Referral Terms</a></li>
-                                <li><a href="javascript:void(0);">Lending Licnses</a></li>
-								<li><a href="javascript:void(0);">Support</a></li>
-                                <li><a href="javascript:void(0);">How It Works</a></li>
-                                <li><a href="javascript:void(0);">For Employers</a></li>
-                                <li><a href="javascript:void(0);">Underwriting</a></li>
-                                <li><a href="javascript:void(0);">Contact Us</a></li>
-								<li><a href="javascript:void(0);">Lending Licnses</a></li>
-								<li><a href="javascript:void(0);">Support</a></li>
-                            </ul>
-                        </div>
-                    </div>
-					<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-12">
-                        <div class="widget border-0">
-                            <h5 class="m-b30 text-white">Find Jobs</h5>
-                            <ul class="list-2 w10 list-line">
-                                <li><a href="javascript:void(0);">US Jobs</a></li>
-                                <li><a href="javascript:void(0);">Canada Jobs</a></li>
-                                <li><a href="javascript:void(0);">UK Jobs</a></li>
-                                <li><a href="javascript:void(0);">Emplois en Fnce</a></li>
-                                <li><a href="javascript:void(0);">Jobs in Deuts</a></li>
-								<li><a href="javascript:void(0);">Vacatures China</a></li>
-                            </ul>
-                        </div>
-                    </div>
-				</div>
-            </div>
-        </div>
-        <!-- footer bottom part -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-						<span> © Copyright by <i class="fa fa-heart m-lr5 text-red heart"></i>
-						<a href="javascript:void(0);">DexignZone </a> All rights reserved.</span> 
-					</div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer END -->
-    <button class="scroltop fa fa-chevron-up" ></button>
-</div>
-<!-- JAVASCRIPT FILES ========================================= -->
-<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
-<script src="plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="plugins/bootstrap/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
-<script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
-<script src="plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
-<script src="plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
-<script src="plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
-<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
-<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
-<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
-<script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
-<script src="plugins/switcher/js/switcher.js"></script><!-- SWITCHER FUCTIONS  -->
-<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-<script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
-<script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
-</body>
-
-
-</html>
+  
 
 </asp:Content>
