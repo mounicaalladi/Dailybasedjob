@@ -30,10 +30,15 @@
 					<div class="col-md-12 m-b30">
 						<div class="p-a30 job-bx max-w500 radius-sm bg-white m-auto">
 							<div class="tab-content">
-								<form id="login" class="tab-pane active">
+								<div id="login" class="tab-pane active">
 									<h4 class="font-weight-700 m-b5">PERSONAL INFORMATION</h4>
 									<p class="font-weight-600">If you have an account with us, please log in.</p>
+                                    <div class="form-group">
+                                        <asp:Label Text="UserName" runat="server" />
+                                        <asp:TextBox ID="txtun" class="form-control" runat="server" />  
+                                        </div>
 									<div class="form-group">
+                                       
                                         <asp:Label Text="FirstName" ID="lbfn" class="font-weight-700" runat="server" />
 										<%--<input name="dzName" required="" class="form-control" placeholder="First Name" type="text">--%>
                                         <asp:TextBox ID="txtfn" class="form-control"  runat="server" />
@@ -54,10 +59,23 @@
 										<asp:Label Text="ConfrimPassword" ID="Label3" class="font-weight-700" runat="server" />
 										<asp:TextBox ID="Txtcp" class="form-control"  runat="server" />
 									</div>
+                                     <div class="form-group">
+                                    <asp:Label Text="Role" runat="server" />
+                                     <asp:RadioButtonList ID="rbtRole" runat="server" RepeatDirection="Vertical">
+
+                        <asp:ListItem>Admin</asp:ListItem>
+
+                        <asp:ListItem>JobProvider</asp:ListItem>
+
+                         <asp:ListItem>JobSeeker</asp:ListItem>
+
+                    </asp:RadioButtonList>
+                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Select role" ControlToValidate="rbtRole"></asp:RequiredFieldValidator>
+                                         </div>
 									<div class="text-left">
                                         <asp:Button Text="Submit" class="site-button button-lg outline outline-2" OnClick="btnsubmit_Click" ID="btnsubmit" runat="server" />
 									</div>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>
