@@ -21,10 +21,19 @@ namespace Dailybasedjobs
       
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into Register(FirstName,LastName,Email,Password,ConfrimPassword) values('" + txtfn.Text + "','" + Txtln.Text + "','" + Txtem.Text + "','" + Txtp.Text + "','" + Txtcp.Text + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into Register(Username,FirstName,LastName,Email,Password,ConfrimPassword,Role) values('"+txtun.Text+"','" + txtfn.Text + "','" + Txtln.Text + "','" + Txtem.Text + "','" + Txtp.Text + "','" + Txtcp.Text + "','"+rbtRole.SelectedValue.ToString()+"')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+        private void clear()
+
+        {
+
+            txtun.Text = "";
+
+            rbtRole.ClearSelection();
+
         }
     }
 }
