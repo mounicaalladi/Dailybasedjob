@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="Dailybasedjobs.Index" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Jobprovider.master.cs" Inherits="Dailybasedjobs.Jobprovider" %>
 
 <!DOCTYPE html>
 
@@ -42,7 +42,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <div id="loading-area"></div>
+               <div id="loading-area"></div>
 <div class="page-wraper">
 	<!-- header -->
     <header class="site-header mo-left header fullwidth">
@@ -171,10 +171,9 @@
     </header>
     <!-- header END -->
     <!-- Content -->
-   
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-      <footer class="site-footer">
+       <footer class="site-footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">

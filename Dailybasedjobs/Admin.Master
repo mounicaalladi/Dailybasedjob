@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-       <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" />
@@ -42,7 +42,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-                        <div id="loading-area"></div>
+                     <div id="loading-area"></div>
 <div class="page-wraper">
 	<!-- header -->
     <header class="site-header mo-left header fullwidth">
@@ -168,11 +168,12 @@
             </div>
         </div>
         <!-- main header END -->
-   <!-- Modal Box End -->
-
+    </header>
+    <!-- header END -->
+    <!-- Content -->
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-                <footer class="site-footer">
+               <footer class="site-footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -268,6 +269,7 @@
 <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
+
         </div>
     </form>
 </body>

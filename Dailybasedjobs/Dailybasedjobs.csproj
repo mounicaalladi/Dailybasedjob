@@ -213,6 +213,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -226,6 +233,20 @@
     </Compile>
     <Compile Include="Index.Master.designer.cs">
       <DependentUpon>Index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Jobprovider.Master.cs">
+      <DependentUpon>Jobprovider.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobprovider.Master.designer.cs">
+      <DependentUpon>Jobprovider.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker.Master.cs">
+      <DependentUpon>Jobseeker.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseeker.Master.designer.cs">
+      <DependentUpon>Jobseeker.Master</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -246,6 +267,9 @@
   <ItemGroup>
     <Content Include="Index.Master" />
     <Content Include="files\pdf-sample.pdf" />
+    <Content Include="Jobprovider.Master" />
+    <Content Include="Jobseeker.Master" />
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <Content Include="plugins\fontawesome\fonts\fontawesome-webfont3e6e.eot" />
     <Content Include="plugins\fontawesome\fonts\fontawesome-webfont3e6e.ttf" />
