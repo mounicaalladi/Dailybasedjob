@@ -10,7 +10,7 @@
 namespace Dailybasedjobs {
     
     
-    public partial class Jobseeker {
+    public partial class Candidates {
         
         /// <summary>
         /// head control.

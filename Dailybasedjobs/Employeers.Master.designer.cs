@@ -10,7 +10,7 @@
 namespace Dailybasedjobs {
     
     
-    public partial class Jobprovider {
+    public partial class Employeers {
         
         /// <summary>
         /// head control.
