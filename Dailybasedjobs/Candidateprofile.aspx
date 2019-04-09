@@ -18,7 +18,9 @@
 											<a href="javascript:void(0);">
 												<img alt="" src="images/team/pic1.jpg">
 											</a>
+                                           <%--  <asp:FileUpload ID="FileUpload1" runat="server" />--%>
 											<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
+                                                <%-- <asp:Button Text="ChooseFile" ID="btnFileupload" runat="server" Visible="False" />--%>
 												<input type="file" class="update-flie">
 												<i class="fa fa-camera"></i>
 											</div>
