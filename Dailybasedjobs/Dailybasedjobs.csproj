@@ -67,13 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Adminchangepassword.aspx" />
     <Content Include="Appliedjobs.aspx" />
+    <Content Include="Browsercandidate.aspx" />
     <Content Include="Candidateprofile.aspx" />
+    <Content Include="Companyprofile.aspx" />
     <Content Include="css\animate.css" />
     <Content Include="css\plugins.css" />
     <Content Include="css\skin\skin-1.css" />
     <Content Include="css\style.css" />
     <Content Include="css\templete.css" />
+    <Content Include="Employeeresume.aspx" />
     <Content Include="images\background\bg2.jpg" />
     <Content Include="images\background\bg3.jpg" />
     <Content Include="images\background\bg4.jpg" />
@@ -160,6 +164,7 @@
     <Content Include="js\dz.carousel.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Managejob.aspx" />
     <Content Include="Myresume.aspx" />
     <Content Include="plugins\bootstrap-select\bootstrap-select.min.css" />
     <Content Include="plugins\bootstrap-select\bootstrap-select.min.js" />
@@ -213,8 +218,12 @@
     <Content Include="plugins\themify\fonts\themify9f24.svg" />
     <Content Include="plugins\themify\themify-icons.css" />
     <Content Include="plugins\wow\wow.js" />
+    <Content Include="Postedjob.aspx" />
+    <Content Include="Postjob.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Registeredmembers.aspx" />
     <Content Include="Savedjob.aspx" />
+    <Content Include="Transactions.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -225,12 +234,26 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Adminchangepassword.aspx.cs">
+      <DependentUpon>Adminchangepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminchangepassword.aspx.designer.cs">
+      <DependentUpon>Adminchangepassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Appliedjobs.aspx.cs">
       <DependentUpon>Appliedjobs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Appliedjobs.aspx.designer.cs">
       <DependentUpon>Appliedjobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Browsercandidate.aspx.cs">
+      <DependentUpon>Browsercandidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Browsercandidate.aspx.designer.cs">
+      <DependentUpon>Browsercandidate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Candidateprofile.aspx.cs">
       <DependentUpon>Candidateprofile.aspx</DependentUpon>
@@ -245,6 +268,20 @@
     </Compile>
     <Compile Include="Candidates.Master.designer.cs">
       <DependentUpon>Candidates.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Companyprofile.aspx.cs">
+      <DependentUpon>Companyprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Companyprofile.aspx.designer.cs">
+      <DependentUpon>Companyprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employeeresume.aspx.cs">
+      <DependentUpon>Employeeresume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employeeresume.aspx.designer.cs">
+      <DependentUpon>Employeeresume.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employeers.Master.cs">
       <DependentUpon>Employeers.Master</DependentUpon>
@@ -281,12 +318,33 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Managejob.aspx.cs">
+      <DependentUpon>Managejob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managejob.aspx.designer.cs">
+      <DependentUpon>Managejob.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Myresume.aspx.cs">
       <DependentUpon>Myresume.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Myresume.aspx.designer.cs">
       <DependentUpon>Myresume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Postedjob.aspx.cs">
+      <DependentUpon>Postedjob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Postedjob.aspx.designer.cs">
+      <DependentUpon>Postedjob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Postjob.aspx.cs">
+      <DependentUpon>Postjob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Postjob.aspx.designer.cs">
+      <DependentUpon>Postjob.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
@@ -296,12 +354,26 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Registeredmembers.aspx.cs">
+      <DependentUpon>Registeredmembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registeredmembers.aspx.designer.cs">
+      <DependentUpon>Registeredmembers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Savedjob.aspx.cs">
       <DependentUpon>Savedjob.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Savedjob.aspx.designer.cs">
       <DependentUpon>Savedjob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions.aspx.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions.aspx.designer.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
