@@ -102,7 +102,7 @@
 								</ul>--%>
 							</li>
 							<li>
-								<a href="#">Contact Us <i class="fa fa-chevron-down"></i></a>
+								<a href="ContactUs.aspx">Contact Us <i class="fa fa-chevron-down"></i></a>
 							
 						</ul>			
                     </div>
