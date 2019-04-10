@@ -187,6 +187,6 @@
 			</div>
             <!-- Browse Jobs END -->
 		</div>
-    </div>
+    
     <!-- Content END-->
 </asp:Content>
