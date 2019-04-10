@@ -15,12 +15,21 @@ namespace Dailybasedjobs
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                theDiv.Visible = false;
+            }
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into CandidateProfile(Name,Skills,Languages,Age,CurrentSalary,ExpectedSalary,Phone,Email,Pincode,Area,Address) values('" + txtyn.Text + "','" + txtsk.Text + "','" + txtlan.Text + "','" + txtage.Text + "','" + txtcs.Text + "','"+txtes.Text+"','"+Txtphone.Text+"','"+txtemail.Text+"','"+Txtpin.Text+"','"+Txtarea.Text+"','"+Txtaddress.Text+"')", con);
+            if (FileUpload1.HasFile)
+            {
+                string str = FileUpload1.FileName;
+                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
+                string Image = "~/Upload1/" + str.ToString();
+            }
+            SqlCommand cmd = new SqlCommand("insert into CandidateProfile(Name,Skills,Languages,Age,CurrentSalary,ExpectedSalary,Phone,Email,Pincode,Area,Picture,Address) values('" + txtyn.Text + "','" + txtsk.Text + "','" + txtlan.Text + "','" + txtage.Text + "','" + txtcs.Text + "','"+txtes.Text+"','"+Txtphone.Text+"','"+txtemail.Text+"','"+Txtpin.Text+"','"+Txtarea.Text +"','"+ "~/Upload1/" + FileUpload1.FileName + "','" +Txtaddress.Text+"')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();

@@ -17,12 +17,14 @@
 										<div class="canditate-des">
 											<a href="javascript:void(0);">
 												<img alt="" src="images/team/pic1.jpg">
+                                                <asp:FileUpload ID="FileUpload1"   runat="server" />
 											</a>
                                         
-											<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-                                                <%-- <asp:Button Text="ChooseFile" ID="btnFileupload" runat="server" Visible="False" />--%>
-												<input type="file" class="update-flie">
-												<i class="fa fa-camera"></i>
+											<div class="upload-link" title="update" id="theDiv" data-toggle="tooltip" data-placement="right" runat="server">
+                                                  
+                                                 <asp:Button Text="ChooseFile" ID="btnFileupload" class="update-flie"  runat="server" Visible="False" />
+											<%--	<input type="file" class="update-flie">--%>
+												<%--<i class="fa fa-camera"></i>--%>
 											</div>
 										</div>
 										<div class="candidate-title">
