@@ -73,6 +73,7 @@
     <Content Include="Browsercandidate.aspx" />
     <Content Include="Candidateprofile.aspx" />
     <Content Include="Companyprofile.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="css\animate.css" />
     <Content Include="css\plugins.css" />
     <Content Include="css\skin\skin-1.css" />
@@ -284,6 +285,13 @@
     </Compile>
     <Compile Include="Companyprofile.aspx.designer.cs">
       <DependentUpon>Companyprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employeechangepassword.aspx.cs">
       <DependentUpon>Employeechangepassword.aspx</DependentUpon>
