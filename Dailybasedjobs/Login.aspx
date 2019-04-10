@@ -1,38 +1,32 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Index.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Dailybasedjobs.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
+
      <script type="text/javascript" language="javascript">
 
-    function Validate()
+         function Validate() {
 
-    {
+             var UName = document.getElementById('txtuser');
 
-    var UName=document.getElementById('txtuser');
+             var Password = document.getElementById('txtpassword');
 
-    var Password=document.getElementById('txtpassword');
+             if ((UName.value == '') || (Password.value == '')) {
 
-    if((UName.value=='') || (Password.value==''))
+                 alert('UserName or Password should not be blank');
 
-    {
+                 return false;
 
-     alert('UserName or Password should not be blank');
+             }
 
-     return false;
+             else {
 
-    }
+                 return true;
 
-    else
+             }
 
-    {
-
-      return true;
-
-    }
-
-    }
+         }
 
     </script>
-        </style>
+      
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="page-header">
@@ -65,10 +59,23 @@ Login
 <div class="form-group">
 <div class="input-icon">
 <i class="lni-lock"></i>
-    <asp:TextBox runat="server" ID="txtpassword" class="form-control" placeholder="Password"  />
+    <asp:TextBox runat="server" ID="txtpassword" TextMode="Password" class="form-control" placeholder="Password"  />
 
 </div>
+
 </div>
+    <div class="form-group">
+                                    <asp:Label Text="Role"  class="font-weight-700" runat="server" />
+                                     <asp:RadioButtonList ID="rbtRole" runat="server" RepeatDirection="Vertical">
+
+                        <asp:ListItem>Admin</asp:ListItem>
+
+                        <asp:ListItem>JobProvider</asp:ListItem>
+
+                         <asp:ListItem>JobSeeker</asp:ListItem>
+
+                    </asp:RadioButtonList>
+                                        </div>
 <div class="form-group form-check">
    <asp:CheckBox runat="server" ID="txtcheck" class="form-check-input"/>
 
@@ -86,7 +93,7 @@ Login
 </div>
 </div>
 </section>
-<script src="assets/js/jquery-min.js"></script>
+<%--<script src="assets/js/jquery-min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/color-switcher.js"></script>
@@ -96,5 +103,6 @@ Login
 <script src="assets/js/waypoints.min.js"></script>
 <script src="assets/js/form-validator.min.js"></script>
 <script src="assets/js/contact-form-script.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>--%>
+    <asp:Label ID="lblmsg" runat="server" />
 </asp:Content>

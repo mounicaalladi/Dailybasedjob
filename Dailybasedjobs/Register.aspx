@@ -32,7 +32,7 @@
 								<div id="login" class="tab-pane active">
 									<h4 class="font-weight-700 m-b5">PERSONAL INFORMATION</h4>
 									<p class="font-weight-600">If you have an account with us, please log in.</p>
-                                    <div class="form-control">
+                                    <div class="form-group">
                                         <asp:Label Text="Username"  class="font-weight-700" runat="server" />
                                         <asp:TextBox ID="txtun" class="form-control" placeholder="User Name" runat="server" />
                                     </div>

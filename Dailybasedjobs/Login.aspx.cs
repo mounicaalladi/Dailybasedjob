@@ -17,13 +17,10 @@ namespace Dailybasedjobs
 
     {
         //SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            
-        }
+        
         string strConnString = ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString;
 
-        string str, UserName, Password;
+        string str, UserName, Password,Role;
 
         SqlCommand com;
 
@@ -32,13 +29,17 @@ namespace Dailybasedjobs
         DataTable dt;
 
         int RowCount;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(strConnString);
 
             con.Open();
 
-            str = "Select * from login";
+            str = "Select * from Register";
 
             com = new SqlCommand(str);
 
@@ -54,11 +55,13 @@ namespace Dailybasedjobs
 
             {
 
-                UserName = dt.Rows[i]["UserName"].ToString();
+                UserName = dt.Rows[i]["username"].ToString();
 
                 Password = dt.Rows[i]["Password"].ToString();
+                Role = dt.Rows[i]["role"].ToString();
 
-                if (UserName == txtuser.Text && Password == txtpassword.Text)
+
+                if (UserName == txtuser.Text && Password == txtpassword.Text && Role==rbtRole.SelectedValue.ToString())
 
                 {
 
@@ -66,19 +69,23 @@ namespace Dailybasedjobs
 
                     if (dt.Rows[i]["role"].ToString() == "Admin")
 
-                        Response.Redirect("Registeredmembers.aspx");
+                       Response.Redirect("~/Registeredmembers.aspx");
 
-                    else if (dt.Rows[i]["role"].ToString() == "FreeUser")
+                    else if (dt.Rows[i]["role"].ToString() == "JobProvider")
 
-                        Response.Redirect("Companyprofile.aspx");
+                        Response.Redirect("~/Companyprofile.aspx");
 
-                    else if (dt.Rows[i]["role"].ToString() == "PaidUser")
+                    else if (dt.Rows[i]["role"].ToString() == "JobSeeker")
 
-                        Response.Redirect("Candidateprofile.aspx");
+                        Response.Redirect("~/Candidateprofile.aspx");
+
 
                 }
 
-               
+               else
+                {
+                    lblmsg.Text = "invalid Password or username";
+                }
 
             }
 
