@@ -86,7 +86,7 @@ Login
 <%--<button class="btn btn-common log-btn">Submit</button>--%>
 </div>
 <ul class="form-links">
-<li class="text-center"><a href="register.html">Don't have an account?</a></li>
+<li class="text-center"><a href="Register.aspx">Create an account</a></li>
 </ul>
 </div>
 </div>

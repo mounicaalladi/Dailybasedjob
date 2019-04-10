@@ -66,6 +66,14 @@
 										<%--<label class="font-weight-700">Password *</label>
 										<input name="dzName" required="" class="form-control " placeholder="Type Password" type="password">
 						--%>			</div>
+                                    
+                                    <div class="form-group">
+                                        <asp:Label Text="Image"  class="font-weight-700" runat="server" />
+                                        <asp:FileUpload ID="FileUpload1" runat="server" />
+                                       
+										<asp:Button Text="ChooseFile" ID="btnFileupload"  class="form-control" runat="server" Visible="False" />
+										
+                                    </div>
                                     <div class="form-group">
                                     <asp:Label Text="Role"  class="font-weight-700" runat="server" />
                                      <asp:RadioButtonList ID="rbtRole" runat="server" RepeatDirection="Vertical">
