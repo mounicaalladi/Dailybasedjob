@@ -22,15 +22,6 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.TextBox txtun;
         
         /// <summary>
-        /// lbfn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbfn;
-        
-        /// <summary>
         /// txtfn control.
         /// </summary>
         /// <remarks>
@@ -40,76 +31,49 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.TextBox txtfn;
         
         /// <summary>
-        /// Lbln control.
+        /// txtln control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbln;
+        protected global::System.Web.UI.WebControls.TextBox txtln;
         
         /// <summary>
-        /// Txtln control.
+        /// lemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtln;
+        protected global::System.Web.UI.WebControls.Label lemail;
         
         /// <summary>
-        /// Label1 control.
+        /// txtemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox txtemail;
         
         /// <summary>
-        /// Txtem control.
+        /// txtpwd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtem;
+        protected global::System.Web.UI.WebControls.TextBox txtpwd;
         
         /// <summary>
-        /// Label2 control.
+        /// txtcnfrmpswd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// Txtp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtp;
-        
-        /// <summary>
-        /// Label3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// Txtcp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtcp;
+        protected global::System.Web.UI.WebControls.TextBox txtcnfrmpswd;
         
         /// <summary>
         /// rbtRole control.
@@ -121,21 +85,12 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.RadioButtonList rbtRole;
         
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// btncreate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
-        
-        /// <summary>
-        /// btnsubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsubmit;
+        protected global::System.Web.UI.WebControls.Button btncreate;
     }
 }
