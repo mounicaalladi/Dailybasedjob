@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
-    <Content Include="Adminchangepassword.aspx" />
     <Content Include="Appliedjobs.aspx" />
     <Content Include="Browsercandidate.aspx" />
     <Content Include="Candidateprofile.aspx" />
@@ -81,7 +80,6 @@
     <Content Include="css\skin\skin-1.css" />
     <Content Include="css\style.css" />
     <Content Include="css\templete.css" />
-    <Content Include="Employeechangepassword.aspx" />
     <Content Include="Employeeresume.aspx" />
     <Content Include="images\background\bg2.jpg" />
     <Content Include="images\background\bg3.jpg" />
@@ -247,13 +245,6 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Adminchangepassword.aspx.cs">
-      <DependentUpon>Adminchangepassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Adminchangepassword.aspx.designer.cs">
-      <DependentUpon>Adminchangepassword.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Appliedjobs.aspx.cs">
       <DependentUpon>Appliedjobs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -309,13 +300,6 @@
     </Compile>
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Employeechangepassword.aspx.cs">
-      <DependentUpon>Employeechangepassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Employeechangepassword.aspx.designer.cs">
-      <DependentUpon>Employeechangepassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employeeresume.aspx.cs">
       <DependentUpon>Employeeresume.aspx</DependentUpon>

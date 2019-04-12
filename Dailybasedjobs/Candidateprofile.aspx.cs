@@ -60,5 +60,7 @@ namespace Dailybasedjobs
             con.Close();
 
         }
+
+       
     }
 }
