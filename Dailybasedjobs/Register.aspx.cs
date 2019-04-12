@@ -18,10 +18,15 @@ namespace Dailybasedjobs
 
         }
 
-      
-        protected void btnsubmit_Click(object sender, EventArgs e)
+        protected void btncreate_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into Register(FirstName,LastName,Email,Password,ConfrimPassword) values('" + txtfn.Text + "','" + Txtln.Text + "','" + Txtem.Text + "','" + Txtp.Text + "','" + Txtcp.Text + "')", con);
+            if (FileUpload1.HasFile)
+            {
+                string str = FileUpload1.FileName;
+                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
+                string Image = "~/Upload1/" + str.ToString();
+            }
+            SqlCommand cmd = new SqlCommand("insert into Register(username,FirstName,LastName,Email,Password,ConfrimPassword,image,role) values('"+txtun.Text+"','" + txtfn.Text + "','" + txtln.Text + "','" + txtemail.Text + "','" + txtpwd.Text + "','" + txtcnfrmpswd.Text + "', '"+"~/ Upload1 / " + FileUpload1.FileName+"' ,'"+ rbtRole.SelectedValue.ToString()+"')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();

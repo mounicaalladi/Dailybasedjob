@@ -100,7 +100,7 @@
     <!-- Content -->
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-               <footer class="site-footer">
+             <footer class="site-footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -108,8 +108,8 @@
                         <div class="widget">
                             <img src="images/logo-white.png" width="180" class="m-b15" alt=""/>
 							<p class="text-capitalize m-b20">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the.</p>
-                          <%--  <div class="subscribe-form m-b20">
-								<div class="dzSubscribe" action="http://job-board.dexignzone.com/xhtml/script/mailchamp.php" method="post">
+                            <div class="subscribe-form m-b20">
+								<%--<form class="dzSubscribe" action="http://job-board.dexignzone.com/xhtml/script/mailchamp.php" method="post">
 									<div class="dzSubscribeMsg"></div>
 									<div class="input-group">
 										<input name="dzEmail" required="required"  class="form-control" placeholder="Your Email Address" type="email">
@@ -117,8 +117,8 @@
 											<button name="submit" value="Submit" type="submit" class="site-button radius-xl">Subscribe</button>
 										</span> 
 									</div>
-								</div>
-							</div>--%>
+								</form>--%>
+							</div>
 							<ul class="list-inline m-a0">
 								<li><a href="javascript:void(0);" class="site-button white facebook circle "><i class="fa fa-facebook"></i></a></li>
 								<li><a href="javascript:void(0);" class="site-button white google-plus circle "><i class="fa fa-google-plus"></i></a></li>
@@ -196,7 +196,6 @@
 <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
-
         </div>
     </form>
 </body>

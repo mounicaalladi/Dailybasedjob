@@ -2,8 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-    <!-- Content -->
+     <!-- Content -->
     <div class="page-content">
         <!-- inner page banner -->
         <div class="dez-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/bnr2.jpg);">
@@ -33,29 +32,63 @@
 								<div id="login" class="tab-pane active">
 									<h4 class="font-weight-700 m-b5">PERSONAL INFORMATION</h4>
 									<p class="font-weight-600">If you have an account with us, please log in.</p>
-									<div class="form-group">
-                                        <asp:Label Text="FirstName" ID="lbfn" class="font-weight-700" runat="server" />
-										<%--<input name="dzName" required="" class="form-control" placeholder="First Name" type="text">--%>
-                                        <asp:TextBox ID="txtfn" class="form-control"  runat="server" />
-									</div>
-									<div class="form-group">
-										 <asp:Label Text="LastName" ID="Lbln" class="font-weight-700" runat="server" />
-										<asp:TextBox ID="Txtln" class="form-control"  runat="server" />
-									</div>
-									<div class="form-group">
-										 <asp:Label Text="Email" ID="Label1" class="font-weight-700" runat="server" />
-										<asp:TextBox ID="Txtem" class="form-control"  runat="server" />
-									</div>
-									<div class="form-group">
-										 <asp:Label Text="Password" ID="Label2" class="font-weight-700" runat="server" />
-										<asp:TextBox ID="Txtp" class="form-control"  runat="server" />
-									</div>
                                     <div class="form-group">
-										<asp:Label Text="ConfrimPassword" ID="Label3" class="font-weight-700" runat="server" />
-										<asp:TextBox ID="Txtcp" class="form-control"  runat="server" />
+                                        <asp:Label Text="Username"  class="font-weight-700" runat="server" />
+                                        <asp:TextBox ID="txtun" class="form-control" placeholder="User Name" runat="server" />
+                                    </div>
+									<div class="form-group">
+                                        <asp:Label Text="First Name" runat="server" class="font-weight-700" />
+										<%--<label class="font-weight-700">First Name *</label>--%>
+                                        <asp:TextBox ID="txtfn" required="" class="form-control" placeholder="First Name"  runat="server" />
+										<%--<input name="dzName" required="" class="form-control" placeholder="First Name" type="text">--%>
 									</div>
+									<div class="form-group">
+                                        <asp:Label Text="Last Name" class="font-weight-700" runat="server" />
+                                        <asp:TextBox ID="txtln"  class="form-control" placeholder="Last Name"   runat="server" />
+										<%--<label class="font-weight-700">Last Name *</label>
+										<input name="dzName" required="" class="form-control" placeholder="Last Name" type="text">--%>
+									</div>
+									<div class="form-group">
+                                        <asp:Label Text="Email " ID="lemail" class="font-weight-700" runat="server" />
+                                        <asp:TextBox runat="server" ID="txtemail" class="form-control" placeholder="Email"  />
+										<%--<label class="font-weight-700">E-MAIL *</label>
+										<input name="dzName" required="" class="form-control" placeholder="Your Email Address" type="email">
+								--%>	</div>
+									<div class="form-group">
+                                        <asp:Label Text="Password " class="font-weight-700" runat="server" />
+                                        <asp:TextBox runat="server" ID="txtpwd" class="form-control" placeholder="Password "  />
+										<%--<label class="font-weight-700">Password *</label>
+										<input name="dzName" required="" class="form-control " placeholder="Type Password" type="password">
+						--%>			</div>
+                                    <div class="form-group">
+                                        <asp:Label Text="Conform Password " class="font-weight-700" runat="server" />
+                                        <asp:TextBox runat="server" ID="txtcnfrmpswd" class="form-control" placeholder="Conform Password "  />
+										<%--<label class="font-weight-700">Password *</label>
+										<input name="dzName" required="" class="form-control " placeholder="Type Password" type="password">
+						--%>			</div>
+                                    
+                                    <div class="form-group">
+                                        <asp:Label Text="Image"  class="font-weight-700" runat="server" />
+                                        <asp:FileUpload ID="FileUpload1" runat="server" />
+                                       
+										<asp:Button Text="ChooseFile" ID="btnFileupload"  class="form-control" runat="server" Visible="False" />
+										
+                                    </div>
+                                    <div class="form-group">
+                                    <asp:Label Text="Role"  class="font-weight-700" runat="server" />
+                                     <asp:RadioButtonList ID="rbtRole" runat="server" RepeatDirection="Vertical">
+
+                        <%--<asp:ListItem>Admin</asp:ListItem>--%>
+
+                        <asp:ListItem>JobProvider</asp:ListItem>
+
+                         <asp:ListItem>JobSeeker</asp:ListItem>
+
+                    </asp:RadioButtonList>
+                                        </div>
 									<div class="text-left">
-                                        <asp:Button Text="Submit" class="site-button button-lg outline outline-2" OnClick="btnsubmit_Click" ID="btnsubmit" runat="server" />
+                                        <asp:Button Text="Create" class="site-button button-lg outline outline-2" ID="btncreate" OnClick="btncreate_Click" runat="server" />
+										<%--<button class="site-button button-lg outline outline-2">CREATE</button>--%>
 									</div>
 								</div>
 							</div>
@@ -67,6 +100,5 @@
 		</div>
 		<!-- contact area  END -->
     </div>
-   
-
+    <!-- Content END-->
 </asp:Content>
