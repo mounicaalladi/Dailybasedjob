@@ -98,7 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
-    <Content Include="Adminchangepassword.aspx" />
     <Content Include="Appliedjobs.aspx" />
     <Content Include="Browsercandidate.aspx" />
     <Content Include="Candidateprofile.aspx" />
@@ -111,7 +110,6 @@
     <Content Include="css\skin\skin-1.css" />
     <Content Include="css\style.css" />
     <Content Include="css\templete.css" />
-    <Content Include="Employeechangepassword.aspx" />
     <Content Include="Employeeresume.aspx" />
     <Content Include="images\background\bg2.jpg" />
     <Content Include="images\background\bg3.jpg" />
@@ -263,15 +261,12 @@
     <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.Svg.js" />
     <Content Include="Scripts\Vintasoft\Vintasoft.Shared.js" />
     <Content Include="Transactions.aspx" />
-    <Content Include="Upload1\4.jpg" />
-    <Content Include="Upload1\5.jpg" />
-    <Content Include="Upload1\Capture1.PNG" />
-    <Content Include="Upload1\cctv.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutUs.aspx.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
@@ -283,12 +278,6 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Adminchangepassword.aspx.cs">
-      <DependentUpon>Adminchangepassword.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Adminchangepassword.aspx.designer.cs">
-      <DependentUpon>Adminchangepassword.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Appliedjobs.aspx.cs">
       <DependentUpon>Appliedjobs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -298,6 +287,7 @@
     </Compile>
     <Compile Include="Browsercandidate.aspx.cs">
       <DependentUpon>Browsercandidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Browsercandidate.aspx.designer.cs">
       <DependentUpon>Browsercandidate.aspx</DependentUpon>
@@ -318,36 +308,35 @@
     </Compile>
     <Compile Include="ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChangepasswordEmp.aspx.cs">
       <DependentUpon>ChangepasswordEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ChangepasswordEmp.aspx.designer.cs">
       <DependentUpon>ChangepasswordEmp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Companyprofile.aspx.cs">
       <DependentUpon>Companyprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Companyprofile.aspx.designer.cs">
       <DependentUpon>Companyprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Employeechangepassword.aspx.cs">
-      <DependentUpon>Employeechangepassword.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Employeechangepassword.aspx.designer.cs">
-      <DependentUpon>Employeechangepassword.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Employeeresume.aspx.cs">
       <DependentUpon>Employeeresume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Employeeresume.aspx.designer.cs">
       <DependentUpon>Employeeresume.aspx</DependentUpon>
@@ -392,6 +381,7 @@
     </Compile>
     <Compile Include="Managejob.aspx.cs">
       <DependentUpon>Managejob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Managejob.aspx.designer.cs">
       <DependentUpon>Managejob.aspx</DependentUpon>
@@ -412,12 +402,14 @@
     </Compile>
     <Compile Include="Postedjob.aspx.cs">
       <DependentUpon>Postedjob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Postedjob.aspx.designer.cs">
       <DependentUpon>Postedjob.aspx</DependentUpon>
     </Compile>
     <Compile Include="Postjob.aspx.cs">
       <DependentUpon>Postjob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Postjob.aspx.designer.cs">
       <DependentUpon>Postjob.aspx</DependentUpon>
@@ -432,6 +424,7 @@
     </Compile>
     <Compile Include="Registeredmembers.aspx.cs">
       <DependentUpon>Registeredmembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Registeredmembers.aspx.designer.cs">
       <DependentUpon>Registeredmembers.aspx</DependentUpon>
@@ -445,6 +438,7 @@
     </Compile>
     <Compile Include="Transactions.aspx.cs">
       <DependentUpon>Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Transactions.aspx.designer.cs">
       <DependentUpon>Transactions.aspx</DependentUpon>
