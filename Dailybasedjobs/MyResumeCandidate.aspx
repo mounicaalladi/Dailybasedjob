@@ -1,8 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Candidates.Master" AutoEventWireup="true" CodeBehind="Myresume.aspx.cs" Inherits="Dailybasedjobs.Myresume" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Candidates.Master" AutoEventWireup="true" CodeBehind="MyResumeCandidate.aspx.cs" Inherits="Dailybasedjobs.MyResumeCandidate" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="page-content">
+ <!-- Content -->
+    <div class="page-content">
         <!-- inner page banner -->
         <div class="overlay-black-dark profile-edit p-t50 p-b20" style="background-image:url(images/banner/bnr1.jpg);">
             <div class="container">
