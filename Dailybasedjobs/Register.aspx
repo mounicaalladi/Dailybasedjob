@@ -30,7 +30,7 @@
 					<div class="col-md-12 m-b30">
 						<div class="p-a30 job-bx max-w500 radius-sm bg-white m-auto">
 							<div class="tab-content">
-								<form id="login" class="tab-pane active">
+								<div id="login" class="tab-pane active">
 									<h4 class="font-weight-700 m-b5">PERSONAL INFORMATION</h4>
 									<p class="font-weight-600">If you have an account with us, please log in.</p>
 									<div class="form-group">
@@ -57,7 +57,7 @@
 									<div class="text-left">
                                         <asp:Button Text="Submit" class="site-button button-lg outline outline-2" OnClick="btnsubmit_Click" ID="btnsubmit" runat="server" />
 									</div>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>
