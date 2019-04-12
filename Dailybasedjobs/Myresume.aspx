@@ -273,18 +273,16 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h5 class="modal-title" id="EmploymentModalLongTitle">Add Employment</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
+                                            <span aria-hidden="true"><asp:Button  runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>
 											</div>
 											<div class="modal-body">
 												<form>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Your Designation</label>
-																<input type="email" class="form-control" placeholder="Enter Your Designation">
-															</div>
+                                                                <asp:Label ID="lbldesignation" Text="Your Designation" runat="server"  />
+                                                                <asp:TextBox ID="txtdesignation" runat="server" class="form-control" placeholder="Enter Your Designation" />
+													            </div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
