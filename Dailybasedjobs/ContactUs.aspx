@@ -2,7 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="contact-form">
+    <div class="section-full content-inner bg-white contact-style-1"> 
+    <div class="contact-form">
 <div class="container">
 <div class="row contact-form-area">
 <div class="col-md-12 col-lg-6 col-sm-12">
@@ -79,7 +80,7 @@
 </div>
 </div>
 </div>
-
+</div>
 <a href="#" class="back-to-top">
 <i class="lni-arrow-up"></i>
 </a>

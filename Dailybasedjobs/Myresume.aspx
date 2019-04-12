@@ -2,278 +2,264 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="page-content">
-        <!-- inner page banner -->
-        <div class="overlay-black-dark profile-edit p-t50 p-b20" style="background-image:url(images/banner/bnr1.jpg);">
-            <div class="container">
-                <div class="row">
-					<div class="col-lg-8 col-md-7 candidate-info">
-						<div class="candidate-detail">
-							<div class="canditate-des text-center">
-								<a href="javascript:void(0);">
-									<img alt="" src="images/team/pic1.jpg">
-								</a>
-								<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-									<input type="file" class="update-flie">
-									<i class="fa fa-camera"></i>
-								</div>
-							</div>
-							<div class="text-white browse-job text-left">
-								<h4 class="m-b0">John Doe
-									<a class="m-l15 font-16 text-white" data-toggle="modal" data-target="#profilename" href="#"><i class="fa fa-pencil"></i></a>
-								</h4>
-								<p class="m-b15">Freelance Senior PHP Developer at various agencies</p>
-								<ul class="clearfix">
-									<li><i class="ti-location-pin"></i> Sacramento, California</li>
-									<li><i class="ti-mobile"></i> +1 123 456 7890</li>
-									<li><i class="ti-briefcase"></i> Fresher</li>
-									<li><i class="ti-email"></i> info@example.com</li>
-								</ul>
-								<div class="progress-box m-t10">
-									<div class="progress-info">Profile Strength (Average)<span>70%</span></div>
-									<div class="progress">
-										<div class="progress-bar bg-primary" style="width: 80%" role="progressbar"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-5">
-						<a href="javascript:void(0);">
-							<div class="pending-info text-white p-a25">
-								<h5>Pending Action</h5>
-								<ul class="list-check secondry">
-									<li>Verify Mobile Number</li>
-									<li>Add Preferred Location</li>
-									<li>Add Resume</li>
-								</ul>
-							</div>
-						</a>
-					</div>
-				</div>
-            </div>
-			<!-- Modal -->
-			<div class="modal fade browse-job modal-bx-info editor" id="profilename" tabindex="-1" role="dialog" aria-labelledby="ProfilenameModalLongTitle" aria-hidden="true">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="ProfilenameModalLongTitle">Basic Details</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<form>
-								<div class="row">
-									<div class="col-lg-12 col-md-12">
-										<div class="form-group">
-											<label>Your Name</label>
-											<input type="email" class="form-control" placeholder="Enter Your Name">
-										</div>
-									</div>
-									<div class="col-lg-12 col-md-12">
-										<div class="form-group">
-											<div class="row">
-												<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-													<div class="custom-control custom-radio">
-														<input type="radio" class="custom-control-input" id="fresher" name="example1">
-														<label class="custom-control-label" for="fresher">Fresher</label>
-													</div>
-												</div>
-												<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-													<div class="custom-control custom-radio">
-														<input type="radio" class="custom-control-input" id="experienced" name="example1">
-														<label class="custom-control-label" for="experienced">Experienced</label>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<div class="form-group">
-											<label>Select Your Country</label>
-											<select>
-												<option>India</option>
-												<option>Australia</option>
-												<option>Bahrain</option>
-												<option>China</option>
-												<option>Dubai</option>
-												<option>France</option>
-												<option>Germany</option>
-												<option>Hong Kong</option>
-												<option>Kuwait</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<div class="form-group">
-											<label>Select Your Country</label>
-											<input type="text" class="form-control" placeholder="Select Your Country">
-										</div>
-									</div>
-									<div class="col-lg-12 col-md-12">
-										<div class="form-group">
-											<label>Select Your City</label>
-											<input type="text" class="form-control" placeholder="Select Your City">
-										</div>
-									</div>
-									<div class="col-lg-12 col-md-12">
-										<div class="form-group">
-											<label>Telephone Number</label>
-											<div class="row">
-												<div class="col-lg-4 col-md-4 col-sm-4 col-4">
-													<input type="text" class="form-control" placeholder="Country Code">
-												</div>
-												<div class="col-lg-4 col-md-4 col-sm-4 col-4">
-													<input type="text" class="form-control" placeholder="Area Code">
-												</div>
-												<div class="col-lg-4 col-md-4 col-sm-4 col-4">
-													<input type="text" class="form-control" placeholder="Phone Number">
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-12 col-md-12">
-										<div class="form-group">
-											<label>Email Address</label>
-											<h6 class="m-a0 font-14">info@example.com</h6>
-											<a href="#">Change Email Address</a>
-										</div>		
-									</div>		
-								</div>
-							</form>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-							<button type="button" class="site-button">Save</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Modal End -->
-        </div>
-        <!-- inner page banner END -->
-		<!-- contact area -->
-        <div class="content-block">
-			<!-- Browse Jobs -->
-			<div class="section-full browse-job content-inner-2">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 m-b30">
-							<div class="sticky-top bg-white">
-								<div class="candidate-info onepage">
-									<ul>
-										<li><a class="scroll-bar nav-link" href="#resume_headline_bx">
-											<span>Resume Headline</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#key_skills_bx">
-											<span>Key Skills</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#employment_bx">
-											<span>Employment</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#education_bx">
-											<span>Education</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#it_skills_bx">
-											<span>IT Skills</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#projects_bx">
-											<span>Projects</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#profile_summary_bx"> 
-											<span>Profile Summary</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#accomplishments_bx">
-											<span>Accomplishments</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#desired_career_profile_bx">
-											<span>Desired Career Profile</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#personal_details_bx">
-											<span>Personal Details</span></a></li>
-										<li><a class="scroll-bar nav-link" href="#attach_resume_bx">
-											<span>Attach Resume</span></a></li>											
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-9 col-lg-8 col-md-8 col-sm-12">
-							<div id="resume_headline_bx" class="job-bx bg-white m-b30">
-								<div class="d-flex">
-									<h5 class="m-b15">Resume Headline</h5>
-									<a href="javascript:void(0);" data-toggle="modal" data-target="#resumeheadline" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-								</div>
-								<p class="m-b0">Job board currently living in USA</p>
-								<!-- Modal -->
-								<div class="modal fade modal-bx-info editor" id="resumeheadline" tabindex="-1" role="dialog" aria-labelledby="ResumeheadlineModalLongTitle" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="ResumeheadlineModalLongTitle">Resume Headline</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
-												<form>
-													<div class="row">
-														<div class="col-lg-12 col-md-12">
-															<div class="form-group">
-																<textarea class="form-control" placeholder="Type Description"></textarea>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal End -->
-							</div>
-							<div id="key_skills_bx" class="job-bx bg-white m-b30">
-								<div class="d-flex">
-									<h5 class="m-b15">Key Skills</h5>
-									<a href="javascript:void(0);" data-toggle="modal" data-target="#keyskills" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-								</div>
-								<div class="job-time mr-auto">
-									<a href="javascript:void(0);"><span>Javascript</span></a>
-									<a href="javascript:void(0);"><span>CSS</span></a>
-									<a href="javascript:void(0);"><span>HTML</span></a>
-									<a href="javascript:void(0);"><span>Bootstrap</span></a>
-									<a href="javascript:void(0);"><span>Web Designing</span></a>
-									<a href="javascript:void(0);"><span>Photoshop</span></a>
-								</div>
-								<!-- Modal -->
-								<div class="modal fade modal-bx-info editor" id="keyskills" tabindex="-1" role="dialog" aria-labelledby="KeyskillsModalLongTitle" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="KeyskillsModalLongTitle">Key Skills</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
-												<form>
-													<div class="row">
-														<div class="col-lg-12 col-md-12">
-															<div class="form-group">
-																<input type="text" class="form-control tags_input" value="html,css,bootstrap,photoshop"/>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal End -->
-							</div>
-							<div id="employment_bx" class="job-bx bg-white m-b30 ">
-								<div class="d-flex">
-									<h5 class="m-b15">Employment</h5>
+<!-- inner page banner -->
+<div class="overlay-black-dark profile-edit p-t50 p-b20" style="background-image:url(images/banner/bnr1.jpg);">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-md-7 candidate-info">
+<div class="candidate-detail">
+<div class="canditate-des text-center">
+<a href="javascript:void(0);">
+<img alt="" src="images/team/pic1.jpg">
+</a>
+<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
+<input type="file" class="update-flie">
+<i class="fa fa-camera"></i>
+</div>
+</div>
+<div class="text-white browse-job text-left">
+<h4 class="m-b0">John Doe
+<a class="m-l15 font-16 text-white" data-toggle="modal" data-target="#profilename" href="#"><i class="fa fa-pencil"></i></a>
+</h4>
+<p class="m-b15">Freelance Senior PHP Developer at various agencies</p>
+<ul class="clearfix">
+<li><i class="ti-location-pin"></i> Hyderabad,Telangana</li>
+<li><i class="ti-mobile"></i> +91 9638527410</li>
+<li><i class="ti-briefcase"></i> Fresher</li>
+<li><i class="ti-email"></i> info@example.com</li>
+</ul>
+<div class="progress-box m-t10">
+<div class="progress-info">Profile Strength (Average)<span>70%</span></div>
+<div class="progress">
+<div class="progress-bar bg-primary" style="width: 80%" role="progressbar"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-5">
+<a href="javascript:void(0);">
+<div class="pending-info text-white p-a25">
+<h5>Pending Action</h5>
+<ul class="list-check secondry">
+<li>Verify Mobile Number</li>
+<li>Add Preferred Location</li>
+<li>Add Resume</li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade browse-job modal-bx-info editor" id="profilename" tabindex="-1" role="dialog" aria-labelledby="ProfilenameModalLongTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="ProfilenameModalLongTitle">Basic Details</h5>
+   <span aria-hidden="true"> <asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>
+</div>
+<div class="modal-body">
+<form>
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+    <asp:Label ID="lblname" Text="Your Name" runat="server" />
+    <asp:TextBox ID="txtname" runat="server" class="form-control" placeholder="Enter Your Name"/>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+<div class="custom-control custom-radio">
+    <asp:RadioButton ID="rbfresher" runat="server" class="custom-control-input" />
+    <asp:Label Text="Fresher" runat="server" class="custom-control-label" />
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+<div class="custom-control custom-radio">
+    <asp:RadioButton ID="rbexperienced" runat="server" class="custom-control-input" />
+    <asp:Label Text="Experienced" runat="server" class="custom-control-label" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group">
+    <asp:Label Text="Select Your Country" runat="server" />
+    <asp:DropDownList ID="country" runat="server">
+        <asp:ListItem Text="Australia" />
+        <asp:ListItem Text="Bahrain" />
+        <asp:ListItem Text="China" />
+        <asp:ListItem Text="Dubai" />
+        <asp:ListItem Text="France" />
+        <asp:ListItem Text="Germany" />
+        <asp:ListItem Text="Hong Kong" />
+        <asp:ListItem Text="India" />
+        <asp:ListItem Text="Kuwait" />
+    </asp:DropDownList>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+    <asp:Label ID="lblcity" Text="Select Your City" runat="server" />
+    <asp:TextBox ID="txtcity" runat="server" class="form-control" placeholder="Select Your City" />
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+    <asp:Label ID="lblcontnum" Text="Contact Number" runat="server" />
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+    <asp:TextBox ID="txtcountrycode" runat="server" class="form-control" placeholder="Country Code" />
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+        <asp:TextBox ID="txtareacode" runat="server" class="form-control" placeholder="Area Code" />
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+        <asp:TextBox ID="txtphoneno" runat="server" class="form-control" placeholder="Phone Number" />
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+   <asp:Label ID="lblemail" Text="Email Address" runat="server" />
+<h6 class="m-a0 font-14">info@example.com</h6>
+<a href="#">Change Email Address</a>
+</div>		
+</div>		
+</div>
+</form>
+</div>
+<div class="modal-footer">
+    <asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+    <asp:Button Text="Save" runat="server" class="site-button" />
+</div>
+</div>
+</div>
+</div>
+<!-- Modal End -->
+</div>
+<!-- inner page banner END -->
+<!-- contact area -->
+<div class="content-block">
+<!-- Browse Jobs -->
+<div class="section-full browse-job content-inner-2">
+<div class="container">
+<div class="row">
+<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 m-b30">
+<div class="sticky-top bg-white">
+<div class="candidate-info onepage">
+<ul>
+<li><a class="scroll-bar nav-link" href="#resume_headline_bx">
+<span>Resume Headline</span></a></li>
+<li><a class="scroll-bar nav-link" href="#key_skills_bx">
+<span>Key Skills</span></a></li>
+<li><a class="scroll-bar nav-link" href="#employment_bx">
+<span>Employment</span></a></li>
+<li><a class="scroll-bar nav-link" href="#education_bx">
+<span>Education</span></a></li>
+<li><a class="scroll-bar nav-link" href="#projects_bx">
+<span>Projects</span></a></li>
+<li><a class="scroll-bar nav-link" href="#profile_summary_bx"> 
+<span>Profile Summary</span></a></li>
+<li><a class="scroll-bar nav-link" href="#desired_career_profile_bx">
+<span>Desired Career Profile</span></a></li>
+<li><a class="scroll-bar nav-link" href="#personal_details_bx">
+<span>Personal Details</span></a></li>
+<li><a class="scroll-bar nav-link" href="#attach_resume_bx">
+<span>Attach Resume</span></a></li>											
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-9 col-lg-8 col-md-8 col-sm-12">
+<div id="resume_headline_bx" class="job-bx bg-white m-b30">
+<div class="d-flex">
+<h5 class="m-b15">Resume Headline</h5>
+<a href="javascript:void(0);" data-toggle="modal" data-target="#resumeheadline" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
+</div>
+<p class="m-b0">Job board currently living in USA</p>
+<!-- Modal -->
+<div class="modal fade modal-bx-info editor" id="resumeheadline" tabindex="-1" role="dialog" aria-labelledby="ResumeheadlineModalLongTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="ResumeheadlineModalLongTitle">Resume Headline</h5>
+  <span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>
+</div>
+<div class="modal-body">
+<p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
+<form>
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+    <asp:TextBox runat="server" />  
+<textarea class="form-control" placeholder="Type Description"></textarea>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
+<button type="button" class="site-button">Save</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal End -->
+</div>
+<div id="key_skills_bx" class="job-bx bg-white m-b30">
+<div class="d-flex">
+<h5 class="m-b15">Key Skills</h5>
+<a href="javascript:void(0);" data-toggle="modal" data-target="#keyskills" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
+</div>
+<div class="job-time mr-auto">
+<a href="javascript:void(0);"><span>Javascript</span></a>
+<a href="javascript:void(0);"><span>CSS</span></a>
+<a href="javascript:void(0);"><span>HTML</span></a>
+<a href="javascript:void(0);"><span>Bootstrap</span></a>
+<a href="javascript:void(0);"><span>Web Designing</span></a>
+<a href="javascript:void(0);"><span>Photoshop</span></a>
+</div>
+<!-- Modal -->
+<div class="modal fade modal-bx-info editor" id="keyskills" tabindex="-1" role="dialog" aria-labelledby="KeyskillsModalLongTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="KeyskillsModalLongTitle">Key Skills</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
+<form>
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+<input type="text" class="form-control tags_input" value="html,css,bootstrap,photoshop"/>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
+<button type="button" class="site-button">Save</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal End -->
+</div>
+<div id="employment_bx" class="job-bx bg-white m-b30 ">
+<div class="d-flex">
+<h5 class="m-b15">Employment</h5>
 									<a href="javascript:void(0);" data-toggle="modal" data-target="#employment" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
 								</div>
 								<h6 class="font-14 m-b0">Junior Software DeveloperEdit</h6>
@@ -501,167 +487,7 @@
 								<a href="javascript:void(0);" class="clearfix">Add Masters/Post-Graduation</a>
 								<a href="javascript:void(0);" class="clearfix">Add Graduation/Diploma</a>
 							</div>
-							<div id="it_skills_bx" class="job-bx table-job-bx bg-white m-b30">
-								<div class="d-flex">
-									<h5 class="m-b15">IT Skills</h5>
-									<a href="javascript:void(0);" data-toggle="modal" data-target="#itskills" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-								</div>
-								<p>Mention your employment details including your current and previous company work experience</p>
-								<table>
-									<thead>
-										<tr>
-											<th>Skills</th>
-											<th>Version</th>
-											<th>Last Used</th>
-											<th>Experience</th>
-											<th></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Bootstrap</td>
-											<td>3</td>
-											<td>2018</td>
-											<td>1 Year 5 Months</td>
-											<td><a class="m-l15 font-14" data-toggle="modal" data-target="#itskills" href="#"><i class="fa fa-pencil"></i></a></td>
-										</tr>
-										<tr>
-											<td>Bootstrap</td>
-											<td>4</td>
-											<td>2013</td>
-											<td>5 Year 5 Months</td>
-											<td><a class="m-l15 font-14" data-toggle="modal" data-target="#itskills" href="#"><i class="fa fa-pencil"></i></a></td>
-										</tr>
-										<tr>
-											<td>html</td>
-											<td>5</td>
-											<td>2016</td>
-											<td>2 Year 7 Months</td>
-											<td><a class="m-l15 font-14" data-toggle="modal" data-target="#itskills" href="#"><i class="fa fa-pencil"></i></a></td>
-										</tr>
-										<tr>
-											<td>css</td>
-											<td>3</td>
-											<td>2018</td>
-											<td>0 Year 5 Months</td>
-											<td><a class="m-l15 font-14" data-toggle="modal" data-target="#itskills" href="#"><i class="fa fa-pencil"></i></a></td>
-										</tr>
-										<tr>
-											<td>photoshop</td>
-											<td>64bit</td>
-											<td>2017</td>
-											<td>1 Year 0 Months</td>
-											<td><a class="m-l15 font-14" data-toggle="modal" data-target="#itskills" href="#"><i class="fa fa-pencil"></i></a></td>
-										</tr>
-									</tbody>
-								</table>
-								<!-- Modal -->
-								<div class="modal fade modal-bx-info editor" id="itskills" tabindex="-1" role="dialog" aria-labelledby="ItskillsModalLongTitle" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="ItskillsModalLongTitle">IT Skills</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<form>
-													<div class="row">
-														<div class="col-lg-12 col-md-12">
-															<div class="form-group">
-																<label>IT Skills</label>
-																<input type="email" class="form-control" placeholder="Enter IT Skills">
-															</div>
-														</div>
-														<div class="col-lg-6 col-md-6">
-															<div class="form-group">
-																<label>Version</label>
-																<input type="email" class="form-control" placeholder="Enter Version">
-															</div>
-														</div>
-														<div class="col-lg-6 col-md-6">
-															<div class="form-group">
-																<label>Last Used</label>
-																<select>
-																	<option>2018</option>
-																	<option>2017</option>
-																	<option>2016</option>
-																	<option>2015</option>
-																	<option>2014</option>
-																	<option>2013</option>
-																	<option>2012</option>
-																	<option>2011</option>
-																	<option>2010</option>
-																	<option>2009</option>
-																	<option>2008</option>
-																	<option>2007</option>
-																	<option>2006</option>
-																	<option>2005</option>
-																	<option>2004</option>
-																	<option>2003</option>
-																	<option>2002</option>
-																	<option>2001</option>
-																</select>
-															</div>
-														</div>
-														<div class="col-lg-12 col-md-6">
-															<div class="form-group">
-																<label>Experience</label>
-																<div class="row">
-																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>2018</option>
-																			<option>2017</option>
-																			<option>2016</option>
-																			<option>2015</option>
-																			<option>2014</option>
-																			<option>2013</option>
-																			<option>2012</option>
-																			<option>2011</option>
-																			<option>2010</option>
-																			<option>2009</option>
-																			<option>2008</option>
-																			<option>2007</option>
-																			<option>2006</option>
-																			<option>2005</option>
-																			<option>2004</option>
-																			<option>2003</option>
-																			<option>2002</option>
-																			<option>2001</option>
-																		</select>
-																	</div>
-																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>january</option>
-																			<option>february</option>
-																			<option>March</option>
-																			<option>April</option>
-																			<option>May</option>
-																			<option>Jun</option>
-																			<option>July</option>
-																			<option>August</option>
-																			<option>September</option>
-																			<option>October</option>
-																			<option>November</option>
-																			<option>December</option>
-																		</select>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Modal End -->
-							</div>
+							
 							<div id="projects_bx" class="job-bx bg-white m-b30">
 								<div class="d-flex">
 									<h5 class="m-b15">Projects</h5>
@@ -870,543 +696,7 @@
 								</div>
 								<!-- Modal End -->
 							</div>
-							<div id="accomplishments_bx" class="job-bx bg-white m-b30">
-								<h5 class="m-b10">Accomplishments</h5>
-								<div class="list-row">
-									<div class="list-line">
-										<div class="d-flex">
-											<h6 class="font-14 m-b5">Online Profile</h6>
-											<a href="javascript:void(0);" data-toggle="modal" data-target="#accomplishments" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-										</div>
-										<p class="m-b0">Add link to Online profiles (e.g. Linkedin, Facebook etc.).</p>
-										<!-- Modal -->
-										<div class="modal fade modal-bx-info editor" id="accomplishments" tabindex="-1" role="dialog"  aria-labelledby="AccomplishmentsModalLongTitle" aria-hidden="true">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="AccomplishmentsModalLongTitle">Online Profiles</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<form>
-															<div class="row">
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Social Profile</label>
-																		<input type="email" class="form-control" placeholder="Social Profile Name">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>URL</label>
-																		<input type="email" class="form-control" placeholder="www.google.com">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Description</label>
-																		<textarea class="form-control" placeholder="Type Description"></textarea>
-																	</div>
-																</div>
-															</div>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-														<button type="button" class="site-button">Save</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal End -->
-									</div>
-									<div class="list-line">
-										<div class="d-flex">
-											<h6 class="font-14 m-b5">Work Sample</h6>
-											<a href="javascript:void(0);" data-toggle="modal" data-target="#worksample" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-										</div>
-										<p class="m-b0">Add link to your Projects (e.g. Github links etc.).</p>
-										<!-- Modal -->
-										<div class="modal fade modal-bx-info editor" id="worksample" tabindex="-1" role="dialog" aria-labelledby="WorksampleModalLongTitle" aria-hidden="true">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="WorksampleModalLongTitle">Work Sample</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<form>
-															<div class="row">
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Work Title</label>
-																		<input type="email" class="form-control" placeholder="Enter Title">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>URL</label>
-																		<input type="email" class="form-control" placeholder="www.google.com">
-																	</div>
-																</div>
-																<div class="col-lg-6 col-md-6">
-																	<div class="form-group">
-																		<label>Duration From</label>
-																		<div class="row">
-																			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																				<select>
-																					<option>2018</option>
-																					<option>2017</option>
-																					<option>2016</option>
-																					<option>2015</option>
-																					<option>2014</option>
-																					<option>2013</option>
-																					<option>2012</option>
-																					<option>2011</option>
-																					<option>2010</option>
-																					<option>2009</option>
-																					<option>2008</option>
-																					<option>2007</option>
-																					<option>2006</option>
-																					<option>2005</option>
-																					<option>2004</option>
-																					<option>2003</option>
-																					<option>2002</option>
-																					<option>2001</option>
-																				</select>
-																			</div>
-																			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																				<select>
-																					<option>january</option>
-																					<option>february</option>
-																					<option>March</option>
-																					<option>April</option>
-																					<option>May</option>
-																					<option>Jun</option>
-																					<option>July</option>
-																					<option>August</option>
-																					<option>September</option>
-																					<option>October</option>
-																					<option>November</option>
-																					<option>December</option>
-																				</select>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-lg-6 col-md-6">
-																	<div class="form-group">
-																		<label>Duration To</label>
-																		<div class="row">
-																			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																				<select>
-																					<option>2018</option>
-																					<option>2017</option>
-																					<option>2016</option>
-																					<option>2015</option>
-																					<option>2014</option>
-																					<option>2013</option>
-																					<option>2012</option>
-																					<option>2011</option>
-																					<option>2010</option>
-																					<option>2009</option>
-																					<option>2008</option>
-																					<option>2007</option>
-																					<option>2006</option>
-																					<option>2005</option>
-																					<option>2004</option>
-																					<option>2003</option>
-																					<option>2002</option>
-																					<option>2001</option>
-																				</select>
-																			</div>
-																			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																				<select>
-																					<option>january</option>
-																					<option>february</option>
-																					<option>March</option>
-																					<option>April</option>
-																					<option>May</option>
-																					<option>Jun</option>
-																					<option>July</option>
-																					<option>August</option>
-																					<option>September</option>
-																					<option>October</option>
-																					<option>November</option>
-																					<option>December</option>
-																				</select>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<div class="custom-control custom-checkbox">
-																			<input type="checkbox" class="custom-control-input" id="check1" name="example1">
-																			<label class="custom-control-label" for="check1">I am currently working on this</label>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Description</label>
-																		<textarea class="form-control" placeholder="Type Description"></textarea>
-																	</div>
-																</div>
-															</div>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-														<button type="button" class="site-button">Save</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal End -->
-									</div>
-									<div class="list-line">
-										<div class="d-flex">
-											<h6 class="font-14 m-b5">White Paper / Research Publication / Journal Entry</h6>
-											<a href="javascript:void(0);" data-toggle="modal" data-target="#journalentry" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-										</div>
-										<p class="m-b0">Add links to your Online publications.</p>
-										<!-- Modal -->
-										<div class="modal fade modal-bx-info editor" id="journalentry" tabindex="-1" role="dialog" aria-labelledby="JournalentryModalLongTitle" aria-hidden="true">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="JournalentryModalLongTitle">White Paper / Research Publication / Journal Entry</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<form>
-															<div class="row">
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Title</label>
-																		<input type="email" class="form-control" placeholder="Enter Title">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>URL</label>
-																		<input type="email" class="form-control" placeholder="www.google.com">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Published On</label>
-																		<div class="row">
-																			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																				<select>
-																					<option>2018</option>
-																					<option>2017</option>
-																					<option>2016</option>
-																					<option>2015</option>
-																					<option>2014</option>
-																					<option>2013</option>
-																					<option>2012</option>
-																					<option>2011</option>
-																					<option>2010</option>
-																					<option>2009</option>
-																					<option>2008</option>
-																					<option>2007</option>
-																					<option>2006</option>
-																					<option>2005</option>
-																					<option>2004</option>
-																					<option>2003</option>
-																					<option>2002</option>
-																					<option>2001</option>
-																				</select>
-																			</div>
-																			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																				<select>
-																					<option>january</option>
-																					<option>february</option>
-																					<option>March</option>
-																					<option>April</option>
-																					<option>May</option>
-																					<option>Jun</option>
-																					<option>July</option>
-																					<option>August</option>
-																					<option>September</option>
-																					<option>October</option>
-																					<option>November</option>
-																					<option>December</option>
-																				</select>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Description</label>
-																		<textarea class="form-control" placeholder="Type Description"></textarea>
-																	</div>
-																</div>
-															</div>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-														<button type="button" class="site-button">Save</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal End -->
-									</div>
-									<div class="list-line">
-										<div class="d-flex">
-											<h6 class="font-14 m-b5">Presentation</h6>
-											<a href="javascript:void(0);" data-toggle="modal" data-target="#presentation" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-										</div>
-										<p class="m-b0">Add links to your Online presentations (e.g. Slideshare presentation links etc.).</p>
-										<!-- Modal -->
-										<div class="modal fade modal-bx-info editor" id="presentation" tabindex="-1" role="dialog" aria-labelledby="PresentationModalLongTitle" aria-hidden="true">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="PresentationModalLongTitle">Presentation</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<form>
-															<div class="row">
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Title</label>
-																		<input type="email" class="form-control" placeholder="Enter Title">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>URL</label>
-																		<input type="email" class="form-control" placeholder="www.google.com">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Description</label>
-																		<textarea class="form-control" placeholder="Type Description"></textarea>
-																	</div>
-																</div>
-															</div>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-														<button type="button" class="site-button">Save</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal End -->
-									</div>
-									<div class="list-line">
-										<div class="d-flex">
-											<h6 class="font-14 m-b5">Patent</h6>
-											<a href="javascript:void(0);" data-toggle="modal" data-target="#patent" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-										</div>
-										<p class="m-b0">Add details of Patents you have filed.</p>
-										<!-- Modal -->
-										<div class="modal fade modal-bx-info editor" id="patent" tabindex="-1" role="dialog" aria-labelledby="PatentModalLongTitle" aria-hidden="true">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="PatentModalLongTitle">Patent</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<form>
-															<div class="row">
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Title</label>
-																		<input type="email" class="form-control" placeholder="Enter Title">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>URL</label>
-																		<input type="email" class="form-control" placeholder="www.google.com">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Patent Office</label>
-																		<input type="email" class="form-control" placeholder="Enter Patent Office">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Status</label>
-																		<div class="row">
-																			<div class="col-lg-6 col-md-6">
-																				<div class="custom-control custom-radio">
-																					<input type="radio" class="custom-control-input" id="check2" name="example1">
-																					<label class="custom-control-label" for="check2">Patent Issued</label>
-																				</div>
-																			</div>
-																			<div class="col-lg-6 col-md-6">
-																				<div class="custom-control custom-radio">
-																					<input type="radio" class="custom-control-input" id="check3" name="example1">
-																					<label class="custom-control-label" for="check3">Patent pending</label>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Application Number</label>
-																		<input type="email" class="form-control" placeholder="Enter Application Number">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Published On</label>
-																		<div class="row">
-																			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																				<select>
-																					<option>2018</option>
-																					<option>2017</option>
-																					<option>2016</option>
-																					<option>2015</option>
-																					<option>2014</option>
-																					<option>2013</option>
-																					<option>2012</option>
-																					<option>2011</option>
-																					<option>2010</option>
-																					<option>2009</option>
-																					<option>2008</option>
-																					<option>2007</option>
-																					<option>2006</option>
-																					<option>2005</option>
-																					<option>2004</option>
-																					<option>2003</option>
-																					<option>2002</option>
-																					<option>2001</option>
-																				</select>
-																			</div>
-																			<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																				<select>
-																					<option>january</option>
-																					<option>february</option>
-																					<option>March</option>
-																					<option>April</option>
-																					<option>May</option>
-																					<option>Jun</option>
-																					<option>July</option>
-																					<option>August</option>
-																					<option>September</option>
-																					<option>October</option>
-																					<option>November</option>
-																					<option>December</option>
-																				</select>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Description</label>
-																		<textarea class="form-control" placeholder="Type Description"></textarea>
-																	</div>
-																</div>
-															</div>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-														<button type="button" class="site-button">Save</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal End -->
-									</div>
-									<div class="list-line">
-										<div class="d-flex">
-											<h6 class="font-14 m-b5">Certification</h6>
-											<a href="javascript:void(0);" data-toggle="modal" data-target="#certification" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
-										</div>
-										<p class="m-b0">Add details of Certification you have filed.</p>
-										<!-- Modal -->
-										<div class="modal fade modal-bx-info editor" id="certification" tabindex="-1" role="dialog" aria-labelledby="CertificationModalLongTitle" aria-hidden="true">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="CertificationModalLongTitle">Certification</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<form>
-															<div class="row">
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Certification Name</label>
-																		<input type="text" class="form-control" placeholder="Enter Certification Name">
-																	</div>
-																</div>
-																<div class="col-lg-12 col-md-12">
-																	<div class="form-group">
-																		<label>Certification Body</label>
-																		<input type="text" class="form-control" placeholder="Enter Certification Body">
-																	</div>
-																</div>
-																<div class="col-lg-6 col-md-6">
-																	<div class="form-group">
-																		<label>Year Onlabel</label>
-																			<select>
-																			<option>2018</option>
-																			<option>2017</option>
-																			<option>2016</option>
-																			<option>2015</option>
-																			<option>2014</option>
-																			<option>2013</option>
-																			<option>2012</option>
-																			<option>2011</option>
-																			<option>2010</option>
-																			<option>2009</option>
-																			<option>2008</option>
-																			<option>2007</option>
-																			<option>2006</option>
-																			<option>2005</option>
-																			<option>2004</option>
-																			<option>2003</option>
-																			<option>2002</option>
-																			<option>2001</option>
-																		</select>
-																	</div>
-																</div>
-															</div>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-														<button type="button" class="site-button">Save</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal End -->
-									</div>
-								</div>
-							</div>
+							
 							<div id="desired_career_profile_bx" class="job-bx bg-white m-b30">
 								<div class="d-flex">
 									<h5 class="m-b30">Desired Career Profile</h5>
@@ -1926,7 +1216,7 @@
 								</div>
 								<!-- Details End -->
 							</div>
-							<div id="attach_resume_bx" class="job-bx bg-white m-b30">
+    							<div id="attach_resume_bx" class="job-bx bg-white m-b30">
 								<h5 class="m-b10">Attach Resume</h5>
 								<p>Resume is the most important document recruiters look for. Recruiters generally do not look at profiles without resumes.</p>
 								<form class="attach-resume">
@@ -1952,4 +1242,5 @@
 					</div>
 				</div>
 			</div>
+    </div>
 </asp:Content>

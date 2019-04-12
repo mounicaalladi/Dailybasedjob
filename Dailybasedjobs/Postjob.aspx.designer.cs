@@ -13,31 +13,22 @@ namespace Dailybasedjobs {
     public partial class Postjob {
         
         /// <summary>
-        /// writejobtitle control.
+        /// jobtitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox writejobtitle;
+        protected global::System.Web.UI.WebControls.TextBox jobtitle;
         
         /// <summary>
-        /// writecompanyname control.
+        /// email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox writecompanyname;
-        
-        /// <summary>
-        /// Location control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Location;
+        protected global::System.Web.UI.WebControls.TextBox email;
         
         /// <summary>
         /// jobtags control.
@@ -49,84 +40,48 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.TextBox jobtags;
         
         /// <summary>
-        /// description control.
+        /// jobtype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox description;
+        protected global::System.Web.UI.WebControls.DropDownList jobtype;
         
         /// <summary>
-        /// appemail control.
+        /// experience control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox appemail;
+        protected global::System.Web.UI.WebControls.DropDownList experience;
         
         /// <summary>
-        /// date control.
+        /// region control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox date;
+        protected global::System.Web.UI.WebControls.DropDownList region;
         
         /// <summary>
-        /// companyname control.
+        /// location control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox companyname;
+        protected global::System.Web.UI.WebControls.TextBox location;
         
         /// <summary>
-        /// website control.
+        /// customFile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox website;
-        
-        /// <summary>
-        /// tagline control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tagline;
-        
-        /// <summary>
-        /// TextBox10 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox10;
-        
-        /// <summary>
-        /// validatedCustomFile control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox validatedCustomFile;
-        
-        /// <summary>
-        /// submityourjob control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submityourjob;
+        protected global::System.Web.UI.WebControls.TextBox customFile;
     }
 }
