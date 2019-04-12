@@ -246,12 +246,6 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Adminchangepassword.aspx.cs">
-      <DependentUpon>Adminchangepassword.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Adminchangepassword.aspx.designer.cs">
-      <DependentUpon>Adminchangepassword.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Appliedjobs.aspx.cs">
       <DependentUpon>Appliedjobs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
