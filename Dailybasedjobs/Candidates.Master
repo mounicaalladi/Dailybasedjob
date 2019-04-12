@@ -67,7 +67,7 @@
                     <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
 							<li class="active">
-								<a href="Index.aspx">Profile <i class="fa fa-chevron-down"></i></a>
+								<a href="Candidateprofile.aspx">Profile <i class="fa fa-chevron-down"></i></a>
 								<%--<ul class="sub-menu">
 									<li><a href="Index.aspx" class="dez-page">Home</a></li>
 								

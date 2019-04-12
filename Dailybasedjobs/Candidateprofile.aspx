@@ -16,20 +16,22 @@
 									<div class="candidate-detail text-center">
 										<div class="canditate-des">
 											<a href="javascript:void(0);">
-												<img alt="" src="images/team/pic1.jpg">
-                                                <asp:FileUpload ID="FileUpload1"   runat="server" />
+												<%--<img alt="" src="images/team/pic1.jpg">--%>
+                                             
+                                               
 											</a>
                                         
 											<div class="upload-link" title="update" id="theDiv" data-toggle="tooltip" data-placement="right" runat="server">
-                                                  
+                                                  <asp:Image ImageUrl='<%# Eval("image") %>' ID="img1"  runat="server" />   
                                                  <asp:Button Text="ChooseFile" ID="btnFileupload" class="update-flie"  runat="server" Visible="False" />
+                                                 <asp:FileUpload ID="FileUpload1"   runat="server" />
 											<%--	<input type="file" class="update-flie">--%>
 												<%--<i class="fa fa-camera"></i>--%>
 											</div>
 										</div>
 										<div class="candidate-title">
 											<div class="">
-												<h4 class="m-b5"><a href="javascript:void(0);">David Matin</a></h4>
+												<h4 class="m-b5"><a href="javascript:void(0);">David Matinhhh</a></h4>
 												<p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>
 											</div>
 										</div>
@@ -177,7 +179,7 @@
 										</div>
 									</div>
 									<%--<button class="site-button m-b30">Save Setting</button>--%>
-                                    <asp:Button Text="Save Settings" class="site-button m-b30" OnClick="Unnamed_Click" runat="server" />
+                                    <asp:Button Text="Save Settings" class="site-button m-b30" OnClick="btnsave_Click" ID="btnsave" runat="server" />
 								</div>
 							</div>    
 						</div>
