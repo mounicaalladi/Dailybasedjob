@@ -31,7 +31,7 @@
 										</div>
 										<div class="candidate-title">
 											<div class="">
-												<h4 class="m-b5"><a href="javascript:void(0);">David Matin</a></h4>
+												<h4 class="m-b5"><a href="javascript:void(0);">David Matinhhh</a></h4>
 												<p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>
 											</div>
 										</div>
