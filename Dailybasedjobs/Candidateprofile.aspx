@@ -17,14 +17,24 @@
 										<div class="canditate-des">
 											<a href="javascript:void(0);">
 												<%--<img alt="" src="images/team/pic1.jpg">--%>
-                                             
-                                               
+                                                <asp:Image ID="img1" runat="server" />
+
+                                <asp:FileUpload ID="fileuploadcontrol" CssClass="form-control" runat="server" />
+                                <asp:Button Text="ChooseFile" ID="btnFileupload" class="update-flie"  runat="server" Visible="False" />
+                                              
 											</a>
                                         
 											<div class="upload-link" title="update" id="theDiv" data-toggle="tooltip" data-placement="right" runat="server">
-                                                  <asp:Image ImageUrl='<%# Eval("image") %>' ID="img1"  runat="server" />   
-                                                 <asp:Button Text="ChooseFile" ID="btnFileupload" class="update-flie"  runat="server" Visible="False" />
-                                                 <asp:FileUpload ID="FileUpload1"   runat="server" />
+                                               
+<%--                                                 <asp:Image ID="imgPreview" ImageUrl='<%#
+
+                            "ImageHandler.ashx?imgID="+ Eval("ImageID") %>' runat="server"
+
+                                Height="80px" Width="80px" />--%>
+                                              
+                                     
+                                                   <asp:FileUpload ID="FileUpload1" CssClass="form-control"  runat="server" />
+                                              
 											<%--	<input type="file" class="update-flie">--%>
 												<%--<i class="fa fa-camera"></i>--%>
 											</div>
@@ -189,6 +199,6 @@
 			</div>
             <!-- Browse Jobs END -->
 		</div>
-    
+    <asp:Label ID="role" runat="server" />
     <!-- Content END-->
 </asp:Content>

@@ -13,15 +13,6 @@ namespace Dailybasedjobs {
     public partial class Candidateprofile {
         
         /// <summary>
-        /// theDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl theDiv;
-        
-        /// <summary>
         /// img1 control.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,15 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.Image img1;
         
         /// <summary>
+        /// fileuploadcontrol control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fileuploadcontrol;
+        
+        /// <summary>
         /// btnFileupload control.
         /// </summary>
         /// <remarks>
@@ -38,6 +38,15 @@ namespace Dailybasedjobs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnFileupload;
+        
+        /// <summary>
+        /// theDiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl theDiv;
         
         /// <summary>
         /// FileUpload1 control.
@@ -155,5 +164,14 @@ namespace Dailybasedjobs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnsave;
+        
+        /// <summary>
+        /// role control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label role;
     }
 }
