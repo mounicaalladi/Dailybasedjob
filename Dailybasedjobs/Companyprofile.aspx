@@ -182,7 +182,8 @@
 											</div>
 										</div>
 									</div>
-									<button type="submit" class="site-button m-b30">Update Setting</button>
+									<%--<button type="submit" class="site-button m-b30">Update Setting</button>--%>
+                                    <asp:Button Text="Upadte setting" ID="btnupt" OnClick="btnupt_Click" runat="server" />
 								</form>
 							</div>
 						</div>
