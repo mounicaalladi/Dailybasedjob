@@ -193,7 +193,7 @@
 </div>
 <div class="modal-body">
 <p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
-<form>
+<div>
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
@@ -201,7 +201,7 @@
 </div>
 </div>
 </div>
-</form>
+</div>
 </div>
 <div class="modal-footer">
     <asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -235,7 +235,7 @@
 </div>
 <div class="modal-body">
 <p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
-<form>
+<div>
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
@@ -243,7 +243,7 @@
 </div>
 </div>
 </div>
-</form>
+</div>
 </div>
 <div class="modal-footer">
     <asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -273,7 +273,7 @@
                                             <span aria-hidden="true"><asp:Button  runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>
 											</div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -405,7 +405,7 @@
 															</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -431,7 +431,7 @@
 												  <span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
 											</div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -456,7 +456,7 @@
 																</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -501,7 +501,7 @@
 												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
                                                 </div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -642,7 +642,7 @@
 																</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -671,7 +671,7 @@
 											</div>
 											<div class="modal-body">
 												<p>Your Profile Summary should mention the highlights of your career and education, what your professional interests are, and what kind of a career you are looking for. Write a meaningful summary of more than 50 characters.</p>
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -680,7 +680,7 @@
 															</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -706,7 +706,7 @@
 												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
                                             </div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -918,7 +918,7 @@
 															</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -991,7 +991,7 @@
 												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>  
                                                 </div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -1148,7 +1148,7 @@
 															</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -1210,7 +1210,7 @@
     							<div id="attach_resume_bx" class="job-bx bg-white m-b30">
 								<h5 class="m-b10">Attach Resume</h5>
 								<p>Resume is the most important document recruiters look for. Recruiters generally do not look at profiles without resumes.</p>
-								<form class="attach-resume">
+								<div class="attach-resume">
 									<div class="row">
 										<div class="col-lg-12 col-md-12">
 											<div class="form-group">
@@ -1224,7 +1224,7 @@
 											</div>
 										</div>
 									</div>
-								</form>
+								</div>
 								<p class="text-center">
 								If you do not have a resume document, you may write your brief professional profile <a class="site-button-link" href="javascript:void(0);">here</a>.
 								</p>
