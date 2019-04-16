@@ -539,35 +539,35 @@ var JobBoard = function(){
 		}	
 	}
 	
-	/* Left Menu ============ */
-	var handleSideBarMenu = function(){
-		$('.openbtn').on('click',function(e){
-			e.preventDefault();
-			if($('#mySidenav').length > 0)
-			{
-				document.getElementById("mySidenav").style.left = "0";
-			}
+	///* Left Menu ============ */
+	//var handleSideBarMenu = function(){
+	//	$('.openbtn').on('click',function(e){
+	//		e.preventDefault();
+	//		if($('#mySidenav').length > 0)
+	//		{
+	//			document.getElementById("mySidenav").style.left = "0";
+	//		}
 
-			if($('#mySidenav1').length > 0)
-			{
-				document.getElementById("mySidenav1").style.right = "0";
-			}
+	//		if($('#mySidenav1').length > 0)
+	//		{
+	//			document.getElementById("mySidenav1").style.right = "0";
+	//		}
 			
-		})
+	//	})
 		
-		$('.closebtn').on('click',function(e){
-			e.preventDefault();
-			if($('#mySidenav').length > 0)
-			{
-				document.getElementById("mySidenav").style.left = "-300px";
-			}
+	//	$('.closebtn').on('click',function(e){
+	//		e.preventDefault();
+	//		if($('#mySidenav').length > 0)
+	//		{
+	//			document.getElementById("mySidenav").style.left = "-300px";
+	//		}
 			
-			if($('#mySidenav1').length > 0)
-			{
-				document.getElementById("mySidenav1").style.right = "-820px";
-			}
-		})
-	}
+	//		if($('#mySidenav1').length > 0)
+	//		{
+	//			document.getElementById("mySidenav1").style.right = "-820px";
+	//		}
+	//	})
+	//}
 	
 	/* Left Menu ============ */
 	var handleMenuPosition = function(){

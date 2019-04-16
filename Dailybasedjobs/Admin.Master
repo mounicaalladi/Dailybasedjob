@@ -192,7 +192,7 @@
 <script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
 <script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
 <script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
-<script src="plugins/switcher/js/switcher.js"></script><!-- SWITCHER FUCTIONS  -->
+
 <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
