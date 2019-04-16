@@ -13,7 +13,7 @@
 <img alt="" src="images/team/pic1.jpg">
 </a>
 <div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-<input type="file" class="update-flie">
+    <asp:TextBox ID="updatefile" runat="server" class="update-flie" />  
 <i class="fa fa-camera"></i>
 </div>
 </div>
@@ -57,7 +57,7 @@
 <div class="modal-content">
 <div class="modal-header">
 <h5 class="modal-title" id="ProfilenameModalLongTitle">Basic Details</h5>
-   <span aria-hidden="true"> <asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>
+   <span aria-hidden="true"> <asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /> </span>
 </div>
 <div class="modal-body">
 <form>
@@ -197,16 +197,15 @@
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
-    <asp:TextBox runat="server" />  
-<textarea class="form-control" placeholder="Type Description"></textarea>
+    <asp:TextBox ID="txtdescrptn" runat="server" TextMode="MultiLine" class="form-control" placeholder="Type Description" />  
 </div>
 </div>
 </div>
 </form>
 </div>
 <div class="modal-footer">
-<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-<button type="button" class="site-button">Save</button>
+    <asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+    <asp:Button Text="Save" runat="server" class="site-button" />
 </div>
 </div>
 </div>
@@ -232,9 +231,7 @@
 <div class="modal-content">
 <div class="modal-header">
 <h5 class="modal-title" id="KeyskillsModalLongTitle">Key Skills</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
+  <span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>
 </div>
 <div class="modal-body">
 <p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
@@ -242,15 +239,15 @@
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
-<input type="text" class="form-control tags_input" value="html,css,bootstrap,photoshop"/>
+    <asp:TextBox ID="txttags" runat="server" class="form-control tags_input" placeholder="html css bootstrap photoshop" />
 </div>
 </div>
 </div>
 </form>
 </div>
 <div class="modal-footer">
-<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-<button type="button" class="site-button">Save</button>
+    <asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+    <asp:Button Text="Save" runat="server" class="site-button" />
 </div>
 </div>
 </div>
@@ -286,131 +283,133 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Your Organization</label>
-																<input type="email" class="form-control" placeholder="Enter Your Organization">
+                                                                <asp:Label ID="lblorganization" Text="Your Organization" runat="server"  />
+                                                                <asp:TextBox ID="txtorganization" runat="server" class="form-control" placeholder="Enter Your Organization" />
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Is this your current company?</label>
-																<div class="row">
+                                                                    <asp:Label ID="lblisthisurcom" Text="Is this your current company?" runat="server"  />
+															<div class="row">
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="employ_yes" name="example1">
-																			<label class="custom-control-label" for="employ_yes">Yes</label>
-																		</div>
+                                                                            <asp:RadioButton ID="employ_yes" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblemploy_yes" Text="Yes" runat="server" class="custom-control-label" />
+                                                                            </div>
 																	</div>
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="employ_no" name="example1">
-																			<label class="custom-control-label" for="employ_no">No</label>
-																		</div>
+                                                                            <asp:RadioButton ID="employ_no" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblemploy_no" Text="No" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Started Working From</label>
+                                                                <asp:Label ID="lblstartworkfrm" Text="Started Working From" runat="server"/>
 																<div class="row">
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>2018</option>
-																			<option>2017</option>
-																			<option>2016</option>
-																			<option>2015</option>
-																			<option>2014</option>
-																			<option>2013</option>
-																			<option>2012</option>
-																			<option>2011</option>
-																			<option>2010</option>
-																			<option>2009</option>
-																			<option>2008</option>
-																			<option>2007</option>
-																			<option>2006</option>
-																			<option>2005</option>
-																			<option>2004</option>
-																			<option>2003</option>
-																			<option>2002</option>
-																			<option>2001</option>
-																		</select>
+                                                                        <asp:DropDownList ID="ddlswfyears" runat="server">
+                                                                            <asp:ListItem Text="2019" />
+                                                                            <asp:ListItem Text="2018" />
+                                                                            <asp:ListItem Text="2017" />
+                                                                            <asp:ListItem Text="2016" />
+                                                                            <asp:ListItem Text="2015" />
+                                                                            <asp:ListItem Text="2014" />
+                                                                            <asp:ListItem Text="2013" />
+                                                                            <asp:ListItem Text="2012" />
+                                                                            <asp:ListItem Text="2011" />
+                                                                            <asp:ListItem Text="2010" />
+                                                                            <asp:ListItem Text="2009" />
+                                                                            <asp:ListItem Text="2008" />
+                                                                            <asp:ListItem Text="2007" />
+                                                                            <asp:ListItem Text="2006" />
+                                                                            <asp:ListItem Text="2005" />
+                                                                            <asp:ListItem Text="2004" />
+                                                                            <asp:ListItem Text="2003" />
+                                                                            <asp:ListItem Text="2002" />
+                                                                            <asp:ListItem Text="2001" />
+                                                                        </asp:DropDownList>
 																	</div>
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>january</option>
-																			<option>february</option>
-																			<option>March</option>
-																			<option>April</option>
-																			<option>May</option>
-																			<option>Jun</option>
-																			<option>July</option>
-																			<option>August</option>
-																			<option>September</option>
-																			<option>October</option>
-																			<option>November</option>
-																			<option>December</option>
-																		</select>
+                                                                        <asp:DropDownList ID="ddlswfmonths" runat="server">
+                                                                            <asp:ListItem Text="january" />
+                                                                            <asp:ListItem Text="february" />
+                                                                            <asp:ListItem Text="March" />
+                                                                            <asp:ListItem Text="April" />
+                                                                            <asp:ListItem Text="May" />
+                                                                            <asp:ListItem Text="Jun" />
+                                                                            <asp:ListItem Text="July" />
+                                                                            <asp:ListItem Text="August" />
+                                                                            <asp:ListItem Text="September" />
+                                                                            <asp:ListItem Text="October" />
+                                                                            <asp:ListItem Text="November" />
+                                                                            <asp:ListItem Text="December" />
+                                                                        </asp:DropDownList>
 																	</div>
 																</div>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Worked Till</label>
+                                                                <asp:Label ID="lblworkedtill" Text="Worked Till" runat="server"/>
 																<div class="row">
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>2018</option>
-																			<option>2017</option>
-																			<option>2016</option>
-																			<option>2015</option>
-																			<option>2014</option>
-																			<option>2013</option>
-																			<option>2012</option>
-																			<option>2011</option>
-																			<option>2010</option>
-																			<option>2009</option>
-																			<option>2008</option>
-																			<option>2007</option>
-																			<option>2006</option>
-																			<option>2005</option>
-																			<option>2004</option>
-																			<option>2003</option>
-																			<option>2002</option>
-																			<option>2001</option>
-																		</select>
+																		<asp:DropDownList ID="ddlwtyears" runat="server">
+                                                                            <asp:ListItem Text="2019" />
+                                                                            <asp:ListItem Text="2018" />
+                                                                            <asp:ListItem Text="2017" />
+                                                                            <asp:ListItem Text="2016" />
+                                                                            <asp:ListItem Text="2015" />
+                                                                            <asp:ListItem Text="2014" />
+                                                                            <asp:ListItem Text="2013" />
+                                                                            <asp:ListItem Text="2012" />
+                                                                            <asp:ListItem Text="2011" />
+                                                                            <asp:ListItem Text="2010" />
+                                                                            <asp:ListItem Text="2009" />
+                                                                            <asp:ListItem Text="2008" />
+                                                                            <asp:ListItem Text="2007" />
+                                                                            <asp:ListItem Text="2006" />
+                                                                            <asp:ListItem Text="2005" />
+                                                                            <asp:ListItem Text="2004" />
+                                                                            <asp:ListItem Text="2003" />
+                                                                            <asp:ListItem Text="2002" />
+                                                                            <asp:ListItem Text="2001" />
+                                                                        </asp:DropDownList>
 																	</div>
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>january</option>
-																			<option>february</option>
-																			<option>March</option>
-																			<option>April</option>
-																			<option>May</option>
-																			<option>Jun</option>
-																			<option>July</option>
-																			<option>August</option>
-																			<option>September</option>
-																			<option>October</option>
-																			<option>November</option>
-																			<option>December</option>
-																		</select>
+																		<asp:DropDownList ID="ddlwtmonths" runat="server">
+                                                                            <asp:ListItem Text="january" />
+                                                                            <asp:ListItem Text="february" />
+                                                                            <asp:ListItem Text="March" />
+                                                                            <asp:ListItem Text="April" />
+                                                                            <asp:ListItem Text="May" />
+                                                                            <asp:ListItem Text="Jun" />
+                                                                            <asp:ListItem Text="July" />
+                                                                            <asp:ListItem Text="August" />
+                                                                            <asp:ListItem Text="September" />
+                                                                            <asp:ListItem Text="October" />
+                                                                            <asp:ListItem Text="November" />
+                                                                            <asp:ListItem Text="December" />
+                                                                        </asp:DropDownList>
 																	</div>
 																</div>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Describe your Job Profile</label>
-																<textarea class="form-control" placeholder="Type Description"></textarea>
+                                                                <asp:Label ID="lbldyjprofile" Text="Describe your Job Profile" runat="server" />
+																    <asp:TextBox ID="txttypedesptn" runat="server" TextMode="MultiLine" class="form-control" placeholder="Type Description" />  																
 															</div>
 														</div>
 													</div>
 												</form>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
+												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+                                                <asp:Button Text="Save" runat="server" class="site-button" />
 											</div>
 										</div>
 									</div>
@@ -429,41 +428,39 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h5 class="modal-title" id="EducationModalLongTitle">Education</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
+												  <span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
 											</div>
 											<div class="modal-body">
 												<form>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Education</label>
-																<select>
-																	<option>Doctorate/PhD</option>
-																	<option>Masters/Post-Graduation</option>
-																	<option>Graduation/Diploma</option>
-																</select>
+                                                                <asp:Label ID="lbleductn" Text="Education" runat="server" />
+                                                                <asp:DropDownList ID="ddleductn" runat="server">
+                                                                    <asp:ListItem Text="Doctorate/PhD" />
+                                                                    <asp:ListItem Text="Masters/Post-Graduation" />
+                                                                    <asp:ListItem Text="Graduation/Diploma" />
+                                                                </asp:DropDownList>																
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Course</label>
-																<input type="email" class="form-control" placeholder="Select Course">
+                                                                <asp:Label Text="Course" runat="server" />
+                                                                <asp:TextBox ID="txtcourse" runat="server" class="form-control" placeholder="Select Course" />																
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>University/Institute</label>
-																<input type="email" class="form-control" placeholder="Select University/Institute">
-															</div>
+                                                                <asp:Label Text="University/Institute" runat="server" />
+                                                                <asp:TextBox ID="txtunivinst" runat="server" class="form-control" placeholder="Select University/Institute" />
+																</div>
 														</div>
 													</div>
 												</form>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
+												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+                                                <asp:Button Text="Save" runat="server" class="site-button" />
 											</div>
 										</div>
 									</div>
@@ -472,11 +469,11 @@
 								<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<div class="clearfix m-b20">
-											<label class="m-b0">London - 12th</label>
+                                            <asp:Label Text="London - 12th" runat="server" class="m-b0"/>
 											<span class="clearfix font-13">2017</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">London - 10th</label>
+                                            <asp:Label Text="London - 10th" runat="server" class="m-b0"/>
 											<span class="clearfix font-13">2015</span>
 										</div>
 									</div>
@@ -501,155 +498,155 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h5 class="modal-title" id="ProjectsModalLongTitle">Add Projects</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
+												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
+                                                </div>
 											<div class="modal-body">
 												<form>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Project Title</label>
-																<input type="email" class="form-control" placeholder="Enter Project Title">
+                                                                <asp:Label ID="lblprojtitle" Text="Project Title" runat="server" />
+                                                                <asp:TextBox ID="txtprojtitle" runat="server" class="form-control" placeholder="Enter Project Title" />																
+																</div>
+														</div>
+														<div class="col-lg-12 col-md-12">
+															<div class="form-group">
+                                                                <asp:Label ID="txtprojemped" Text="Tag this project with your Employment/Education" runat="server" />
+                                                                <asp:DropDownList ID="ddlprojemped" runat="server">
+                                                                    <asp:ListItem Text="Class 12th" />
+                                                                    <asp:ListItem Text="Class 10th" />
+                                                                </asp:DropDownList>								
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Tag this project with your Employment/Education</label>
-																<select>
-																	<option>Class 12th</option>
-																	<option>Class 10th</option>
-																</select>
-															</div>
+                                                                <asp:Label ID="lblclient" Text="Client" runat="server" />
+                                                                <asp:TextBox ID="txtclient" runat="server" class="form-control" placeholder="Enter Client Name" />						
+																</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Client</label>
-																<input type="email" class="form-control" placeholder="Enter Client Name">
-															</div>
-														</div>
-														<div class="col-lg-12 col-md-12">
-															<div class="form-group">
-																<label>Project Status</label>
+                                                                <asp:Label ID="lblprojstus" Text="Project Status" runat="server" />
 																<div class="row">
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="inprogress" name="example1">
-																			<label class="custom-control-label" for="inprogress">In Progress</label>
-																		</div>
+                                                                            <asp:RadioButton ID="inprogress" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblinprogress" Text="In Progress" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="finished" name="example1">
-																			<label class="custom-control-label" for="finished">Finished</label>
-																		</div>
+                                                                            <asp:RadioButton ID="finished" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblfinished" Text="Finished" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-6">
 															<div class="form-group">
-																<label>Started Working From</label>
+																<asp:Label ID="lblstwfrom" Text="Started Working From" runat="server"/>
 																<div class="row">
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>2018</option>
-																			<option>2017</option>
-																			<option>2016</option>
-																			<option>2015</option>
-																			<option>2014</option>
-																			<option>2013</option>
-																			<option>2012</option>
-																			<option>2011</option>
-																			<option>2010</option>
-																			<option>2009</option>
-																			<option>2008</option>
-																			<option>2007</option>
-																			<option>2006</option>
-																			<option>2005</option>
-																			<option>2004</option>
-																			<option>2003</option>
-																			<option>2002</option>
-																			<option>2001</option>
-																		</select>
+                                                                        <asp:DropDownList ID="ddlstwfrmyears" runat="server">
+                                                                            <asp:ListItem Text="2019" />
+                                                                            <asp:ListItem Text="2018" />
+                                                                            <asp:ListItem Text="2017" />
+                                                                            <asp:ListItem Text="2016" />
+                                                                            <asp:ListItem Text="2015" />
+                                                                            <asp:ListItem Text="2014" />
+                                                                            <asp:ListItem Text="2013" />
+                                                                            <asp:ListItem Text="2012" />
+                                                                            <asp:ListItem Text="2011" />
+                                                                            <asp:ListItem Text="2010" />
+                                                                            <asp:ListItem Text="2009" />
+                                                                            <asp:ListItem Text="2008" />
+                                                                            <asp:ListItem Text="2007" />
+                                                                            <asp:ListItem Text="2006" />
+                                                                            <asp:ListItem Text="2005" />
+                                                                            <asp:ListItem Text="2004" />
+                                                                            <asp:ListItem Text="2003" />
+                                                                            <asp:ListItem Text="2002" />
+                                                                            <asp:ListItem Text="2001" />
+                                                                        </asp:DropDownList>
 																	</div>
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>january</option>
-																			<option>february</option>
-																			<option>March</option>
-																			<option>April</option>
-																			<option>May</option>
-																			<option>Jun</option>
-																			<option>July</option>
-																			<option>August</option>
-																			<option>September</option>
-																			<option>October</option>
-																			<option>November</option>
-																			<option>December</option>
-																		</select>
+                                                                        <asp:DropDownList ID="ddlstwfrmmonths" runat="server">
+                                                                            <asp:ListItem Text="january" />
+                                                                            <asp:ListItem Text="february" />
+                                                                            <asp:ListItem Text="March" />
+                                                                            <asp:ListItem Text="April" />
+                                                                            <asp:ListItem Text="May" />
+                                                                            <asp:ListItem Text="Jun" />
+                                                                            <asp:ListItem Text="July" />
+                                                                            <asp:ListItem Text="August" />
+                                                                            <asp:ListItem Text="September" />
+                                                                            <asp:ListItem Text="October" />
+                                                                            <asp:ListItem Text="November" />
+                                                                            <asp:ListItem Text="December" />
+                                                                        </asp:DropDownList>
 																	</div>
 																</div>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-6">
 															<div class="form-group">
-																<label>Worked Till</label>
+                                                                <asp:Label ID="lblwrkedtll" Text="Worked Till" runat="server"/>																
 																<div class="row">
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>2018</option>
-																			<option>2017</option>
-																			<option>2016</option>
-																			<option>2015</option>
-																			<option>2014</option>
-																			<option>2013</option>
-																			<option>2012</option>
-																			<option>2011</option>
-																			<option>2010</option>
-																			<option>2009</option>
-																			<option>2008</option>
-																			<option>2007</option>
-																			<option>2006</option>
-																			<option>2005</option>
-																			<option>2004</option>
-																			<option>2003</option>
-																			<option>2002</option>
-																			<option>2001</option>
-																		</select>
+																		<asp:DropDownList ID="ddlwrkedtllyears" runat="server">
+                                                                            <asp:ListItem Text="2019" />
+                                                                            <asp:ListItem Text="2018" />
+                                                                            <asp:ListItem Text="2017" />
+                                                                            <asp:ListItem Text="2016" />
+                                                                            <asp:ListItem Text="2015" />
+                                                                            <asp:ListItem Text="2014" />
+                                                                            <asp:ListItem Text="2013" />
+                                                                            <asp:ListItem Text="2012" />
+                                                                            <asp:ListItem Text="2011" />
+                                                                            <asp:ListItem Text="2010" />
+                                                                            <asp:ListItem Text="2009" />
+                                                                            <asp:ListItem Text="2008" />
+                                                                            <asp:ListItem Text="2007" />
+                                                                            <asp:ListItem Text="2006" />
+                                                                            <asp:ListItem Text="2005" />
+                                                                            <asp:ListItem Text="2004" />
+                                                                            <asp:ListItem Text="2003" />
+                                                                            <asp:ListItem Text="2002" />
+                                                                            <asp:ListItem Text="2001" />
+                                                                        </asp:DropDownList>
 																	</div>
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-																		<select>
-																			<option>january</option>
-																			<option>february</option>
-																			<option>March</option>
-																			<option>April</option>
-																			<option>May</option>
-																			<option>Jun</option>
-																			<option>July</option>
-																			<option>August</option>
-																			<option>September</option>
-																			<option>October</option>
-																			<option>November</option>
-																			<option>December</option>
-																		</select>
+                                                                        <asp:DropDownList ID="ddlwrkedtllmonths" runat="server">
+                                                                            <asp:ListItem Text="january" />
+                                                                            <asp:ListItem Text="february" />
+                                                                            <asp:ListItem Text="March" />
+                                                                            <asp:ListItem Text="April" />
+                                                                            <asp:ListItem Text="May" />
+                                                                            <asp:ListItem Text="Jun" />
+                                                                            <asp:ListItem Text="July" />
+                                                                            <asp:ListItem Text="August" />
+                                                                            <asp:ListItem Text="September" />
+                                                                            <asp:ListItem Text="October" />
+                                                                            <asp:ListItem Text="November" />
+                                                                            <asp:ListItem Text="December" />
+                                                                        </asp:DropDownList>
 																	</div>
 																</div>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Details of Project</label>
-																<textarea class="form-control" placeholder="Type Description"></textarea>
-															</div>
+                                                                <asp:Label ID="lbldetofproj" Text="Details of Project" runat="server" />
+                                                                <asp:TextBox ID="txtdetofproj" runat="server" TextMode="MultiLine" class="form-control" placeholder="Type Description" />
+																</div>
 														</div>
 													</div>
 												</form>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
+												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+                                                <asp:Button Text="Save" runat="server" class="site-button" />
 											</div>
 										</div>
 									</div>
@@ -686,8 +683,8 @@
 												</form>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
+												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+                                                <asp:Button Text="Save" runat="server" class="site-button" />
 											</div>
 										</div>
 									</div>
@@ -706,16 +703,14 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h5 class="modal-title" id="DesiredprofileModalLongTitle">Desired Career Profile </h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
+												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
+                                            </div>
 											<div class="modal-body">
 												<form>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Industry</label>
+                                                                <asp:Label ID="lblindustry" Text="Industry" runat="server" />																
 																<select>
 																	<option>Accounting / Finance</option>
 																	<option>Banking / Financial Services / Broking</option>
@@ -727,7 +722,7 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Functional Area / Department</label>
+                                                                <asp:Label ID="lblfuntardepat" Text="Functional Area / Department" runat="server" />																
 																<select>
 																	<option>Agent</option>
 																	<option>Architecture / Interior Design</option>
@@ -740,7 +735,7 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Role</label>
+                                                                 <asp:Label ID="lblrole" Text="Role" runat="server" />
 																<select>
 																	<option>Creative</option>
 																	<option>Web Designer</option>
@@ -753,19 +748,19 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Job Type</label>
+                                                                <asp:Label ID="lbljobtype" Text="Job Type" runat="server" />
 																<div class="row">
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-checkbox">
-																			<input type="checkbox" class="custom-control-input" id="permanent" name="example1">
-																			<label class="custom-control-label" for="permanent">Permanent</label>
+                                                                            <asp:CheckBox ID="ckbpermanent" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblpermanent" Text="Permanent" runat="server" class="custom-control-label" />																			
 																		</div>
 																	</div>
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-checkbox">
-																			<input type="checkbox" class="custom-control-input" id="contractual" name="example1">
-																			<label class="custom-control-label" for="contractual">Contractual</label>
-																		</div>
+                                                                            <asp:CheckBox ID="ckbcontractual" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblcontractual" Text="Contractual" runat="server" class="custom-control-label" />	
+																			</div>
 																	</div>
 																</div>
 															</div>
@@ -776,47 +771,47 @@
 																<div class="row">
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-checkbox">
-																			<input type="checkbox" class="custom-control-input" id="fulltime" name="example1">
-																			<label class="custom-control-label" for="fulltime">Full Time</label>
-																		</div>
+                                                                            <asp:CheckBox ID="ckbfulltime" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblfulltime" Text="Full Time" runat="server" class="custom-control-label" />	
+																			</div>
 																	</div>
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-checkbox">
-																			<input type="checkbox" class="custom-control-input" id="parttime" name="example1">
-																			<label class="custom-control-label" for="parttime">Part Time</label>
-																		</div>
+                                                                            <asp:CheckBox ID="ckbparttime" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblparttime" Text="Part Time" runat="server" class="custom-control-label" />	
+																			</div>
 																	</div>
 																</div>
 															</div>
 														</div>	
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Preferred Shift</label>
+                                                                <asp:Label ID="lblprfdshift" Text="Preferred Shift" runat="server" />
 																<div class="row">
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="day" name="example1">
-																			<label class="custom-control-label" for="day">Day</label>
-																		</div>
+                                                                            <asp:RadioButton ID="rdbday" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblday" Text="Day" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="night" name="example1">
-																			<label class="custom-control-label" for="night">Night</label>
-																		</div>
+                                                                            <asp:RadioButton ID="rdbnight" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblnight" Text="Night" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="flexible" name="example1">
-																			<label class="custom-control-label" for="flexible">Part Time</label>
-																		</div>
+                                                                            <asp:RadioButton ID="rdbflexible" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblflexible" Text="Part Time" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																</div>
 															</div>
 														</div>															
 														<div class="col-lg-12 col-md-6">
 															<div class="form-group">
-																<label>Availability to Join</label>
+                                                                <asp:Label ID="lblavailtojoin" Text="Availability to Join" runat="server" />
 																<div class="row">
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
 																		<select>
@@ -848,19 +843,19 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Expected Salary</label>
+                                                                <asp:Label ID="lblexpecsalary" Text="Expected Salary" runat="server" />																
 																<div class="row">
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="usdollars" name="example1">
-																			<label class="custom-control-label" for="usdollars">US Dollars</label>
-																		</div>
+                                                                            <asp:RadioButton ID="rdbusdollars" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblusdollars" Text="US Dollars" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="rupees" name="example1">
-																			<label class="custom-control-label" for="rupees">Indian Rupees</label>
-																		</div>
+                                                                            <asp:RadioButton ID="rdbrupees" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblrupees" Text="Indian Rupees" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																</div>
 															</div>
@@ -897,7 +892,7 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Desired Location</label>
+                                                          <asp:Label ID="lbldesiredloctn" Text="Desired Location" runat="server"></asp:Label>
 																<select>
 																	<option>India</option>
 																	<option>Australia</option>
@@ -913,7 +908,7 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Desired Industry</label>
+                                                                <asp:Label ID="lbldesirdindustry" Text="Desired Industry" runat="server"></asp:Label>
 																<select>
 																	<option>Software</option>
 																	<option>Factory</option>
@@ -926,8 +921,8 @@
 												</form>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
+												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+                                                <asp:Button Text="Save" runat="server" class="site-button" />
 											</div>
 										</div>
 									</div>
@@ -937,45 +932,45 @@
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-6">
 										<div class="clearfix m-b20">
-											<label class="m-b0">Industry</label>
+                                            <asp:Label ID="lblindutry" Text="Industry" runat="server" class="m-b0"></asp:Label>
 											<span class="clearfix font-13">IT-Software/Software Services</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Role</label>
+                                            <asp:Label ID="lblroel" Text="Role" runat="server" class="m-b0"></asp:Label>											
 											<span class="clearfix font-13">Web Designer</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Employment Type</label>
+                                            <asp:Label ID="lblemptype" Text="Employment Type" runat="server" class="m-b0"></asp:Label>											
 											<span class="clearfix font-13">Full Time</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Availability to Join</label>
+                                            <asp:Label ID="lblavlijoin" Text="Availability to Join" runat="server" class="m-b0"></asp:Label>
 											<span class="clearfix font-13">12 july</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Desired Location</label>
+                                            <asp:Label ID="lbldesdloctn" Text="Desired Location" runat="server" class="m-b0"></asp:Label>
 											<span class="clearfix font-13">Add Desired Location</span>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-6">
-										<div class="clearfix m-b20">
-											<label class="m-b0">Functional Area</label>
+										<div class="clearfix m-b20">  
+                                            <asp:Label ID="lblfuntlarea" Text="Functional Area" runat="server" class="m-b0"></asp:Label>
 											<span class="clearfix font-13">Design / Creative / User Experience</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Job Type</label>
+                                            <asp:Label ID="lbljbtype" Text="Job Type" runat="server" class="m-b0"></asp:Label>
 											<span class="clearfix font-13">permanent</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Desired Shift</label>
+                                            <asp:Label ID="lbldesrdshift" Text="Desired Shift" runat="server" class="m-b0"></asp:Label>
 											<span class="clearfix font-13">Add Desired Shift</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Expected Salary</label>
+                                            <asp:Label ID="lblexptdsalary" Text="Expected Salary" runat="server" class="m-b0"></asp:Label>
 											<span class="clearfix font-13">1 Lakhs</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Desired Industry</label>
+                                            <asp:Label ID="lblderddindustry" Text="Desired Industry" runat="server" class="m-b0"></asp:Label>
 											<span class="clearfix font-13">Add Desired Industry</span>
 										</div>
 									</div>
@@ -993,16 +988,14 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h5 class="modal-title" id="PersonaldetailsModalLongTitle">Personal Details</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
+												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>  
+                                                </div>
 											<div class="modal-body">
 												<form>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Date of Birth</label>
+																<asp:Label ID="lbldof" Text="Date of Birth" runat="server"></asp:Label>
 																<div class="row">
 																	<div class="col-lg-4 col-md-4 col-sm-4 col-4">
 																		<select>
@@ -1082,44 +1075,44 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Gender</label>
+																<asp:Label ID="lblgender" Text="Gender" runat="server"></asp:Label>
 																<div class="row">
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="male" name="example1">
-																			<label class="custom-control-label" for="male">Male</label>
-																		</div>
+                                                                            <asp:RadioButton ID="rdbmale" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblmale" Text="Male" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
-																			<input type="radio" class="custom-control-input" id="female" name="example1">
-																			<label class="custom-control-label" for="female">Female</label>
-																		</div>
+                                                                             <asp:RadioButton ID="rdbfemale" runat="server" class="custom-control-input" />
+                                                                            <asp:Label ID="lblfemale" Text="Female" runat="server" class="custom-control-label" />
+																			</div>
 																	</div>
 																</div>
 															</div>
 														</div>														
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Permanent Address</label>
-																<input type="email" class="form-control" placeholder="Enter Your Permanent Address">
-															</div>
+                                                                <asp:Label ID="lbladdress" Text="Permanent Address" runat="server"></asp:Label>
+                                                                <asp:TextBox ID="txtaddress" runat="server" class="form-control" placeholder="Enter Your Permanent Address" />  
+																</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Hometown</label>
-																<input type="email" class="form-control" placeholder="Enter Hometown">
-															</div>
+                                                                <asp:Label ID="lblhometown" Text="Hometown" runat="server"></asp:Label>
+                                                                <asp:TextBox ID="txtlblhometown" runat="server" class="form-control" placeholder="Enter Hometown" />  
+																</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Pincode</label>
-																<input type="email" class="form-control" placeholder="Enter Pincode">
-															</div>
+                                                                <asp:Label ID="lblpincode" Text="Pincode" runat="server"></asp:Label>
+                                                                <asp:TextBox ID="txtpincode" runat="server" class="form-control" placeholder="Enter Pincode" />  
+																</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Marital Status</label>
+                                                                <asp:Label ID="lblmaritalstatus" Text="Marital Status" runat="server" />																
 																<select>
 																	<option>Married</option>
 																	<option>Single / Unmarried</option>
@@ -1128,20 +1121,20 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Passport Number</label>
-																<input type="email" class="form-control" placeholder="Enter Passport Number">
-															</div>
+                                                                <asp:Label ID="lblpassportno" Text="Passport Number" runat="server"></asp:Label>
+                                                                <asp:TextBox ID="txtpassportno" runat="server" class="form-control" placeholder="Enter Passport Number" />  
+																</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>What assistance do you need</label>
-																<textarea class="form-control" placeholder="Type Description"></textarea>
-															</div>
+                                                                <asp:Label ID="lblwassistance" Text="What assistance do you need" runat="server"></asp:Label>
+                                                                <asp:TextBox ID="txtwassistance" runat="server" TextMode="MultiLine" class="form-control" placeholder="Type Description" />  
+																</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-																<label>Work Permit for Other Countries</label>
-																<select>
+                                                                <asp:Label ID="lblwrkpercountr" Text="Work Permit for Other Countries" runat="server"></asp:Label>
+                                                                <select>
 																	<option>India</option>
 																	<option>Australia</option>
 																	<option>Bahrain</option>
@@ -1158,8 +1151,8 @@
 												</form>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="site-button" data-dismiss="modal">Cancel</button>
-												<button type="button" class="site-button">Save</button>
+												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
+                                                <asp:Button Text="Save" runat="server" class="site-button" />
 											</div>
 										</div>
 									</div>
@@ -1169,45 +1162,45 @@
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-6">
 										<div class="clearfix m-b20">
-											<label class="m-b0">Date of Birth</label>
+                                            <asp:Label ID="lbldof1" Text="Date of Birth" runat="server" class="m-b0" />
 											<span class="clearfix font-13">31 July 1998</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Gender</label>
+                                            <asp:Label ID="lblgender1" Text="Gender" runat="server" class="m-b0" />
 											<span class="clearfix font-13">male</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Marital Status</label>
+                                            <asp:Label ID="lblmaritalststs1" Text="Marital Status" runat="server" class="m-b0" />
 											<span class="clearfix font-13">Single / unmarried</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Passport Number</label>
+                                            <asp:Label ID="lblpassportno1" Text="Passport Number" runat="server" class="m-b0" />
 											<span class="clearfix font-13">+ 123 456 7890</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Differently Abled</label>
+                                            <asp:Label ID="lbldiffabled" Text="Differently Abled" runat="server" class="m-b0" />
 											<span class="clearfix font-13">None</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Languages</label>
+                                            <asp:Label ID="lbllanguages" Text="Languages" runat="server" class="m-b0" />
 											<span class="clearfix font-13">English</span>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-6">
 										<div class="clearfix m-b20">
-											<label class="m-b0">Permanent Address</label>
+                                            <asp:Label ID="lblpermanentadd" Text="Permanent Address" runat="server" class="m-b0" />
 											<span class="clearfix font-13">Add Permanent Address</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Area Pin Code</label>
+                                            <asp:Label ID="lblareapincode" Text="Area Pin Code" runat="server" class="m-b0" />
 											<span class="clearfix font-13">302010</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Hometown</label>
-											<span class="clearfix font-13">Delhi</span>
+                                            <asp:Label ID="lblhometown1" Text="Hometown" runat="server" class="m-b0" />
+											<span class="clearfix font-13">Hyderabad</span>
 										</div>
 										<div class="clearfix m-b20">
-											<label class="m-b0">Work permit of other country</label>
+                                            <asp:Label ID="lblwrkpercountry1" Text="Work permit of other country" runat="server" class="m-b0" />
 											<span class="clearfix font-13">USA</span>
 										</div>
 									</div>
@@ -1226,8 +1219,8 @@
 													   <i class="fa fa-upload"></i>
 													   Upload Resume File size is 3 MB
 													</p>
-													<input type="file" class="site-button form-control" id="customFile">
-												</div>
+                                                    <input type="file" class="site-button form-control" id="customFile">
+													</div>
 											</div>
 										</div>
 									</div>
