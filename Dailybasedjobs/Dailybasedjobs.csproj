@@ -199,7 +199,6 @@
     <Content Include="Login.aspx" />
     <Content Include="Managejob.aspx" />
     <Content Include="Myresume.aspx" />
-    <Content Include="MyResumeCandidate.aspx" />
     <Content Include="plugins\bootstrap-select\bootstrap-select.min.css" />
     <Content Include="plugins\bootstrap-select\bootstrap-select.min.js" />
     <Content Include="plugins\bootstrap-touchspin\jquery.bootstrap-touchspin.js" />
@@ -392,13 +391,6 @@
     </Compile>
     <Compile Include="Myresume.aspx.designer.cs">
       <DependentUpon>Myresume.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MyResumeCandidate.aspx.cs">
-      <DependentUpon>MyResumeCandidate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MyResumeCandidate.aspx.designer.cs">
-      <DependentUpon>MyResumeCandidate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Postedjob.aspx.cs">
       <DependentUpon>Postedjob.aspx</DependentUpon>
