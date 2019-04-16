@@ -45,8 +45,7 @@
 									<div class="form-group">
                                         <asp:Label Text="Last Name" class="font-weight-700" runat="server" />
                                         <asp:TextBox ID="txtln"  class="form-control" placeholder="Last Name"   runat="server" />
-										<%--<label class="font-weight-700">Last Name *</label>
-										<input name="dzName" required="" class="form-control" placeholder="Last Name" type="text">--%>
+									
 									</div>
 									<div class="form-group">
                                         <asp:Label Text="Email " ID="lemail" class="font-weight-700" runat="server" />
@@ -68,6 +67,7 @@
 						--%>			</div>
                                     
                                     <div class="form-group">
+                                      
                                         <asp:Label Text="Image"  class="font-weight-700" runat="server" />
                                         <asp:FileUpload ID="FileUpload1" runat="server" />
                                        

@@ -36,7 +36,6 @@ namespace Dailybasedjobs
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(strConnString);
-
             con.Open();
 
             str = "Select * from Register";
