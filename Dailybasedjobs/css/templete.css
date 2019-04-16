@@ -228,14 +228,26 @@
 		padding: 10px 15px;
 		font-size: 12px;
 	}
-	.job-search-tabs .dez-tabs .nav-tabs > li > a:active,
-	.job-search-tabs .dez-tabs .nav-tabs > li > a:focus,
-	.job-search-tabs .dez-tabs .nav-tabs > li > a:hover,
-	.job-search-tabs .dez-tabs .nav-tabs > li > a,
-	.job-search-tabs .dez-tabs .nav-tabs > li > a.show{
-		padding: 15px 20px;
-		font-size: 12px;
-	}
+    .footer-bottom {
+        background-color: #edeff8;
+        padding: 25px 0;
+        padding-top: 25px;
+        padding-right: 0px;
+        padding-bottom: 25px;
+        padding-left: 0px;
+        color: #000514;
+        font-size: 14px;
+        border-top: 1px solid rgba(20, 12, 13, 0.05);
+        text-transform: capitalize !important;
+    }
+    .job-search-tabs .dez-tabs .nav-tabs > li > a:active,
+    .job-search-tabs .dez-tabs .nav-tabs > li > a:focus,
+    .job-search-tabs .dez-tabs .nav-tabs > li > a:hover,
+    .job-search-tabs .dez-tabs .nav-tabs > li > a,
+    .job-search-tabs .dez-tabs .nav-tabs > li > a.show {
+        padding: 15px 20px;
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width: 360px){
 	.dez-bnr-inr-entry h2{
