@@ -260,6 +260,12 @@
     <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.Svg.js" />
     <Content Include="Scripts\Vintasoft\Vintasoft.Shared.js" />
     <Content Include="Transactions.aspx" />
+    <Content Include="Upload1\4.jpg" />
+    <Content Include="Upload1\5.jpg" />
+    <Content Include="Upload1\Capture1.PNG" />
+    <Content Include="Upload1\cctv.jpg" />
+    <Content Include="Upload1\Jellyfish.jpg" />
+    <Content Include="Upload1\Tulips.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -463,6 +469,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

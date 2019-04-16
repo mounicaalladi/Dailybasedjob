@@ -26,7 +26,7 @@ namespace Dailybasedjobs
                 FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
                 string Image = "~/Upload1/" + str.ToString();
             }
-            SqlCommand cmd = new SqlCommand("insert into Register(username,FirstName,LastName,Email,Password,ConfrimPassword,image,role) values('"+txtun.Text+"','" + txtfn.Text + "','" + txtln.Text + "','" + txtemail.Text + "','" + txtpwd.Text + "','" + txtcnfrmpswd.Text + "', '"+"~/ Upload1 / " + FileUpload1.FileName+"' ,'"+ rbtRole.SelectedValue.ToString()+"')", con);
+            SqlCommand cmd = new SqlCommand("insert into Register(username,FirstName,LastName,Email,Password,ConfrimPassword,image,role) values('"+txtun.Text+"','" + txtfn.Text + "','" + txtln.Text + "','" + txtemail.Text + "','" + txtpwd.Text + "','" + txtcnfrmpswd.Text + "', '"+"~/Upload1/" + FileUpload1.FileName+"' ,'"+ rbtRole.SelectedValue.ToString()+"')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();

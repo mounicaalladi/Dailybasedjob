@@ -60,7 +60,7 @@
    <span aria-hidden="true"> <asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /> </span>
 </div>
 <div class="modal-body">
-<form>
+<div>
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
@@ -132,7 +132,7 @@
 </div>		
 </div>		
 </div>
-</form>
+</div>
 </div>
 <div class="modal-footer">
     <asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -158,16 +158,16 @@
 <span>Resume Headline</span></a></li>
 <li><a class="scroll-bar nav-link" href="#key_skills_bx">
 <span>Key Skills</span></a></li>
-<li><a class="scroll-bar nav-link" href="#employment_bx">
-<span>Employment</span></a></li>
+<%--<li><a class="scroll-bar nav-link" href="#employment_bx">
+<span>Employment</span></a></li>--%>
 <li><a class="scroll-bar nav-link" href="#education_bx">
 <span>Education</span></a></li>
-<li><a class="scroll-bar nav-link" href="#projects_bx">
-<span>Projects</span></a></li>
+<%--<li><a class="scroll-bar nav-link" href="#projects_bx">
+<span>Projects</span></a></li>--%>
 <li><a class="scroll-bar nav-link" href="#profile_summary_bx"> 
 <span>Profile Summary</span></a></li>
-<li><a class="scroll-bar nav-link" href="#desired_career_profile_bx">
-<span>Desired Career Profile</span></a></li>
+<%--<li><a class="scroll-bar nav-link" href="#desired_career_profile_bx">
+<span>Desired Career Profile</span></a></li>--%>
 <li><a class="scroll-bar nav-link" href="#personal_details_bx">
 <span>Personal Details</span></a></li>
 <li><a class="scroll-bar nav-link" href="#attach_resume_bx">
@@ -180,6 +180,7 @@
 <div id="resume_headline_bx" class="job-bx bg-white m-b30">
 <div class="d-flex">
 <h5 class="m-b15">Resume Headline</h5>
+    <asp:TextBox ID="txtresuhed" Visible="false" runat="server" />
 <a href="javascript:void(0);" data-toggle="modal" data-target="#resumeheadline" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
 </div>
 <p class="m-b0">Job board currently living in USA</p>
@@ -193,7 +194,7 @@
 </div>
 <div class="modal-body">
 <p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
-<form>
+<div>
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
@@ -201,11 +202,11 @@
 </div>
 </div>
 </div>
-</form>
+</div>
 </div>
 <div class="modal-footer">
     <asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
-    <asp:Button Text="Save" runat="server" class="site-button" />
+    <asp:Button Text="Save" runat="server" ID="btnsave" OnClick="btnsave_Click"  class="site-button" />
 </div>
 </div>
 </div>
@@ -215,6 +216,7 @@
 <div id="key_skills_bx" class="job-bx bg-white m-b30">
 <div class="d-flex">
 <h5 class="m-b15">Key Skills</h5>
+    <asp:TextBox ID="txtkeskll" Visible="false" runat="server" />
 <a href="javascript:void(0);" data-toggle="modal" data-target="#keyskills" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
 </div>
 <div class="job-time mr-auto">
@@ -235,7 +237,7 @@
 </div>
 <div class="modal-body">
 <p>It is the first thing recruiters notice in your profile. Write concisely what makes you unique and right person for the job you are looking for.</p>
-<form>
+<div>
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
@@ -243,18 +245,18 @@
 </div>
 </div>
 </div>
-</form>
+</div>
 </div>
 <div class="modal-footer">
     <asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
-    <asp:Button Text="Save" runat="server" class="site-button" />
+    <asp:Button Text="Save" runat="server" ID="btsave" OnClick="btsave_Click" class="site-button" />
 </div>
 </div>
 </div>
 </div>
 <!-- Modal End -->
 </div>
-<div id="employment_bx" class="job-bx bg-white m-b30 ">
+<%--<div id="employment_bx" class="job-bx bg-white m-b30 ">
 <div class="d-flex">
 <h5 class="m-b15">Employment</h5>
 									<a href="javascript:void(0);" data-toggle="modal" data-target="#employment" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
@@ -273,7 +275,7 @@
                                             <span aria-hidden="true"><asp:Button  runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>
 											</div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -405,7 +407,7 @@
 															</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -415,10 +417,11 @@
 									</div>
 								</div>
 								<!-- Modal End -->
-							</div>
+							</div>--%>
 							<div id="education_bx" class="job-bx bg-white m-b30">
 								<div class="d-flex">
 									<h5 class="m-b15">Education</h5>
+                                    <asp:TextBox ID="txtedu"  Visible="false" runat="server" />
 									<a href="javascript:void(0);" data-toggle="modal" data-target="#education" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
 								</div>
 								<p>Mention your employment details including your current and previous company work experience</p>
@@ -431,42 +434,42 @@
 												  <span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
 											</div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
                                                                 <asp:Label ID="lbleductn" Text="Education" runat="server" />
                                                                 <asp:DropDownList ID="ddleductn" runat="server">
-                                                                    <asp:ListItem Text="Doctorate/PhD" />
-                                                                    <asp:ListItem Text="Masters/Post-Graduation" />
-                                                                    <asp:ListItem Text="Graduation/Diploma" />
+                                                                    <asp:ListItem Text="10th" />
+                                                                    <asp:ListItem Text="Intermediate" />
+                                                                    <asp:ListItem Text="B.tech" />
                                                                 </asp:DropDownList>																
 															</div>
 														</div>
-														<div class="col-lg-12 col-md-12">
+														<%--<div class="col-lg-12 col-md-12">
 															<div class="form-group">
                                                                 <asp:Label Text="Course" runat="server" />
                                                                 <asp:TextBox ID="txtcourse" runat="server" class="form-control" placeholder="Select Course" />																
 															</div>
-														</div>
-														<div class="col-lg-12 col-md-12">
+														</div>--%>
+														<%--<div class="col-lg-12 col-md-12">
 															<div class="form-group">
                                                                 <asp:Label Text="University/Institute" runat="server" />
                                                                 <asp:TextBox ID="txtunivinst" runat="server" class="form-control" placeholder="Select University/Institute" />
 																</div>
-														</div>
+														</div>--%>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
-                                                <asp:Button Text="Save" runat="server" class="site-button" />
+                                                <asp:Button Text="Save" runat="server" ID="txtsaved" OnClick="txtsaved_Click" class="site-button" />
 											</div>
 										</div>
 									</div>
 								</div>
 								<!-- Modal End -->
-								<div class="row">
+								<%--<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12">
 										<div class="clearfix m-b20">
                                             <asp:Label Text="London - 12th" runat="server" class="m-b0"/>
@@ -481,9 +484,9 @@
 								<a href="javascript:void(0);" class="clearfix">Add Doctorate/PhD</a>
 								<a href="javascript:void(0);" class="clearfix">Add Masters/Post-Graduation</a>
 								<a href="javascript:void(0);" class="clearfix">Add Graduation/Diploma</a>
-							</div>
+							</div>--%>
 							
-							<div id="projects_bx" class="job-bx bg-white m-b30">
+							<%--<div id="projects_bx" class="job-bx bg-white m-b30">
 								<div class="d-flex">
 									<h5 class="m-b15">Projects</h5>
 									<a href="javascript:void(0);" data-toggle="modal" data-target="#projects" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
@@ -501,7 +504,7 @@
 												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
                                                 </div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -642,7 +645,7 @@
 																</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -652,7 +655,7 @@
 									</div>
 								</div>
 								<!-- Modal End -->
-							</div>
+							</div>--%>
 							<div id="profile_summary_bx" class="job-bx bg-white m-b30">
 								<div class="d-flex">
 									<h5 class="m-b15">Profile Summary</h5>
@@ -671,20 +674,21 @@
 											</div>
 											<div class="modal-body">
 												<p>Your Profile Summary should mention the highlights of your career and education, what your professional interests are, and what kind of a career you are looking for. Write a meaningful summary of more than 50 characters.</p>
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
+                                                                <asp:TextBox ID="txtprofisum" Visible="false" runat="server" />
 																<label>Details of Project</label>
 																<textarea class="form-control" placeholder="Type Description"></textarea>
 															</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
-                                                <asp:Button Text="Save" runat="server" class="site-button" />
+                                                <asp:Button Text="Save" runat="server" ID="bsave" OnClick="bsave_Click" class="site-button" />
 											</div>
 										</div>
 									</div>
@@ -692,7 +696,7 @@
 								<!-- Modal End -->
 							</div>
 							
-							<div id="desired_career_profile_bx" class="job-bx bg-white m-b30">
+							<%--<div id="desired_career_profile_bx" class="job-bx bg-white m-b30">
 								<div class="d-flex">
 									<h5 class="m-b30">Desired Career Profile</h5>
 									<a href="javascript:void(0);" data-toggle="modal" data-target="#desiredprofile" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
@@ -706,7 +710,7 @@
 												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>                                                												
                                             </div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
@@ -918,7 +922,7 @@
 															</div>
 														</div>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
@@ -976,7 +980,7 @@
 									</div>
 								</div>
 								<!-- Details End -->
-							</div>
+							</div>--%>
 							<div id="personal_details_bx" class="job-bx bg-white m-b30">
 								<div class="d-flex">
 									<h5 class="m-b30">Personal Details</h5>
@@ -991,11 +995,12 @@
 												<span aria-hidden="true"><asp:Button runat="server" class="close" data-dismiss="modal" aria-label="Close" /></span>  
                                                 </div>
 											<div class="modal-body">
-												<form>
+												<div>
 													<div class="row">
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
 																<asp:Label ID="lbldof" Text="Date of Birth" runat="server"></asp:Label>
+                                                                <asp:TextBox ID="txtdob" Visible="false" runat="server" />
 																<div class="row">
 																	<div class="col-lg-4 col-md-4 col-sm-4 col-4">
 																		<select>
@@ -1076,6 +1081,7 @@
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
 																<asp:Label ID="lblgender" Text="Gender" runat="server"></asp:Label>
+                                                                <asp:TextBox ID="txtgnedeer" Visible="false" runat="server" />
 																<div class="row">
 																	<div class="col-lg-3 col-md-6 col-sm-6 col-6">
 																		<div class="custom-control custom-radio">
@@ -1098,12 +1104,12 @@
                                                                 <asp:TextBox ID="txtaddress" runat="server" class="form-control" placeholder="Enter Your Permanent Address" />  
 																</div>
 														</div>
-														<div class="col-lg-12 col-md-12">
+														<%--<div class="col-lg-12 col-md-12">
 															<div class="form-group">
                                                                 <asp:Label ID="lblhometown" Text="Hometown" runat="server"></asp:Label>
                                                                 <asp:TextBox ID="txtlblhometown" runat="server" class="form-control" placeholder="Enter Hometown" />  
 																</div>
-														</div>
+														</div>--%>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
                                                                 <asp:Label ID="lblpincode" Text="Pincode" runat="server"></asp:Label>
@@ -1112,26 +1118,34 @@
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="form-group">
-                                                                <asp:Label ID="lblmaritalstatus" Text="Marital Status" runat="server" />																
+                                                                <asp:Label ID="lblmaritalstatus" Text="Marital Status" runat="server" />	
+                                                                <asp:TextBox ID="txtmartst" Visible="false" runat="server" />
 																<select>
 																	<option>Married</option>
 																	<option>Single / Unmarried</option>
 																</select>
 															</div>
 														</div>
-														<div class="col-lg-12 col-md-12">
+														<%--<div class="col-lg-12 col-md-12">
 															<div class="form-group">
                                                                 <asp:Label ID="lblpassportno" Text="Passport Number" runat="server"></asp:Label>
                                                                 <asp:TextBox ID="txtpassportno" runat="server" class="form-control" placeholder="Enter Passport Number" />  
 																</div>
-														</div>
-														<div class="col-lg-12 col-md-12">
+														</div>--%>
+														<%--<div class="col-lg-12 col-md-12">
 															<div class="form-group">
                                                                 <asp:Label ID="lblwassistance" Text="What assistance do you need" runat="server"></asp:Label>
                                                                 <asp:TextBox ID="txtwassistance" runat="server" TextMode="MultiLine" class="form-control" placeholder="Type Description" />  
 																</div>
-														</div>
-														<div class="col-lg-12 col-md-12">
+														</div>--%>
+                                                        <div class="col-lg-12 col-md-12" >
+                                                            <div class="form-group" >
+                                                                <asp:Label Text="Languages"  runat="server" />
+                                                                <asp:TextBox ID="txtlang" TextMode="MultiLine" CssClass="form-control" runat="server" />
+
+                                                            </div>
+                                                        </div>
+														<%--<div class="col-lg-12 col-md-12">
 															<div class="form-group">
                                                                 <asp:Label ID="lblwrkpercountr" Text="Work Permit for Other Countries" runat="server"></asp:Label>
                                                                 <select>
@@ -1146,13 +1160,13 @@
 																	<option>Kuwait</option>
 																</select>
 															</div>
-														</div>
+														</div>--%>
 													</div>
-												</form>
+												</div>
 											</div>
 											<div class="modal-footer">
 												<asp:Button Text="Cancel" runat="server" class="site-button" data-dismiss="modal" />
-                                                <asp:Button Text="Save" runat="server" class="site-button" />
+                                                <asp:Button Text="Save" runat="server" ID="btnsavinv" OnClick="btnsavinv_Click" class="site-button" />
 											</div>
 										</div>
 									</div>
@@ -1210,7 +1224,7 @@
     							<div id="attach_resume_bx" class="job-bx bg-white m-b30">
 								<h5 class="m-b10">Attach Resume</h5>
 								<p>Resume is the most important document recruiters look for. Recruiters generally do not look at profiles without resumes.</p>
-								<form class="attach-resume">
+								<div class="attach-resume">
 									<div class="row">
 										<div class="col-lg-12 col-md-12">
 											<div class="form-group">
@@ -1224,7 +1238,7 @@
 											</div>
 										</div>
 									</div>
-								</form>
+								</div>
 								<p class="text-center">
 								If you do not have a resume document, you may write your brief professional profile <a class="site-button-link" href="javascript:void(0);">here</a>.
 								</p>

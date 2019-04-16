@@ -66,14 +66,14 @@
                     <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown" >
                         <ul class="nav navbar-nav">
 							<li class="active">
-								<a href="Index.aspx">Company Profile<i class="fa fa-chevron-down"></i></a>
+								<a href="Companyprofile.aspx">Company Profile<i class="fa fa-chevron-down"></i></a>
 								<%--<ul class="sub-menu">
 									<li><a href="Index.aspx" class="dez-page">Home</a></li>
 								
 								</ul>--%>
 							</li>
 							<li>
-								<a href="#">Employees Resume  <i class="fa fa-chevron-down"></i></a>
+								<a href="Employeeresume.aspx">Employees Resume  <i class="fa fa-chevron-down"></i></a>
 								<%--<ul class="sub-menu">
 									<li><a href="jobs-profile.html" class="dez-page">My Profile<span class="new-page">New</span></a></li>
 									<li><a href="jobs-my-resume.html" class="dez-page">My Resume <span class="new-page">New</span></a></li>
@@ -85,7 +85,7 @@
 								</ul>--%>
 							</li>
 							<li>
-								<a href="#">Post A Job <i class="fa fa-chevron-down"></i></a>
+								<a href="Postjob.aspx">Post A Job <i class="fa fa-chevron-down"></i></a>
 								<%--<ul class="sub-menu">
 									<li><a href="company-profile.html" class="dez-page">Company Profile <span class="new-page">New</span></a></li>
 									<li><a href="company-resume.html" class="dez-page">Employer Resume <span class="new-page">New</span></a></li>
@@ -96,15 +96,15 @@
 								</ul>--%>
 							</li>
 							<li>
-								<a href="#">Manage Job <i class="fa fa-chevron-down"></i></a>
+								<a href="Managejob.aspx">Manage Job <i class="fa fa-chevron-down"></i></a>
 							
 									</li>
                             	<li>
-								<a href="#">Transcations<i class="fa fa-chevron-down"></i></a>
+								<a href="Transactions.aspx">Transcations<i class="fa fa-chevron-down"></i></a>
 							
 									</li>
                             	<li  >
-								<a href="#"> Browser Candidates<i class="fa fa-chevron-down"></i></a>
+								<a href="Browsercandidate.aspx"> Browser Candidates<i class="fa fa-chevron-down"></i></a>
 							
 									</li>
 									
