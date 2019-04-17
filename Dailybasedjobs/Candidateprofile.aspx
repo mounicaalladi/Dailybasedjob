@@ -14,35 +14,44 @@
 							<div class="sticky-top">
 								<div class="candidate-info">
 									<div class="candidate-detail text-center">
-										<div class="canditate-des">
+								<div class="canditate-des">
 											<a href="javascript:void(0);">
 												<%--<img alt="" src="images/team/pic1.jpg">--%>
-                                                <asp:Image ID="img1" runat="server" />
-
-                                <asp:FileUpload ID="fileuploadcontrol" CssClass="form-control" runat="server" />
+                                               <%-- <asp:Image ID="img1" runat="server" />--%>
+                                                <asp:Image  ID="img" ClientIDMode="Static" runat="server" />
+                            <%--    <asp:FileUpload ID="fileuploadcontrol" CssClass="form-control" runat="server" />
                                 <asp:Button Text="ChooseFile" ID="btnFileupload" class="update-flie"  runat="server" Visible="False" />
-                                              
+                                              --%>
 											</a>
                                         
-											<div class="upload-link" title="update" id="theDiv" data-toggle="tooltip" data-placement="right" runat="server">
+											<%--<div class="upload-link" title="update" id="theDiv" data-toggle="tooltip" data-placement="right" runat="server">--%>
                                                
 <%--                                                 <asp:Image ID="imgPreview" ImageUrl='<%#
 
                             "ImageHandler.ashx?imgID="+ Eval("ImageID") %>' runat="server"
 
                                 Height="80px" Width="80px" />--%>
-                                              
+                                                
+              <div class="upload-link" title="update"   data-toggle="tooltip" data-placement="right" runat="server">
+											<%--<input type="file" name="FileUpload1" class="update-flie" runat="server" >--%>
+                  <asp:FileUpload ID="FileUpload1" Visible="false"  runat="server" />
+                 <asp:Button Text="save" ID="save"  OnClick="save_Click1" runat="server"  />
+												<i class="fa fa-camera"></i>
+											</div>
                                      
-                                                   <asp:FileUpload ID="FileUpload1" CssClass="form-control"  runat="server" />
+                                                  <%-- <asp:FileUpload ID="FileUpload1" CssClass="form-control"  runat="server" />
+                                                  <asp:button text="ChooseFile" ID="btnFileupload" runat="server" Visible="False" />--%>
                                               
 											<%--	<input type="file" class="update-flie">--%>
 												<%--<i class="fa fa-camera"></i>--%>
-											</div>
+									
 										</div>
+                                        
 										<div class="candidate-title">
 											<div class="">
-												<h4 class="m-b5"><a href="javascript:void(0);">David Matinhhh</a></h4>
+												<h4 class="m-b5"><%--<a href="javascript:void(0);">David Matinhhh</a>--%><asp:Label ID="lblname" runat="server" /></h4>
 												<p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>
+                                                 
 											</div>
 										</div>
 									</div>
@@ -83,6 +92,7 @@
 								</div>
 								<div>
 									<div class="row m-b30 ">
+                                        	
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<%--<label>Your Name:</label>--%>

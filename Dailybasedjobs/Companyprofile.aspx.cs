@@ -18,18 +18,18 @@ namespace Dailybasedjobs
 
         }
 
-        //protected void btnupt_Click(object sender, EventArgs e)
-        //{
-        //    if (FileUpload1.HasFile)
-        //    {
-        //        string str = FileUpload1.FileName;
-        //        FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
-        //        string Image = "~/Upload1/" + str.ToString();
-        //    }
-        //    SqlCommand cmd = new SqlCommand("insert into CompanyProfile(Name,Skills,Languages,Age,CurrentSalary,ExpectedSalary,Phone,Email,Pincode,Area,Picture,Address) values('" + txtyn.Text + "','" + txtsk.Text + "','" + txtlan.Text + "','" + txtage.Text + "','" + txtcs.Text + "','" + txtes.Text + "','" + Txtphone.Text + "','" + txtemail.Text + "','" + Txtpin.Text + "','" + Txtarea.Text + "','" + "~/Upload1/" + FileUpload1.FileName + "','" + Txtaddress.Text + "')", con);
-        //    con.Open();
-        //    cmd.ExecuteNonQuery();
-        //    con.Close();
-        //}
+        protected void btnupt_Click(object sender, EventArgs e)
+        {
+            //if (FileUpload1.HasFile)
+            //{
+            //    string str = FileUpload1.FileName;
+            //    FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
+            //    string Image = "~/Upload1/" + str.ToString();
+            //}
+            SqlCommand cmd = new SqlCommand("insert into CompanyProfile(CompanyName,Email,Website,Foundeddate,Category,Area,Phone,Pincode,Address) values('" + Textcname.Text + "','" + txtemail.Text + "','" + Texwebsite.Text + "','" + txtfoundate.Text + "','" + ddlcat.SelectedItem.ToString() + "','" + Txtarea.Text + "','" + txtphone.Text + "','" + Textzip.Text + "','" + Texaddress.Text + "')", con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

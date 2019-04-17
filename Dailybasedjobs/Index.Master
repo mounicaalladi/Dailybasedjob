@@ -64,7 +64,7 @@
                     <!-- extra nav -->
                     <div class="extra-nav">
                         <div class="extra-cell">
-                            <a href="register-2.html" class="site-button"><i class="fa fa-user"></i> Sign in</a>
+                            <a href="Login.aspx" class="site-button"><i class="fa fa-user"></i> Sign in</a>
 							<a href="#" title="READ MORE" rel="bookmark" data-toggle="modal" data-target="#car-details" class="site-button"><i class="fa fa-lock"></i> Sign out </a>
                         </div>
                     </div>
@@ -78,28 +78,63 @@
 								
 								</ul>--%>
 							</li>
-							<li>
+                            <li>
 								<a href="AboutUs.aspx">About Us<i class="fa fa-chevron-down"></i></a>
-								<%--<ul class="sub-menu">
-									<li><a href="jobs-profile.html" class="dez-page">My Profile<span class="new-page">New</span></a></li>
-									<li><a href="jobs-my-resume.html" class="dez-page">My Resume <span class="new-page">New</span></a></li>
-									<li><a href="jobs-applied-job.html" class="dez-page">Applied Job <span class="new-page">New</span></a></li>
-									<li><a href="jobs-alerts.html" class="dez-page">Jobs Alerts <span class="new-page">New</span></a></li>
-									<li><a href="jobs-saved-jobs.html" class="dez-page">Saved Job <span class="new-page">New</span></a></li>
-									<li><a href="jobs-cv-manager.html" class="dez-page">CV Manager <span class="new-page">New</span></a></li>
-									<li><a href="jobs-change-password.html" class="dez-page">Change Password <span class="new-page">New</span></a></li>
-								</ul>--%>
+                                </li>
+							<li>
+								<a href="#">Categories<i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="HomeServices.aspx" class="dez-page">Home Services <i class="fa fa-chevron-right"></i></a>
+                                    								<ul class="sub-menu">
+                                   
+                                  
+                                   	<li><a href="Cleaning.aspx" class="dez-page">Cleaning</a></li>
+                                   	<li><a href="Gardening.aspx" class="dez-page">Gardening </a></li>
+                                   	<li><a href="Washing.aspx" class="dez-page">Washing</a></li>
+                                   	<li><a href="Painting.aspx" class="dez-page">Painting </a></li>
+                                   	<li><a href="Plumbing.aspx" class="dez-page">Plumbing</a></li>
+                                   	<li><a href="Electrician.aspx" class="dez-page">Electrician</a></li>
+                                    <li><a href="Carpenter.aspx" class="dez-page">Carpenter</a></li>
+                                  
+                                  
+                                  
+                                                                        </ul>
+                                        </li>
+									<li><a href="tutors.aspx" class="dez-page">Tutors  <i class="fa fa-chevron-right"></i></a>
+                                    <ul class="sub-menu">
+                                    <li><a href="PrimaryLevel.aspx" class="dez-page">Primary School </a></li>
+                                   	<li><a href="Highschool.aspx" class="dez-page">High School</a></li>
+                                   	<li><a href="Degree.aspx" class="dez-page">Degree</a></li>
+                                   	<li><a href="DanceAndMusic.aspx" class="dez-page">Dance & Music</a></li>
+                                  
+                                  
+                                  
+                                                                        </ul>
+                                        </li>
+									<li><a href="Caretakers.aspx" class="dez-page">Care Takers  <i class="fa fa-chevron-right"></i></a>
+                                     <ul class="sub-menu">
+                                    <li><a href="Babysitters.aspx" class="dez-page">BabySitter</a></li>
+                                   	<li><a href="PetCareTakers.aspx" class="dez-page">Pet Caretakers</a></li>
+                                   	<li><a href="Nurse.aspx" class="dez-page">Nurse</a></li>
+                                   
+                                                                        </ul>
+                                        </li>
+									<li><a href="Transport.aspx" class="dez-page">Transport  <i class="fa fa-chevron-right"></i></a>
+                                        <ul class="sub-menu">
+                                    <li><a href="LightWeightVehicles.aspx" class="dez-page">Light Weight Vehicles</a></li>
+                                   	<li><a href="HeavyWeightvehicles.aspx" class="dez-page">Heavy Weight Vehicles</a></li>
+                                   
+                                                                        </ul>
+                                        </li>
+									<li><a href="Events.aspx" class="dez-page">Events</a></li>
+									<li><a href="PackersAndMovers.aspx" class="dez-page">Packers & Movers</a></li>
+									<li><a href="Mechanic.aspx" class="dez-page">Mechanic </a></li>
+								</ul>
+
 							</li>
 							<li>
 								<a href="#">Jobs <i class="fa fa-chevron-down"></i></a>
-								<%--<ul class="sub-menu">
-									<li><a href="company-profile.html" class="dez-page">Company Profile <span class="new-page">New</span></a></li>
-									<li><a href="company-resume.html" class="dez-page">Employer Resume <span class="new-page">New</span></a></li>
-									<li><a href="company-post-jobs.html" class="dez-page">Post A Jobs <span class="new-page">New</span></a></li>
-									<li><a href="company-manage-job.html" class="dez-page">Manage jobs <span class="new-page">New</span></a></li>
-									<li><a href="company-transactions.html" class="dez-page">Transactions <span class="new-page">New</span></a></li>
-									<li><a href="browse-candidates.html" class="dez-page">Browse Candidates</a></li>
-								</ul>--%>
+								
 							</li>
 							<li>
 								<a href="ContactUs.aspx">Contact Us <i class="fa fa-chevron-down"></i></a>
@@ -117,6 +152,7 @@
    
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+
    <footer class="site-footer">
         <div class="footer-top">
             <div class="container">
@@ -181,16 +217,18 @@
             </div>
         </div>
         <!-- footer bottom part -->
+       <div style="background-color:white">
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-						<span> © Copyright by <i class="fa fa-heart m-lr5 text-red heart"></i>
-						<a href="javascript:void(0);">DexignZone </a> All rights reserved.</span> 
+                    <div class="col-lg-12 text-center" style="color:black">
+						<span> © SwankInnovation<i class="fa fa-heart m-lr5 text-red heart"></i>
+						<a href="javascript:void(0);"> </a> 2019-2020</span> 
 					</div>
                 </div>
             </div>
         </div>
+           </div>
     </footer>
     <!-- Footer END -->
     <!-- scroll top button -->

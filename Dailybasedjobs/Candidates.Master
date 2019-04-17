@@ -74,7 +74,7 @@
 								</ul>--%>
 							</li>
 							<li>
-								<a href="#">My Resume <i class="fa fa-chevron-down"></i></a>
+								<a href="Myresume.aspx">My Resume <i class="fa fa-chevron-down"></i></a>
 								<%--<ul class="sub-menu">
 									<li><a href="jobs-profile.html" class="dez-page">My Profile<span class="new-page">New</span></a></li>
 									<li><a href="jobs-my-resume.html" class="dez-page">My Resume <span class="new-page">New</span></a></li>
@@ -86,7 +86,7 @@
 								</ul>--%>
 							</li>
 							<li>
-								<a href="#">Saved Jobs <i class="fa fa-chevron-down"></i></a>
+								<a href="Savedjob.aspx">Saved Jobs <i class="fa fa-chevron-down"></i></a>
 								<%--<ul class="sub-menu">
 									<li><a href="company-profile.html" class="dez-page">Company Profile <span class="new-page">New</span></a></li>
 									<li><a href="company-resume.html" class="dez-page">Employer Resume <span class="new-page">New</span></a></li>
@@ -97,15 +97,15 @@
 								</ul>--%>
 							</li>
 							<li>
-								<a href="#">Applied Jobs <i class="fa fa-chevron-down"></i></a>
+								<a href="Appliedjobs.aspx">Applied Jobs <i class="fa fa-chevron-down"></i></a>
 								
 									</li>
                             <li>
-								<a href="#">Job alerts <i class="fa fa-chevron-down"></i></a>
+								<a href="Jobalerts.aspx">Job alerts <i class="fa fa-chevron-down"></i></a>
 								
 									</li>
                             <li>
-								<a href="#">Change Password<i class="fa fa-chevron-down"></i></a>
+								<a href="ChangePassword.aspx">Change Password<i class="fa fa-chevron-down"></i></a>
 								
 									</li>
 									

@@ -11,7 +11,7 @@ namespace Dailybasedjobs
 {
 
 
-    public partial class MyResumeCandidate
+    public partial class HeavyWeightvehicles
     {
     }
 }

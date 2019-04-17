@@ -64,41 +64,49 @@
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Company Name</label>
-												<input type="text" class="form-control" placeholder="Enter Company Name">
+												<%--<input type="text" class="form-control" placeholder="Enter Company Name">--%>
+                                                <asp:TextBox ID="Textcname" class="form-control"  runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Your Email</label>
-												<input type="email" class="form-control" placeholder="info@gmail.com">
+											<%--	<input type="email" class="form-control" placeholder="info@gmail.com">--%>
+                                                <asp:TextBox ID="txtemail" class="form-control" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Website</label>
-												<input type="text" class="form-control" placeholder="Website Link">
+												<%--<input type="text" class="form-control" placeholder="Website Link">--%>
+                                                <asp:TextBox ID="Texwebsite" class="form-control" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Founded Date </label>
-												<input type="email" class="form-control" placeholder="17/12/2018">
+												<%--<input type="email" class="form-control" placeholder="17/12/2018">--%>
+                                                <asp:TextBox ID="txtfoundate" class="form-control" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Category</label>
-												<select>
+                                                <asp:DropDownList ID="ddlcat"  runat="server">
+                                                    <asp:ListItem Text="Designer" />
+                                                    <asp:ListItem Text="Web Developer" />
+                                                </asp:DropDownList>
+												<%--<select>
 													<option>Web Designer</option>
 													<option>Web Developer</option>
-												</select>
+												</select>--%>
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
+											<%--<div class="form-group">
 												<label>Country</label>
 												<input type="email" class="form-control" placeholder="London">
-											</div>
+											</div>--%>
 										</div>
 										<div class="col-lg-12 col-md-12">
 											<div class="form-group">
@@ -115,37 +123,42 @@
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Phone</label>
-												<input type="text" class="form-control" placeholder="+1 123 456 7890">
+												<%--<input type="text" class="form-control" placeholder="+1 123 456 7890">--%>
+                                                <asp:TextBox ID="txtphone" class="form-control" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
+											<%--<div class="form-group">
 												<label>Email</label>
 												<input type="email" class="form-control" placeholder="exemple@gmail.com">
-											</div>
+                                                <asp:TextBox ID="TextBox1" runat="server" />
+											</div>--%>
 										</div>
 										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
+											<%--<div class="form-group">
 												<label>Contry</label>
 												<input type="text" class="form-control" placeholder="India">
-											</div>
+											</div>--%>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
-												<label>City</label>
-												<input type="email" class="form-control" placeholder="Delhi">
+												<label>Area</label>
+												<%--<input type="email" class="form-control" placeholder="Delhi">--%>
+                                                <asp:TextBox ID="Txtarea" class="form-control" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Zip</label>
-												<input type="email" class="form-control" placeholder="504030">
+												<%--<input type="email" class="form-control" placeholder="504030">--%>
+                                                <asp:TextBox ID="Textzip" class="form-control" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Address</label>
-												<input type="email" class="form-control" placeholder="New york city">
+												<%--<input type="email" class="form-control" placeholder="New york city">--%>
+                                                <asp:TextBox ID="Texaddress" class="form-control" runat="server" />
 											</div>
 										</div>
 										<%--<div class="col-lg-12">

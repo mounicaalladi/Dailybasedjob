@@ -64,7 +64,7 @@
 									<h5 class="font-weight-700 pull-left text-uppercase">Change Password</h5>
 									<a href="jobs-cv-manager.html" class="site-button right-arrow button-sm float-right">Back</a>
 								</div>
-								<form>
+								<div>
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="form-group">
@@ -96,7 +96,7 @@
                                              <asp:Label id="lbl" Visible="false" runat="server" />
 										</div>
 									</div>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>

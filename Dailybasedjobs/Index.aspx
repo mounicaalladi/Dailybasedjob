@@ -615,13 +615,13 @@
 						<div class="form-info text-white align-self-center">
 							<h3 class="m-b15">Login To You Now</h3>
 							<p class="m-b15">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry.</p>
-							<ul class="list-inline m-a0">
+							<%--<ul class="list-inline m-a0">
 								<li><a href="#" class="m-r10 text-white"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#" class="m-r10 text-white"><i class="fa fa-google-plus"></i></a></li>
 								<li><a href="#" class="m-r10 text-white"><i class="fa fa-linkedin"></i></a></li>
 								<li><a href="#" class="m-r10 text-white"><i class="fa fa-instagram"></i></a></li>
 								<li><a href="#" class="m-r10 text-white"><i class="fa fa-twitter"></i></a></li>
-							</ul>
+							</ul>--%>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 p-a0">
