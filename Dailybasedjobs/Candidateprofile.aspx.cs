@@ -17,7 +17,7 @@ namespace Dailybasedjobs
         string filePath;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["username"]!=null)
+            if (Session["username"] != null)
             {
                 if (!IsPostBack)
                 {
@@ -29,13 +29,13 @@ namespace Dailybasedjobs
                     Response.Redirect("Index.aspx");
                 }
             }
-           
-            
+
+
         }
 
         private void FileUploadReader()
         {
-           
+
             SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
             con.Open();
             SqlDataReader dr = com.ExecuteReader();
@@ -45,7 +45,7 @@ namespace Dailybasedjobs
                 img.ImageUrl = dr["image"].ToString();
                 //string url = dr["image"].ToString();
                 //img.ImageUrl = url;
-              
+
             }
             con.Close();
         }
@@ -69,10 +69,10 @@ namespace Dailybasedjobs
 
         }
 
-      
-      
 
-        protected void save_Click(object sender, EventArgs e)
+
+
+        protected void save_Click1(object sender, EventArgs e)
         {
 
             HttpPostedFile postedFile = Request.Files["FileUpload1"];
@@ -89,6 +89,7 @@ namespace Dailybasedjobs
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
+
 
         }
     }
