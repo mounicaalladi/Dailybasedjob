@@ -70,8 +70,11 @@ namespace Dailybasedjobs
         }
 
       
-        protected void save_Click1(object sender, EventArgs e)
+      
+
+        protected void save_Click(object sender, EventArgs e)
         {
+
             HttpPostedFile postedFile = Request.Files["FileUpload1"];
             if (postedFile != null && postedFile.ContentLength > 0)
             {
@@ -86,6 +89,7 @@ namespace Dailybasedjobs
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
+
         }
     }
 }

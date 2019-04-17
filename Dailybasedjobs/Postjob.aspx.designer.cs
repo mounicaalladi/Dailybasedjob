@@ -13,6 +13,33 @@ namespace Dailybasedjobs {
     public partial class Postjob {
         
         /// <summary>
+        /// img1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image img1;
+        
+        /// <summary>
+        /// FileUpload1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        
+        /// <summary>
+        /// lblname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblname;
+        
+        /// <summary>
         /// jobtitle control.
         /// </summary>
         /// <remarks>
@@ -31,49 +58,49 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.TextBox email;
         
         /// <summary>
-        /// jobtags control.
+        /// ddljobtags control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox jobtags;
+        protected global::System.Web.UI.WebControls.DropDownList ddljobtags;
         
         /// <summary>
-        /// jobtype control.
+        /// ddlsubjobtype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList jobtype;
+        protected global::System.Web.UI.WebControls.DropDownList ddlsubjobtype;
         
         /// <summary>
-        /// experience control.
+        /// txtmobileno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList experience;
+        protected global::System.Web.UI.WebControls.TextBox txtmobileno;
         
         /// <summary>
-        /// region control.
+        /// txtLocation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList region;
+        protected global::System.Web.UI.WebControls.TextBox txtLocation;
         
         /// <summary>
-        /// location control.
+        /// txtAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox location;
+        protected global::System.Web.UI.WebControls.TextBox txtAddress;
         
         /// <summary>
         /// customFile control.
@@ -83,5 +110,14 @@ namespace Dailybasedjobs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox customFile;
+        
+        /// <summary>
+        /// btnsubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnsubmit;
     }
 }

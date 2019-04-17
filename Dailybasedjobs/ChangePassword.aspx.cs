@@ -12,10 +12,10 @@ namespace Dailybasedjobs
 {
     public partial class ChangePassword : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DailyJobs"].ConnectionString);
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["ida"] != null)
+            if (Session["username"] != null)
             {
                 if (!IsPostBack)
                 {

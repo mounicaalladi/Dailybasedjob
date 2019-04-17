@@ -9,14 +9,20 @@
 <div class="candidate-info company-info">
 <div class="candidate-detail text-center">
 <div class="canditate-des">
-<a href="javascript:void(0);"><img alt="" src="images/logo/icon3.jpg"></a>
+<a href="javascript:void(0);"><%--<img alt="" src="images/logo/icon3.jpg">--%>
+
+    <asp:Image ID="img1"  ClientIDMode="Static" runat="server" />
+    </a>
 <div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
-<input type="file" class="update-flie">
+<%--<input type="file" class="update-flie">--%>
+    <asp:FileUpload ID="FileUpload1" runat="server" />
 <i class="fa fa-pencil"></i>
+    
 </div>
 </div>
 <div class="candidate-title">
-<h4 class="m-b5"><a href="javascript:void(0);">@COMPANY</a></h4>
+<h4 class="m-b5">
+    <asp:Label ID="lblname" runat="server" /></h4>
 </div>
 </div>
 <ul>
@@ -65,63 +71,46 @@
 <asp:TextBox ID="email" runat="server" class="form-control" placeholder="info@gmail.com" />
 </div>
 </div>
-<div class="col-lg-12 col-md-12">
+<div class="col-lg-6 col-md-6">
  <div class="form-group">
 <asp:Label Text="Job Tags" runat="server" />
-<asp:TextBox ID="jobtags" runat="server" class="form-control tags_input" placeholder="html,css,bootstrap,photoshop" data-tagcomplete-id="1555043536764" />
+     <asp:DropDownList ID="ddljobtags" data-tagcomplete-id="1555043536764" OnSelectedIndexChanged="ddljobtags_SelectedIndexChanged" AutoPostBack="true"  runat="server">
+  <asp:ListItem Text="Select Value" />
+     </asp:DropDownList>
+<%--<asp:TextBox ID="jobtags" runat="server" class="form-control tags_input" placeholder="html,css,bootstrap,photoshop" data-tagcomplete-id="1555043536764" />--%>
 </div>
 </div>
 <div class="col-lg-6 col-md-6">
 <div class="form-group">
-    <asp:Label Text="Job Type" runat="server" />
-    <asp:DropDownList ID="jobtype" runat="server" class="bs-select-hidden">
-        <asp:ListItem Text="Full Time" />
-        <asp:ListItem Text="Part Time" />
-        <asp:ListItem Text="Internship" />
-        <asp:ListItem Text="Freelance" />
+    <asp:Label Text="Sub Job Tags" runat="server" />
+    <asp:DropDownList ID="ddlsubjobtype" runat="server" class="bs-select-hidden">
+       
+        <asp:ListItem Text="Select" />
     </asp:DropDownList>
 </div>
 </div>
 <div class="col-lg-6 col-md-6">
 <div class="form-group">
-<asp:Label Text="Experience" runat="server" />
-    <asp:DropDownList ID="experience" runat="server" class="bs-select-hidden">
-        <asp:ListItem Text="1 Years" />
-        <asp:ListItem Text="2 Years" />
-        <asp:ListItem Text="3 Years" />
-        <asp:ListItem Text="4 Years" />
-        <asp:ListItem Text="5 Years" />
-    </asp:DropDownList>
+<asp:Label Text="Mobile No" runat="server" />
+<asp:TextBox ID="txtmobileno" runat="server" class="form-control" placeholder="Mobileno" />
 </div>
 </div>
+
 <div class="col-lg-6 col-md-6">
-<div class="form-group">
-    <asp:Label Text="Minimum Salary:" runat="server" />
-    <asp:TextBox runat="server" class="form-control" placeholder="e.g. 10000" />  
-</div>
-</div>
-<div class="col-lg-6 col-md-6">
-<div class="form-group">
-    <asp:Label Text="Maximum Salary:" runat="server" />
-    <asp:TextBox runat="server" class="form-control" placeholder="e.g. 200000" />
-</div>
-</div>
-<div class="col-lg-6 col-md-6">
-<div class="form-group">
-<asp:Label Text="Region" runat="server" />
-    <asp:DropDownList ID="region" runat="server" class="bs-select-hidden">
-        <asp:ListItem Text="India" />
-        <asp:ListItem Text="USA" />
-        <asp:ListItem Text="UK" />
-    </asp:DropDownList>
-</div>
-</div>
-<div class="col-lg-6 col-md-6">
+
 <div class="form-group">
 <asp:Label Text="Location" runat="server" />
-<asp:TextBox ID="location" runat="server" class="form-control" placeholder="India" />
+<asp:TextBox ID="txtLocation" runat="server" class="form-control" placeholder="Location" />
 </div>
 </div>
+    <div class="col-lg-12 col-md-12">
+
+<div class="form-group">
+<asp:Label Text="Address" runat="server" />
+<asp:TextBox ID="txtAddress" TextMode="MultiLine" runat="server" class="form-control" placeholder="Address" />
+</div>
+</div>
+
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
 <label>Upload File</label>
@@ -132,7 +121,7 @@
 </div>
 </div>
 </div>
-    <asp:Button Text="Upload" runat="server" class="site-button m-b30" />
+    <asp:Button Text="Upload" runat="server" ID="btnsubmit" OnClick="btnsubmit_Click" class="site-button m-b30" />
 </form>
 </div>
 </div>

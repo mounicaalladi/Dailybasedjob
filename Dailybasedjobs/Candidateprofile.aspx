@@ -23,6 +23,11 @@
                                 <asp:Button Text="ChooseFile" ID="btnFileupload" class="update-flie"  runat="server" Visible="False" />
                                               --%>
 											</a>
+                                    	<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
+												<input type="file" class="update-flie">
+                                            <asp:FileUpload   ID="FileUpload1" Visible="false" runat="server" />
+												<i class="fa fa-camera"></i>
+											</div>
                                         
 											<%--<div class="upload-link" title="update" id="theDiv" data-toggle="tooltip" data-placement="right" runat="server">--%>
                                                
@@ -31,14 +36,14 @@
                             "ImageHandler.ashx?imgID="+ Eval("ImageID") %>' runat="server"
 
                                 Height="80px" Width="80px" />--%>
-                                                
+<%--                                                
               <div class="upload-link" title="update"   data-toggle="tooltip" data-placement="right" runat="server">
 											<%--<input type="file" name="FileUpload1" class="update-flie" runat="server" >--%>
-                  <asp:FileUpload ID="FileUpload1" Visible="false"  runat="server" />
-                 <asp:Button Text="save" ID="save"  OnClick="save_Click1" runat="server"  />
-												<i class="fa fa-camera"></i>
+                  <%--<asp:FileUpload ID="FileUpload1" Visible="false"  runat="server" />
+                 <asp:Button   ID="save" CssClass="fa fa-camera" CausesValidation="false"  OnClick="save_Click" runat="server"  />
+											
 											</div>
-                                     
+                  --%>                   
                                                   <%-- <asp:FileUpload ID="FileUpload1" CssClass="form-control"  runat="server" />
                                                   <asp:button text="ChooseFile" ID="btnFileupload" runat="server" Visible="False" />--%>
                                               
