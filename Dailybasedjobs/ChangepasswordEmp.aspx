@@ -26,6 +26,7 @@
 											<div class="">
 												<h4 class="m-b5"><a href="javascript:void(0);">David Matin</a></h4>
 												<p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>
+                                           <%--     sgsg--%>
 											</div>
 										</div>
 									</div>
@@ -72,6 +73,7 @@
 												<input type="password" class="form-control">--%>
                                                 <asp:Label Text="Old Password"  runat="server" />
                                                 <asp:TextBox ID="txtop" class="form-control" runat="server" />
+                                                <asp:RequiredFieldValidator ErrorMessage="Enter old Password" ControlToValidate="txtop" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6">
@@ -80,6 +82,7 @@
 												<input type="password" class="form-control">--%>
                                                 <asp:Label Text="New Password"  runat="server" />
                                                 <asp:TextBox ID="txtnp" class="form-control" runat="server" />
+                                                  <asp:RequiredFieldValidator ErrorMessage="Enter New Password" ControlToValidate="txtop" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6">
@@ -88,6 +91,7 @@
 												<input type="password" class="form-control">--%>
                                                   <asp:Label Text="Confirm New Password"  runat="server" />
                                                 <asp:TextBox ID="txtcnp" class="form-control" runat="server" />
+                                                  <asp:RequiredFieldValidator ErrorMessage="Enter Confirm New Password" ControlToValidate="txtop" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-12 m-b10">

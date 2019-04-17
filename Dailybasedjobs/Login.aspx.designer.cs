@@ -10,7 +10,16 @@
 namespace Dailybasedjobs {
     
     
-    public partial class Login {
+    public partial class WebForm1 {
+        
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// txtuser control.
@@ -49,15 +58,6 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.CheckBox txtcheck;
         
         /// <summary>
-        /// btnsubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsubmit;
-        
-        /// <summary>
         /// lblmsg control.
         /// </summary>
         /// <remarks>
@@ -65,5 +65,14 @@ namespace Dailybasedjobs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblmsg;
+        
+        /// <summary>
+        /// btnsubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnsubmit;
     }
 }
