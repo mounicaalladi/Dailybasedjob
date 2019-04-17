@@ -84,45 +84,46 @@
 							<li>
 								<a href="AboutUs.aspx">Categories<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="jobs-profile.html" class="dez-page">Home Services <i class="fa fa-chevron-right"></i></a></li>
+									<li><a href="HomeServices.aspx" class="dez-page">Home Services <i class="fa fa-chevron-right"></i></a></li>
                                     								<ul class="sub-menu">
-                                    <li><a href="jobs-profile.html" class="dez-page">Home Services <span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Cleaning<span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Gardening <span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Washing<span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Painting <span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Plumbing<span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Electrician <span class="new-page">New</span></a></li>
+                                  
+                                   	<li><a href="Cleaning.aspx" class="dez-page">Cleaning</a></li>
+                                   	<li><a href="Gardening.aspx" class="dez-page">Gardening </a></li>
+                                   	<li><a href="Washing.aspx" class="dez-page">Washing</a></li>
+                                   	<li><a href="Painting.aspx" class="dez-page">Painting </a></li>
+                                   	<li><a href="Plumbing.aspx" class="dez-page">Plumbing</a></li>
+                                   	<li><a href="Electrician.aspx" class="dez-page">Electrician</a></li>
+                                    <li><a href="Carpenter.aspx" class="dez-page">Carpenter</a></li>
                                   
                                   
                                   
                                                                         </ul>
-									<li><a href="jobs-my-resume.html" class="dez-page">Tutors<span class="new-page">New</span></a></li>
+									<li><a href="Tutors.aspx" class="dez-page">Tutors</a></li>
                                     <ul class="sub-menu">
-                                    <li><a href="jobs-profile.html" class="dez-page">Primary School <span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">High School<span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Degree<span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Dance & Music<span class="new-page">New</span></a></li>
+                                    <li><a href="PrimaryLevel.aspx" class="dez-page">Primary School </a></li>
+                                   	<li><a href="Highschool.aspx" class="dez-page">High School</a></li>
+                                   	<li><a href="Degree.aspx" class="dez-page">Degree</a></li>
+                                   	<li><a href="DanceAndMusic.aspx" class="dez-page">Dance & Music</a></li>
                                   
                                   
                                   
                                                                         </ul>
-									<li><a href="jobs-applied-job.html" class="dez-page">Care Takers<span class="new-page">New</span></a></li>
+									<li><a href="Caretakers.aspx" class="dez-page">Care Takers</a></li>
                                      <ul class="sub-menu">
-                                    <li><a href="jobs-profile.html" class="dez-page">BabySitter<span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Pet Caretakers<span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Nurse<span class="new-page">New</span></a></li>
+                                    <li><a href="Babysitters.aspx" class="dez-page">BabySitter</a></li>
+                                   	<li><a href="PetCareTakers.aspx" class="dez-page">Pet Caretakers</a></li>
+                                   	<li><a href="Nurse.aspx" class="dez-page">Nurse</a></li>
                                    
                                                                         </ul>
-									<li><a href="jobs-alerts.html" class="dez-page">Transport<span class="new-page">New</span></a></li>
+									<li><a href="Transport.aspx" class="dez-page">Transport</a></li>
                                         <ul class="sub-menu">
-                                    <li><a href="jobs-profile.html" class="dez-page">Light Weight Vehicles<span class="new-page">New</span></a></li>
-                                   	<li><a href="jobs-profile.html" class="dez-page">Heavy Weight Vehicles<span class="new-page">New</span></a></li>
+                                    <li><a href="LightWeightVehicles.aspx" class="dez-page">Light Weight Vehicles</a></li>
+                                   	<li><a href="HeavyWeightvehicles.aspx" class="dez-page">Heavy Weight Vehicles</a></li>
                                    
                                                                         </ul>
-									<li><a href="jobs-saved-jobs.html" class="dez-page">Events<span class="new-page">New</span></a></li>
-									<li><a href="jobs-cv-manager.html" class="dez-page">Packers & Movers <span class="new-page">New</span></a></li>
-									<li><a href="jobs-change-password.html" class="dez-page">Mechanic <span class="new-page">New</span></a></li>
+									<li><a href="Events.aspx" class="dez-page">Events</a></li>
+									<li><a href="PackersAndMovers.aspx" class="dez-page">Packers & Movers </a></li>
+									<li><a href="Mechanic.aspx" class="dez-page">Mechanic</a></li>
 								</ul>
 							</li>
 							<li>
