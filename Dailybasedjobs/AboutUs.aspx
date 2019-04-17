@@ -71,6 +71,7 @@
 			<!-- Why Chose Us -->
 			<!-- Call To Action -->
             	<!-- Swank is Very good company -->
+            <!--Place to learn new technologies-->
 			<div class="section-full content-inner-2 call-to-action overlay-black-dark text-white text-center bg-img-fix" style="background-image:url(images/background/bg4.jpg);">
 				<div class="container">
 					<div class="row">
