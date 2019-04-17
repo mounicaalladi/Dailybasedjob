@@ -21,6 +21,7 @@
             </div>
         </div>
         <!-- inner page banner END -->
+        <!--Located in Platina-->
 		<div class="content-block">
             <div class="section-full content-inner overlay-white-middle">
 				<div class="container">
