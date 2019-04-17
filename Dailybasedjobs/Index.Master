@@ -84,9 +84,9 @@
 							<li>
 								<a href="AboutUs.aspx">Categories<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="jobs-profile.html" class="dez-page">Home Services <span class="new-page">New</span></a></li>
+									<li><a href="jobs-profile.html" class="dez-page">Home Services <i class="fa fa-chevron-right"></i></a></li>
                                     								<ul class="sub-menu">
-                                                                      	<li><a href="jobs-profile.html" class="dez-page">Home Services <span class="new-page">New</span></a></li>
+                                    <li><a href="jobs-profile.html" class="dez-page">Home Services <span class="new-page">New</span></a></li>
                                    	<li><a href="jobs-profile.html" class="dez-page">Cleaning<span class="new-page">New</span></a></li>
                                    	<li><a href="jobs-profile.html" class="dez-page">Gardening <span class="new-page">New</span></a></li>
                                    	<li><a href="jobs-profile.html" class="dez-page">Washing<span class="new-page">New</span></a></li>
