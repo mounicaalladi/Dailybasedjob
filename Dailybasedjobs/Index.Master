@@ -84,7 +84,7 @@
 							<li>
 								<a href="AboutUs.aspx">Categories<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="HomeServices.aspx" class="dez-page">Home Services <i class="fa fa-chevron-right"></i></a></li>
+									<li><a href="HomeServices.aspx" class="dez-page">Home Services <i class="fa fa-chevron-right"></i></a>
                                     								<ul class="sub-menu">
                                    
                                   
@@ -99,7 +99,8 @@
                                   
                                   
                                                                         </ul>
-									<li><a href="tutors.aspx" class="dez-page">Tutors</a></li>
+                                        </li>
+									<li><a href="tutors.aspx" class="dez-page">Tutors</a>
                                     <ul class="sub-menu">
                                     <li><a href="PrimaryLevel.aspx" class="dez-page">Primary School </a></li>
                                    	<li><a href="Highschool.aspx" class="dez-page">High School</a></li>
@@ -109,19 +110,22 @@
                                   
                                   
                                                                         </ul>
-									<li><a href="Caretakers.aspx" class="dez-page">Care Takers</a></li>
+                                        </li>
+									<li><a href="Caretakers.aspx" class="dez-page">Care Takers</a>
                                      <ul class="sub-menu">
                                     <li><a href="Babysitters.aspx" class="dez-page">BabySitter</a></li>
                                    	<li><a href="PetCareTakers.aspx" class="dez-page">Pet Caretakers</a></li>
                                    	<li><a href="Nurse.aspx" class="dez-page">Nurse</a></li>
                                    
                                                                         </ul>
-									<li><a href="Transport.aspx" class="dez-page">Transport</a></li>
+                                        </li>
+									<li><a href="Transport.aspx" class="dez-page">Transport</a>
                                         <ul class="sub-menu">
                                     <li><a href="LightWeightVehicles.aspx" class="dez-page">Light Weight Vehicles</a></li>
                                    	<li><a href="HeavyWeightvehicles.aspx" class="dez-page">Heavy Weight Vehicles</a></li>
                                    
                                                                         </ul>
+                                        </li>
 									<li><a href="Events.aspx" class="dez-page">Events</a></li>
 									<li><a href="PackersAndMovers.aspx" class="dez-page">Packers & Movers</a></li>
 									<li><a href="Mechanic.aspx" class="dez-page">Mechanic </a></li>
