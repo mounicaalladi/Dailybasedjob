@@ -130,22 +130,22 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.Label lblemail;
         
         /// <summary>
-        /// txtresuhed control.
+        /// lbres control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtresuhed;
+        protected global::System.Web.UI.WebControls.Label lbres;
         
         /// <summary>
-        /// txtdescrptn control.
+        /// txtresuh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtdescrptn;
+        protected global::System.Web.UI.WebControls.TextBox txtresuh;
         
         /// <summary>
         /// btnsave control.
@@ -157,6 +157,15 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.Button btnsave;
         
         /// <summary>
+        /// txtskill control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtskill;
+        
+        /// <summary>
         /// txtkeskll control.
         /// </summary>
         /// <remarks>
@@ -164,15 +173,6 @@ namespace Dailybasedjobs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtkeskll;
-        
-        /// <summary>
-        /// txttags control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttags;
         
         /// <summary>
         /// btsave control.

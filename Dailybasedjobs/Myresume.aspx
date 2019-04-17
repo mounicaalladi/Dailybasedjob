@@ -180,10 +180,11 @@
 <div id="resume_headline_bx" class="job-bx bg-white m-b30">
 <div class="d-flex">
 <h5 class="m-b15">Resume Headline</h5>
-    <asp:TextBox ID="txtresuhed" Visible="false" runat="server" />
+    <asp:TextBox  Visible="false" runat="server" />
 <a href="javascript:void(0);" data-toggle="modal" data-target="#resumeheadline" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
 </div>
-<p class="m-b0">Job board currently living in USA</p>
+<p class="m-b0">
+    <asp:Label ID="lbres" runat="server" /></p>
 <!-- Modal -->
 <div class="modal fade modal-bx-info editor" id="resumeheadline" tabindex="-1" role="dialog" aria-labelledby="ResumeheadlineModalLongTitle" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -198,7 +199,7 @@
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
-    <asp:TextBox ID="txtdescrptn" runat="server" TextMode="MultiLine" class="form-control" placeholder="Type Description" />  
+    <asp:TextBox  runat="server" ID="txtresuh" TextMode="MultiLine" class="form-control" placeholder="Type Description" />  
 </div>
 </div>
 </div>
@@ -216,16 +217,17 @@
 <div id="key_skills_bx" class="job-bx bg-white m-b30">
 <div class="d-flex">
 <h5 class="m-b15">Key Skills</h5>
-    <asp:TextBox ID="txtkeskll" Visible="false" runat="server" />
+    
 <a href="javascript:void(0);" data-toggle="modal" data-target="#keyskills" class="site-button add-btn button-sm"><i class="fa fa-pencil m-r5"></i> Edit</a>
 </div>
 <div class="job-time mr-auto">
-<a href="javascript:void(0);"><span>Javascript</span></a>
+<%--<a href="javascript:void(0);"><span>Javascript</span></a>
 <a href="javascript:void(0);"><span>CSS</span></a>
 <a href="javascript:void(0);"><span>HTML</span></a>
 <a href="javascript:void(0);"><span>Bootstrap</span></a>
 <a href="javascript:void(0);"><span>Web Designing</span></a>
-<a href="javascript:void(0);"><span>Photoshop</span></a>
+<a href="javascript:void(0);"><span>Photoshop</span></a>--%>
+    <asp:TextBox ID="txtskill" Visible="false" runat="server" />
 </div>
 <!-- Modal -->
 <div class="modal fade modal-bx-info editor" id="keyskills" tabindex="-1" role="dialog" aria-labelledby="KeyskillsModalLongTitle" aria-hidden="true">
@@ -241,7 +243,7 @@
 <div class="row">
 <div class="col-lg-12 col-md-12">
 <div class="form-group">
-    <asp:TextBox ID="txttags" runat="server" class="form-control tags_input" placeholder="html css bootstrap photoshop" />
+    <asp:TextBox ID="txtkeskll" runat="server" class="form-control tags_input" placeholder="html css bootstrap photoshop" />
 </div>
 </div>
 </div>

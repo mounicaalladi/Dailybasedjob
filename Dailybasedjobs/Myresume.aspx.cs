@@ -15,23 +15,64 @@ namespace Dailybasedjobs
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+                Resumereader();
+                Skill();
+            }
 
         }
 
+
+
         protected void btnsave_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("Update CandidateResume SET ResumeHeadline='" + txtresuhed.Text + "'", con);
+            SqlCommand cmd = new SqlCommand("insert into ResumeHeadline (Resumeheadline) values ('" + txtresuh.Text + "')", con);
+            //SqlCommand cmd = new SqlCommand("Update CandidateResume SET ResumeHeadline='" + txtresuh.Text + "'", con);
             con.Open();
             cmd.ExecuteNonQuery();
+            con.Close();
+            Resumereader();
+        }
+        private void Resumereader()
+        {
+
+            SqlCommand com = new SqlCommand("select * from ResumeHeadline ", con);
+            con.Open();
+            SqlDataReader dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                lbres.Text = dr["Resumeheadline"].ToString();
+
+                //string url = dr["image"].ToString();
+                //img.ImageUrl = url;
+
+            }
             con.Close();
         }
 
         protected void btsave_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into CandidateResume(KeySkills) values('" + txtkeskll.Text + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into keyskills(Keyskills) values('" + txtkeskll.Text + "')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+        private void Skill()
+        {
+            SqlCommand com = new SqlCommand("select * from keyskills ", con);
+            con.Open();
+            SqlDataReader dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                txtskill.Text = dr["Keyskills"].ToString();
+
+                //string url = dr["image"].ToString();
+                //img.ImageUrl = url;
+
+            }
+            con.Close();
+
         }
 
         protected void txtsaved_Click(object sender, EventArgs e)
