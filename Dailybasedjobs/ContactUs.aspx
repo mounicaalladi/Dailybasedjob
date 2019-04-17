@@ -40,6 +40,7 @@
 <div id="msgSubmit" class="h3 text-center hidden"></div>
 <div class="clearfix"></div>
 </div>--%>
+    <!--Very good support from TLs-->
 </div>
 </div>
  
