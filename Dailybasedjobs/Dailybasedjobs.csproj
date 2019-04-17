@@ -209,7 +209,6 @@
     <Content Include="js\dz.carousel.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="LightweightVehicles.aspx" />
-    <Content Include="Login.aspx" />
     <Content Include="Managejob.aspx" />
     <Content Include="Mechanic.aspx" />
     <Content Include="Myresume.aspx" />
@@ -290,6 +289,7 @@
     <Content Include="Upload1\Tulips.jpg" />
     <Content Include="Washing.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutUs.aspx.cs">
@@ -491,13 +491,6 @@
     <Compile Include="LightweightVehicles.aspx.designer.cs">
       <DependentUpon>LightweightVehicles.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Managejob.aspx.cs">
       <DependentUpon>Managejob.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -624,6 +617,13 @@
     </Compile>
     <Compile Include="Washing.aspx.designer.cs">
       <DependentUpon>Washing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

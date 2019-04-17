@@ -4,23 +4,18 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Configuration;
-using System.Web.UI.HtmlControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Xml.Linq;
 
 namespace Dailybasedjobs
 {
-    public partial class Login : System.Web.UI.Page
-
+    public partial class WebForm1 : System.Web.UI.Page
     {
-        //SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
-        
+
         string strConnString = ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString;
 
-        string str, UserName, Password,Role;
+        string str, UserName, Password, Role;
 
         SqlCommand com;
 
@@ -29,10 +24,12 @@ namespace Dailybasedjobs
         DataTable dt;
 
         int RowCount;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(strConnString);
@@ -60,7 +57,7 @@ namespace Dailybasedjobs
                 Role = dt.Rows[i]["role"].ToString();
 
 
-                if (UserName == txtuser.Text && Password == txtpassword.Text && Role==rbtRole.SelectedValue.ToString())
+                if (UserName == txtuser.Text && Password == txtpassword.Text && Role == rbtRole.SelectedValue.ToString())
 
                 {
 
@@ -68,7 +65,7 @@ namespace Dailybasedjobs
 
                     if (dt.Rows[i]["role"].ToString() == "Admin")
 
-                       Response.Redirect("~/Registeredmembers.aspx");
+                        Response.Redirect("~/Registeredmembers.aspx");
 
                     else if (dt.Rows[i]["role"].ToString() == "JobProvider")
 
@@ -81,16 +78,12 @@ namespace Dailybasedjobs
 
                 }
 
-               else
+                else
                 {
                     lblmsg.Text = "invalid Password or username";
                 }
 
             }
-
-
-
         }
-
     }
 }
