@@ -118,7 +118,7 @@ Login
 <label class="form-check-label" for="exampleCheck1">Keep Me Signed In</label>
     <asp:Label  ID="lblmsg" runat="server" />
 </div>
-    <asp:Button ID="btnsubmit" runat="server" Text="Submit" class="btn btn-common log-btn"   OnClientClick="Validate()" Font-Bold="True"  OnClick="btnsubmit_Click"/>
+   <br /><br /><br /> <asp:Button ID="btnsubmit" runat="server" Text="Submit" class="btn btn-danger"   OnClientClick="Validate()" Font-Bold="True"  OnClick="btnsubmit_Click"/>
    
 <%--<button class="btn btn-common log-btn">Submit</button>--%>
 </div>
