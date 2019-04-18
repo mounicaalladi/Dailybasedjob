@@ -16,15 +16,18 @@
 									<div class="candidate-detail text-center">
 										<div class="canditate-des">
 											<a href="javascript:void(0);">
-												<img alt="" src="images/logo/icon3.jpg">
+												<%--<img alt="" src="images/logo/icon3.jpg">--%>
+                                                <asp:Image ID="img1" runat="server" />
 											</a>
 											<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-												<input type="file" class="update-flie">
+												<%--<input type="file" class="update-flie">--%>
+                                               <asp:FileUpload ID="FileUpload1" runat="server"></asp:FileUpload>                
 												<i class="fa fa-pencil"></i>
-											</div>
+                                            </div>
 										</div>
 										<div class="candidate-title">
-											<h4 class="m-b5"><a href="javascript:void(0);">@COMPANY</a></h4>
+											<h4 class="m-b5">
+                                                <asp:Label ID="lblname" runat="server" /></h4>
 										</div>
 									</div>
 									<ul>
@@ -59,7 +62,7 @@
 									<h5 class="font-weight-700 pull-left text-uppercase">Company Profile</h5>
 									<a href="company-profile.html" class="site-button right-arrow button-sm float-right">Back</a>
 								</div>
-								<form>
+								<div>
 									<div class="row m-b30">
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
@@ -197,7 +200,7 @@
 									</div>
 									<%--<button type="submit" class="site-button m-b30">Update Setting</button>--%>
                                     <asp:Button Text="Upadte setting" ID="btnupt" OnClick="btnupt_Click" runat="server" />
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>

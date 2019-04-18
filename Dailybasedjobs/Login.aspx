@@ -89,6 +89,7 @@ Login
 <div class="input-icon">
 <i class="lni-user"></i>
 <asp:TextBox runat="server" ID="txtuser"  class="form-control" name="email" placeholder="Username" />
+    <asp:RequiredFieldValidator ErrorMessage="Enter Username" ControlToValidate="txtuser" runat="server" />
 
 </div>
 </div>
@@ -96,6 +97,7 @@ Login
 <div class="input-icon">
 <i class="lni-lock"></i>
     <asp:TextBox runat="server" ID="txtpassword" TextMode="Password" class="form-control" placeholder="Password"  />
+    <asp:RequiredFieldValidator ErrorMessage="Enter password" ControlToValidate="txtpassword" runat="server" />
 
 </div>
 
