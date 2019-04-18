@@ -115,11 +115,13 @@
 <div class="form-group">
 <label>Upload File</label>
 <div class="custom-file">
-<p class="m-a0"><i class="fa fa-upload"></i><asp:Label Text="Upload File" runat="server" /></p>
-<asp:TextBox ID="customFile" runat="server" class="site-button form-control" />
+<p class="m-a0"><i class="fa fa-upload"></i> <asp:FileUpload ID="FileUpload2" runat="server" /></p>
+  
+<%--<asp:TextBox ID="customFile" runat="server" class="site-button form-control" />--%>
 </div>
 </div>
 </div>
+    
 </div>
     <asp:Button Text="Upload" runat="server" ID="btnsubmit" OnClick="btnsubmit_Click" class="site-button m-b30" />
 </form>
