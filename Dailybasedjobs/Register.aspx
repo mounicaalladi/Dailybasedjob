@@ -78,7 +78,7 @@
                                     <asp:Label Text="Role"  class="font-weight-700" runat="server" />
                                      <asp:RadioButtonList ID="rbtRole" runat="server" RepeatDirection="Vertical">
 
-                       <%-- <asp:ListItem>Admin</asp:ListItem>--%>
+                   <%--     <asp:ListItem>Admin</asp:ListItem>--%>
 
                         <asp:ListItem>JobProvider</asp:ListItem>
 
