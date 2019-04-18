@@ -20,14 +20,15 @@
                                                <%-- <asp:Image ID="img1" runat="server" />--%>
                                                 <asp:Image  ID="img" ClientIDMode="Static" runat="server" />
                             <%--    <asp:FileUpload ID="fileuploadcontrol" CssClass="form-control" runat="server" />
-                                <asp:Button Text="ChooseFile" ID="btnFileupload" class="update-flie"  runat="server" Visible="False" />
+                              
                                               --%>
 											</a>
                                     	<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-												<input type="file" class="update-flie">
-                                            <asp:FileUpload   ID="FileUpload1" Visible="false" runat="server" />
-												<i class="fa fa-camera"></i>
-											</div>
+                                            <asp:FileUpload ID="FileUpload1"  CssClass="fa fa-camera"  runat="server" />
+                                            <asp:LinkButton   ID="save" OnClick="save_Click1" CausesValidation="false" runat="server" />                        
+														
+
+								</div>
                                         
 											<%--<div class="upload-link" title="update" id="theDiv" data-toggle="tooltip" data-placement="right" runat="server">--%>
                                                
@@ -39,11 +40,11 @@
 <%--                                                
               <div class="upload-link" title="update"   data-toggle="tooltip" data-placement="right" runat="server">
 											<%--<input type="file" name="FileUpload1" class="update-flie" runat="server" >--%>
-                  <%--<asp:FileUpload ID="FileUpload1" Visible="false"  runat="server" />
-                 <asp:Button   ID="save" CssClass="fa fa-camera" CausesValidation="false"  OnClick="save_Click" runat="server"  />
+                
+             <%--    <asp:Button   ID="save" CssClass="fa fa-camera" CausesValidation="false"  OnClick="save_Click" runat="server"  />--%>
 											
-											</div>
-                  --%>                   
+									<%--		</div>
+                  --%>                
                                                   <%-- <asp:FileUpload ID="FileUpload1" CssClass="form-control"  runat="server" />
                                                   <asp:button text="ChooseFile" ID="btnFileupload" runat="server" Visible="False" />--%>
                                               
