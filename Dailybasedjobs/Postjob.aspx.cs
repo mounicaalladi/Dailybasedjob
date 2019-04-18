@@ -14,7 +14,8 @@ namespace Dailybasedjobs
     public partial class Postjob : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
-        string filePath;
+        //string filePath;
+        //string filepath1;
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)
@@ -83,35 +84,9 @@ namespace Dailybasedjobs
             ddljobtags.DataBind();
             ddljobtags.Items.Insert(0, new ListItem("Select Category","0"));
         }
-
-        protected void btnsubmit_Click(object sender, EventArgs e)
-        {
-            //if (FileUpload1.HasFile)
-            //{
-            //    string str = FileUpload1.FileName;
-            //    FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
-            //    string Image = "~/Upload1/" + str.ToString();
-            //}
-            HttpPostedFile postedFile = Request.Files["FileUpload1"];
-            if (postedFile != null && postedFile.ContentLength > 0)
-            {
-                string fn = postedFile.FileName;
-                string filePath = Server.MapPath("~/Upload1/") + fn;
-                postedFile.SaveAs(filePath);
-                
-            }
-            con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Postjob values('"+jobtitle.Text+"','"+email.Text+"','"+ddljobtags.SelectedValue.ToString()+"','"+ddlsubjobtype.SelectedValue.ToString()+"','"+txtmobileno.Text+"','"+txtLocation.Text+"','"+txtAddress.Text+"','"+lblname.Text+"','"+filePath.ToString()+"')", con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            //lbl.Text = "password successfully changed";
-        }
-
-        
-
         protected void ddljobtags_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlDataAdapter sda = new SqlDataAdapter("select * from Subcategories where Categories='"+ddljobtags.SelectedValue.ToString()+"'", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select * from Subcategories where Categories='" + ddljobtags.SelectedValue.ToString() + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             ddlsubjobtype.DataSource = dt;
@@ -120,5 +95,47 @@ namespace Dailybasedjobs
             ddlsubjobtype.DataBind();
             ddlsubjobtype.Items.Insert(0, new ListItem("Select Subcategories", "0"));
         }
+
+        protected void btnsubmit_Click(object sender, EventArgs e)
+        {
+            if (FileUpload1.HasFile)
+            {
+                string str = FileUpload1.FileName;
+                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
+                string Image = "~/Upload1/" + str.ToString();
+            }
+            if (FileUpload2.HasFile)
+            {
+                string str = FileUpload2.FileName;
+                FileUpload2.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
+                string Image = "~/Upload1/" + str.ToString();
+            }
+            //HttpPostedFile postedFile = Request.Files["FileUpload1"];
+            //if (postedFile != null && postedFile.ContentLength > 0)
+            //{
+            //    string fn = postedFile.FileName;
+            //    string filePath = Server.MapPath("~/Upload1/") + fn;
+            //    postedFile.SaveAs(filePath);
+
+            //}
+            //HttpPostedFile postedFile2 = Request.Files["FileUpload2"];
+            //if (postedFile2 != null && postedFile2.ContentLength > 0)
+            //{
+            //    string fn = postedFile2.FileName;
+            //    string filePath1 = Server.MapPath("~/Upload1/") + fn;
+            //    postedFile2.SaveAs(filePath1);
+
+            //}
+
+            SqlCommand cmd = new SqlCommand("insert into PostJob(Jobtitle,Email,Tags,Subjobtag,Mobile,Location,Address,Companyname,Image,Fileupload) values('"+jobtitle.Text+"','"+email.Text+"','"+ddljobtags.SelectedValue.ToString()+"','"+ddlsubjobtype.SelectedValue.ToString()+"','"+txtmobileno.Text+"','"+txtLocation.Text+"','"+txtAddress.Text+"','"+lblname.Text+ "', '" + "~/Upload1/" + FileUpload1.FileName + "', '" + "~/Upload1/" + FileUpload2.FileName + "')", con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            //lbl.Text = "password successfully changed";
+        }
+
+        
+
+      
     }
 }
