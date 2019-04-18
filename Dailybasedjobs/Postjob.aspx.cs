@@ -15,8 +15,6 @@ namespace Dailybasedjobs
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
         string filePath;
-        string filePath1;
-        string filePath3;
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)
@@ -24,8 +22,8 @@ namespace Dailybasedjobs
               
                 Datareader();
                 categorybind();
-                //insertimage();v
-                //showimage();
+                insertimage();
+                showimage();
             }
             
         }
@@ -47,39 +45,32 @@ namespace Dailybasedjobs
 
         }
 
-        //private void insertimage()
-        //{
-        //    HttpPostedFile postedFile3 = Request.Files["FileUpload3"];
-        //    if (postedFile3 != null && postedFile3.ContentLength > 0)
-        //    {
-        //        string fn = postedFile3.FileName;
-        //        string filePath3 = Server.MapPath("~/Upload1/") + fn;
-        //        postedFile3.SaveAs(filePath);
+        private void insertimage()
+        {
 
-        //    }
+            SqlCommand cmd = new SqlCommand("update Register set image='"+img1.ToString()+ "' where username='" + Session["username"].ToString() + "'",con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
 
-        //    SqlCommand cmd = new SqlCommand("update Register set image='" + filePath3.ToString() + "' where username='" + Session["username"].ToString() + "'", con);
-        //    con.Open();
-        //    cmd.ExecuteNonQuery();
-        //    con.Close();
-        //}
-        //private void showimage()
-        //{
-        //    SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
-        //    con.Open();
-        //    SqlDataReader dr = com.ExecuteReader();
-        //    while (dr.Read())
-        //    {
-        //        //lblname.Text = dr["username"].ToString();
-        //        img1.ImageUrl = dr["image"].ToString();
-        //        //string url = dr["image"].ToString();
-        //        //img.ImageUrl = url;
+        private void showimage()
+        {
+            SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
+            con.Open();
+            SqlDataReader dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                //lblname.Text = dr["username"].ToString();
+                img1.ImageUrl = dr["image"].ToString();
+                //string url = dr["image"].ToString();
+                //img.ImageUrl = url;
 
-        //    }
-        //    con.Close();
-        //}
+            }
+            con.Close();
+        }
 
-
+      
 
         private void categorybind()
         {
@@ -109,16 +100,8 @@ namespace Dailybasedjobs
                 postedFile.SaveAs(filePath);
                 
             }
-            HttpPostedFile postedFile2 = Request.Files["FileUpload2"];
-            if (postedFile2 != null && postedFile2.ContentLength > 0)
-            {
-                string fn = postedFile2.FileName;
-                string filePath1 = Server.MapPath("~/Upload1/") + fn;
-                postedFile2.SaveAs(filePath);
-
-            }
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Postjob values('"+jobtitle.Text+"','"+email.Text+"','"+ddljobtags.SelectedValue.ToString()+"','"+ddlsubjobtype.SelectedValue.ToString()+"','"+txtmobileno.Text+"','"+txtLocation.Text+"','"+txtAddress.Text+"','"+lblname.Text+"','"+filePath.ToString()+"','"+filePath1.ToString()+"')", con);
+            SqlCommand cmd = new SqlCommand("insert into Postjob values('"+jobtitle.Text+"','"+email.Text+"','"+ddljobtags.SelectedValue.ToString()+"','"+ddlsubjobtype.SelectedValue.ToString()+"','"+txtmobileno.Text+"','"+txtLocation.Text+"','"+txtAddress.Text+"','"+lblname.Text+"','"+filePath.ToString()+"')", con);
             cmd.ExecuteNonQuery();
             con.Close();
             //lbl.Text = "password successfully changed";
