@@ -24,7 +24,7 @@ namespace Dailybasedjobs
               
                 Datareader();
                 categorybind();
-                //insertimage();
+                //insertimage();v
                 //showimage();
             }
             
