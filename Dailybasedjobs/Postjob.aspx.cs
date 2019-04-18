@@ -22,8 +22,8 @@ namespace Dailybasedjobs
               
                 Datareader();
                 categorybind();
-                insertimage();
-                showimage();
+                //insertimage();
+                //showimage();
             }
             
         }
@@ -45,30 +45,30 @@ namespace Dailybasedjobs
 
         }
 
-        private void insertimage()
-        {
+        //private void insertimage()
+        //{
 
-            SqlCommand cmd = new SqlCommand("update Register set image='"+img1.ToString()+ "' where username='" + Session["username"].ToString() + "'",con);
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
+        //    SqlCommand cmd = new SqlCommand("update Register set image='"+img1.ToString()+ "' where username='" + Session["username"].ToString() + "'",con);
+        //    con.Open();
+        //    cmd.ExecuteNonQuery();
+        //    con.Close();
+        //}
 
-        private void showimage()
-        {
-            SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
-            con.Open();
-            SqlDataReader dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                //lblname.Text = dr["username"].ToString();
-                img1.ImageUrl = dr["image"].ToString();
-                //string url = dr["image"].ToString();
-                //img.ImageUrl = url;
+        //private void showimage()
+        //{
+        //    SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
+        //    con.Open();
+        //    SqlDataReader dr = com.ExecuteReader();
+        //    while (dr.Read())
+        //    {
+        //        //lblname.Text = dr["username"].ToString();
+        //        img1.ImageUrl = dr["image"].ToString();
+        //        //string url = dr["image"].ToString();
+        //        //img.ImageUrl = url;
 
-            }
-            con.Close();
-        }
+        //    }
+        //    con.Close();
+        //}
 
       
 
