@@ -53,6 +53,7 @@ namespace Dailybasedjobs
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
         private void showimage()
         {
             SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
