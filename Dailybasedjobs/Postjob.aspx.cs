@@ -101,7 +101,7 @@ namespace Dailybasedjobs
                 
             }
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Postjob values('"+jobtitle.Text+"','"+email.Text+"','"+ddljobtags.SelectedValue.ToString()+"','"+ddlsubjobtype.SelectedValue.ToString()+"','"+txtmobileno.Text+"','"+txtLocation.Text+"','"+txtAddress.Text+"','"+lblname.Text+"','"+filePath.ToString()+"')", con);
+            SqlCommand cmd = new SqlCommand("insert into PostJob values('"+jobtitle.Text+"','"+email.Text+"','"+ddljobtags.SelectedValue.ToString()+"','"+ddlsubjobtype.SelectedValue.ToString()+"','"+txtmobileno.Text+"','"+txtLocation.Text+"','"+txtAddress.Text+"','"+lblname.Text+"','"+filePath.ToString()+"')", con);
             cmd.ExecuteNonQuery();
             con.Close();
             //lbl.Text = "password successfully changed";
