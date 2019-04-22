@@ -89,31 +89,33 @@
 											<div class="form-group">
 												<label>Founded Date </label>
 												<%--<input type="email" class="form-control" placeholder="17/12/2018">--%>
-                                                <asp:TextBox ID="txtfoundate" class="form-control" runat="server" />
+                                                <asp:TextBox ID="txtfoundate" class="form-control" TextMode="Date" runat="server" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Category</label>
-                                                <asp:DropDownList ID="ddlcat"  runat="server">
-                                                    <asp:ListItem Text="Designer" />
-                                                    <asp:ListItem Text="Web Developer" />
+                                                <asp:DropDownList ID="ddlcat"  runat="server" DataSourceID="SqlDataSource1" DataTextField="Subcategories" DataValueField="Subcategories">
+                                                    <asp:ListItem Text="select category" />
+                                                 
                                                 </asp:DropDownList>
+												<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Dailybasedjob %>" SelectCommand="SELECT [Subcategories] FROM [Subcategories]"></asp:SqlDataSource>
 												<%--<select>
 													<option>Web Designer</option>
 													<option>Web Developer</option>
 												</select>--%>
 											</div>
 										</div>
-										<div class="col-lg-6 col-md-6">
+								<%--		<div class="col-lg-6 col-md-6">
 											<%--<div class="form-group">
 												<label>Country</label>
 												<input type="email" class="form-control" placeholder="London">
-											</div>--%>
-										</div>
+											</div>
+										</div>--%>
 										<div class="col-lg-12 col-md-12">
 											<div class="form-group">
 												<label>Description:</label>
+                                                <asp:TextBox runat="server" TextMode="MultiLine" ID="txtdesc" />
 												<textarea class="form-control">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>
 											</div>
 										</div>
@@ -130,26 +132,21 @@
                                                 <asp:TextBox ID="txtphone" class="form-control" runat="server" />
 											</div>
 										</div>
-										<div class="col-lg-6 col-md-6">
+										<%--<div class="col-lg-6 col-md-6">
 											<%--<div class="form-group">
 												<label>Email</label>
 												<input type="email" class="form-control" placeholder="exemple@gmail.com">
                                                 <asp:TextBox ID="TextBox1" runat="server" />
-											</div>--%>
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<%--<div class="form-group">
-												<label>Contry</label>
-												<input type="text" class="form-control" placeholder="India">
-											</div>--%>
-										</div>
+											</div>
+										</div>--%>
+							<%--			
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Area</label>
-												<%--<input type="email" class="form-control" placeholder="Delhi">--%>
+												<%--<input type="email" class="form-control" placeholder="Delhi">
                                                 <asp:TextBox ID="Txtarea" class="form-control" runat="server" />
 											</div>
-										</div>
+										</div>--%>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Zip</label>
@@ -161,7 +158,7 @@
 											<div class="form-group">
 												<label>Address</label>
 												<%--<input type="email" class="form-control" placeholder="New york city">--%>
-                                                <asp:TextBox ID="Texaddress" class="form-control" runat="server" />
+                                                <asp:TextBox ID="Texaddress" TextMode="MultiLine" class="form-control" runat="server" />
 											</div>
 										</div>
 										<%--<div class="col-lg-12">
@@ -176,25 +173,29 @@
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Facebook</label>
-												<input type="text" class="form-control" placeholder="https://www.facebook.com/">
+											<%--	<input type="text" class="form-control" placeholder="https://www.facebook.com/">--%>
+                                                <asp:TextBox runat="server" ID="txtfb" class="form-control" placeholder="https://www.facebook.com/" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Twitter</label>
-												<input type="email" class="form-control" placeholder="https://www.twitter.com/">
+												<%--<input type="email" class="form-control" placeholder="https://www.twitter.com/">--%>
+                                                <asp:TextBox runat="server" ID="txttwter" class="form-control" placeholder="https://www.twitter.com/" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Google</label>
-												<input type="text" class="form-control" placeholder="https://www.google.com/">
+												<%--<input type="text" class="form-control" placeholder="https://www.google.com/">--%>
+                                                <asp:TextBox runat="server" ID="txtgoogle" class="form-control" placeholder="https://www.google.com/" />
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Linkedin</label>
-												<input type="email" class="form-control" placeholder="https://www.linkedin.com/">
+												<%--<input type="email" class="form-control" placeholder="https://www.linkedin.com/">--%>
+                                                <asp:TextBox runat="server" ID="txtlin" class="form-control" placeholder="https://www.linkedin.com/" />
 											</div>
 										</div>
 									</div>
