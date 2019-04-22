@@ -115,8 +115,8 @@
 										<div class="col-lg-12 col-md-12">
 											<div class="form-group">
 												<label>Description:</label>
-                                                <asp:TextBox runat="server" TextMode="MultiLine" ID="txtdesc" />
-												<textarea class="form-control">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>
+                                                <asp:TextBox runat="server" class="form-control" TextMode="MultiLine" ID="txtdesc" />
+												<%--<textarea class="form-control">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>--%>
 											</div>
 										</div>
 									</div>
