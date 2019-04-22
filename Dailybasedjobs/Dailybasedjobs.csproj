@@ -209,6 +209,7 @@
     <Content Include="js\dz.carousel.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="LightweightVehicles.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="Managejob.aspx" />
     <Content Include="Mechanic.aspx" />
     <Content Include="Myresume.aspx" />
@@ -288,7 +289,9 @@
     <Content Include="Upload1\Jellyfish.jpg" />
     <Content Include="Upload1\Tulips.jpg" />
     <Content Include="Washing.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -490,6 +493,13 @@
     </Compile>
     <Compile Include="LightweightVehicles.aspx.designer.cs">
       <DependentUpon>LightweightVehicles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Managejob.aspx.cs">
       <DependentUpon>Managejob.aspx</DependentUpon>
