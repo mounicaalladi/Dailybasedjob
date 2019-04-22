@@ -67,7 +67,7 @@
 </div>
 <div class="col-lg-6 col-md-6">
 <div class="form-group">
-<asp:Label Text="Your email" runat="server" />
+<asp:Label Text="Your email id" runat="server" />
 <asp:TextBox ID="email" runat="server" class="form-control" placeholder="info@gmail.com" />
 </div>
 </div>
