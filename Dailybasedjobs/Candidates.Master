@@ -169,12 +169,13 @@
                         <div class="widget border-0">
                             <h5 class="m-b30 text-white">Find Jobs</h5>
                             <ul class="list-2 w10 list-line">
-                                <li><a href="javascript:void(0);">US Jobs</a></li>
-                                <li><a href="javascript:void(0);">Canada Jobs</a></li>
-                                <li><a href="javascript:void(0);">UK Jobs</a></li>
-                                <li><a href="javascript:void(0);">Emplois en Fnce</a></li>
-                                <li><a href="javascript:void(0);">Jobs in Deuts</a></li>
-								<li><a href="javascript:void(0);">Vacatures China</a></li>
+                                <li><a href="HomeServices.aspx">Home services Jobs</a></li>
+                                <li><a href="Tutors.aspx">Tutors Jobs</a></li>
+                                <li><a href="Caretakers.aspx">Care Takers Jobs</a></li>
+                                <li><a href="Transport.aspx">Transport Jobs</a></li>
+                                <li><a href="Events.aspx">Jobs in Event Management</a></li>
+								<li><a href="PackersAndMovers.aspx">Packers & Movers</a></li>
+                                <li><a href="mechanic.aspx">Mechanic Jobs</a></li>
                             </ul>
                         </div>
                     </div>
