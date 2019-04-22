@@ -83,7 +83,7 @@
 										<li><a href="jobs-change-password.html">
 											<i class="fa fa-key" aria-hidden="true"></i> 
 											<span>Change Password</span></a></li>
-										<li><a href="index.html">
+										<li><a href="Index.aspx">
 											<i class="fa fa-sign-out" aria-hidden="true"></i> 
 											<span>Log Out</span></a></li>
 									</ul>

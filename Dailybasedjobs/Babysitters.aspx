@@ -66,7 +66,7 @@
 											<a href="javascript:void(0);"><span>Full Time</span></a>
 										</div>
 										<div class="salary-bx">
-											<span>$1200 - $ 2500</span>
+											<span>Rs.800 - Rs.1500</span>
 										</div>
 									</div>
 									<label class="like-btn">

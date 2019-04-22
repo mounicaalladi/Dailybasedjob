@@ -78,9 +78,9 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<h2 class="m-b10">Make a Difference with Your Online Resume!</h2>
-							<p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-							<a href="register-2.html" class="site-button m-t20 outline outline-2 radius-xl">Create an Account</a>
-                           <asp:
+							<p class="m-b0">As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
+							<a href="Register.aspx" class="site-button m-t20 outline outline-2 radius-xl">Create an Account</a>
+                           
 						</div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 				<div class="container">
 					<div class="section-head text-black text-center">
 						<h2 class="text-uppercase m-b0">Our Latest Blog</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+						<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
 					</div>
 					<div class="blog-carousel owl-carousel owl-btn-center-lr owl-btn-3 owl-theme owl-btn-center-lr owl-btn-1">
 						<div class="item">
@@ -108,10 +108,10 @@
 										<h5 class="post-title font-20"><a href="blog-details.html">Do you have a job that the average person doesn even know exists?</a></h5>
 									</div>
 									<div class="dez-post-text">
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
 									</div>
 									<div class="dez-post-readmore blog-share"> 
-										<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>
+										<%--<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>--%>
 									</div>
 								</div>
 							</div>
@@ -130,10 +130,10 @@
 										<h5 class="post-title font-20"><a href="blog-details.html">Do you have a job that the average person doesn even know exists?</a></h5>
 									</div>
 									<div class="dez-post-text">
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
 									</div>
 									<div class="dez-post-readmore blog-share"> 
-										<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>
+										<%--<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>--%>
 									</div>
 								</div>
 							</div>
@@ -152,10 +152,10 @@
 										<h5 class="post-title font-20"><a href="blog-details.html">Do you have a job that the average person doesn even know exists?</a></h5>
 									</div>
 									<div class="dez-post-text">
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
 									</div>
 									<div class="dez-post-readmore blog-share"> 
-										<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>
+										<%--<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>--%>
 									</div>
 								</div>
 							</div>
@@ -174,10 +174,10 @@
 										<h5 class="post-title font-20"><a href="blog-details.html">Do you have a job that the average person doesn even know exists?</a></h5>
 									</div>
 									<div class="dez-post-text">
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
 									</div>
 									<div class="dez-post-readmore blog-share"> 
-										<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>
+										<%--<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>--%>
 									</div>
 								</div>
 							</div>
