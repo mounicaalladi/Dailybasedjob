@@ -13,5 +13,10 @@ namespace Dailybasedjobs
         {
 
         }
+
+        protected void btndel_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+        }
     }
 }
