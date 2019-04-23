@@ -62,13 +62,13 @@
 										</div>
 									</div>
 									<ul>
-										<li><a href="jobs-profile.html" class="active">
+										<li><a href="Candidateprofile.aspx" class="active">
 											<i class="fa fa-user-o" aria-hidden="true"></i> 
 											<span>Profile</span></a></li>
-										<li><a href="jobs-my-resume.html">
+										<li><a href="Myresume.aspx">
 											<i class="fa fa-file-text-o" aria-hidden="true"></i> 
 											<span>My Resume</span></a></li>
-										<li><a href="jobs-saved-jobs.html">
+										<%--<li><a href="jobs-saved-jobs.html">
 											<i class="fa fa-heart-o" aria-hidden="true"></i> 
 											<span>Saved Jobs</span></a></li>
 										<li><a href="jobs-applied-job.html">
@@ -80,9 +80,9 @@
 										<li><a href="jobs-cv-manager.html">
 											<i class="fa fa-id-card-o" aria-hidden="true"></i> 
 											<span>CV Manager</span></a></li>
-										<li><a href="jobs-change-password.html">
+									--%>	<%--<li><a href="jobs-change-password.html">
 											<i class="fa fa-key" aria-hidden="true"></i> 
-											<span>Change Password</span></a></li>
+											<span>Change Password</span></a></li>--%>
 										<li><a href="Index.aspx">
 											<i class="fa fa-sign-out" aria-hidden="true"></i> 
 											<span>Log Out</span></a></li>

@@ -38,9 +38,15 @@ namespace Dailybasedjobs
             con.Close();
         }
 
+   
+        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+
+        }
+
         protected void Log_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd1 = new SqlCommand("select * from Register where Email=@User1, Password=@password1 and role='JobSeeker'", con);
+            SqlCommand cmd1 = new SqlCommand("select * from Register where Email=@User1 and Password=@password1 and role='JobSeeker'", con);
             cmd1.Parameters.AddWithValue("@User1", txtUsername.Text);
             cmd1.Parameters.AddWithValue("@Password1", txtPassword.Text);
             SqlDataAdapter sd = new SqlDataAdapter(cmd1);
@@ -51,7 +57,7 @@ namespace Dailybasedjobs
             con.Close();
             if (dt1.Rows.Count > 0)
             {
-                Session["username"] = lbusername.Text;
+                Session["username"] = txtUsername.Text;
                 string id3 = Request.QueryString["id"].ToString();
                 Response.Redirect("View3.aspx?id1=" + id3);
             }
@@ -59,11 +65,6 @@ namespace Dailybasedjobs
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Check Email and password')</script>");
             }
-        }
-
-        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
-        {
-
         }
     }
 }
