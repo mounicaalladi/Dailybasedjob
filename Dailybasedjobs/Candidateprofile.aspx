@@ -98,7 +98,15 @@
 								</div>
 								<div>
 									<div class="row m-b30 ">
-                                        	
+                                        
+                                         <div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="form-group">
+												 <asp:Label Text="UserID" runat="server" />
+												<asp:TextBox ID="TextID" class="form-control"  runat="server" />
+                                                <asp:RequiredFieldValidator ErrorMessage="Enter Userid" ControlToValidate="TextID" runat="server" />
+											</div>
+										</div>
+
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<%--<label>Your Name:</label>--%>
@@ -115,6 +123,7 @@
                                                 <asp:RequiredFieldValidator ErrorMessage="Enter Email" ControlToValidate="txtemail" runat="server" />
 											</div>
 										</div>
+
 										<div class="col-lg-6 col-md-6 col-sm-6">
 											<div class="form-group" >
 												 <asp:Label Text="Skills" runat="server" />

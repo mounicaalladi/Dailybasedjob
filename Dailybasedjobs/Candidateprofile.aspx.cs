@@ -41,8 +41,10 @@ namespace Dailybasedjobs
             SqlDataReader dr = com.ExecuteReader();
             while (dr.Read())
             {
+                TextID.Text = dr["id"].ToString();
                 lblname.Text = dr["username"].ToString();
                 img.ImageUrl = dr["image"].ToString();
+
                 //string url = dr["image"].ToString();
                 //img.ImageUrl = url;
 
@@ -85,7 +87,7 @@ namespace Dailybasedjobs
                 //FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
                 //image1 = "~/Upload1/" + str.ToString();
             }
-            SqlCommand cmd = new SqlCommand("insert into CandidateProfile(Name,Skills,Languages,Age,CurrentSalary,ExpectedSalary,Phone,Email,Pincode,Area,Picture,Address) values('" + txtyn.Text + "','" + txtsk.Text + "','" + txtlan.Text + "','" + txtage.Text + "','" + txtcs.Text + "','" + txtes.Text + "','" + Txtphone.Text + "','" + txtemail.Text + "','" + Txtpin.Text + "','" + Txtarea.Text + "','" + filePath.ToString() + "','" + Txtaddress.Text + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into CandidateProfile(Name,Skills,Languages,Age,CurrentSalary,ExpectedSalary,Phone,Email,Pincode,Area,Picture,Address,Userid) values('" + txtyn.Text + "','" + txtsk.Text + "','" + txtlan.Text + "','" + txtage.Text + "','" + txtcs.Text + "','" + txtes.Text + "','" + Txtphone.Text + "','" + txtemail.Text + "','" + Txtpin.Text + "','" + Txtarea.Text + "','" + filePath.ToString() + "','" + Txtaddress.Text +"','"+TextID.Text+"')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
