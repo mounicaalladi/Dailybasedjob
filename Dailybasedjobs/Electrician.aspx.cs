@@ -26,14 +26,14 @@ namespace Dailybasedjobs
         private void Bind()
         {
 
-            SqlDataAdapter sda = new SqlDataAdapter("select * from PostJob where Subjobtag='Electricain'", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select * from PostJob where Subjobtag='Babysitters'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             con.Open();
             if (dt.Rows.Count > 0)
             {
-                DataList1.DataSource = dt;
-                DataList1.DataBind();
+                DataList2.DataSource = dt;
+                DataList2.DataBind();
             }
             else
             {
@@ -43,7 +43,8 @@ namespace Dailybasedjobs
             con.Close();
         }
 
-        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
+        
+        protected void DataList2_ItemCommand(object source, DataListCommandEventArgs e)
         {
             int id = Convert.ToInt32(e.CommandArgument.ToString());
             Response.Redirect("View2.aspx?id=" + id);

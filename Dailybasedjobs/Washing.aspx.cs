@@ -25,7 +25,7 @@ namespace Dailybasedjobs
         private void Bind()
         {
 
-            SqlDataAdapter sda = new SqlDataAdapter("select * from PostJob where Subjobtag='Babysitters'", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select * from PostJob where Subjobtag='Washing'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             con.Open();

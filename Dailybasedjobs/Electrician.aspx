@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Index.Master" AutoEventWireup="true" CodeBehind="Electrician.aspx.cs" Inherits="Dailybasedjobs.Electrician" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="section-full bg-white content-inner-2">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"><div class="section-full bg-white content-inner-2">
 			<div class="container">
 				<div class="d-flex job-title-bx section-head">
 					<div class="mr-auto">
@@ -16,7 +15,7 @@
                <%--   <asp:DataList ID="DataList1" runat="server"  Width="100%" OnItemCommand="DataList1_ItemCommand1"   BorderStyle="None" BorderWidth="3px" CellPadding="3"  CssClass="auto-style1" RepeatColumns="1"  RepeatDirection="Horizontal"  DataKeyField="id"  >
       
 			--%>
-                <asp:DataList runat="server" ID="DataList1"  Width="100%" OnItemCommand="DataList1_ItemCommand"   BorderStyle="None" BorderWidth="3px" CellPadding="3"  CssClass="auto-style1" RepeatColumns="1"  RepeatDirection="Horizontal"  DataKeyField="id">
+                <asp:DataList runat="server" ID="DataList2"  Width="100%" OnItemCommand="DataList2_ItemCommand"  BorderStyle="None" BorderWidth="3px" CellPadding="3"  CssClass="auto-style1" RepeatColumns="1"  RepeatDirection="Horizontal"  DataKeyField="id">
                     <ItemTemplate>
   <div class="row">
 					<div class="col-lg-9">
