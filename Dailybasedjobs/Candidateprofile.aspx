@@ -25,7 +25,7 @@
 											</a>
                                     	<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
                                             <asp:FileUpload ID="FileUpload1"  CssClass="fa fa-camera"  runat="server" />
-                                            <asp:LinkButton   ID="save" OnClick="save_Click1" CausesValidation="false" runat="server" />                        
+                                            <asp:LinkButton   ID="save" CausesValidation="false" runat="server" />                        
 														
 
 								</div>
@@ -92,7 +92,7 @@
 						</div>
 						<div class="col-xl-9 col-lg-8 m-b30">
 							<div class="job-bx job-profile">
-								<div class="job-bx-title clearfix">
+								<div class="job-bx-title clearfix">   
 									<h5 class="font-weight-700 pull-left text-uppercase">Basic Information</h5>
 									<a href="index.html" class="site-button right-arrow button-sm float-right">Back</a>
 								</div>
