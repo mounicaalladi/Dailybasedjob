@@ -17,36 +17,7 @@ namespace Dailybasedjobs
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                Bind();
-            }
-        }
-
-        private void Bind()
-        {
-
-            SqlDataAdapter sda = new SqlDataAdapter("select * from PostJob where Subjobtag='Transactions'", con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            con.Open();
-            if (dt.Rows.Count > 0)
-            {
-                DataList1.DataSource = dt;
-                DataList1.DataBind();
-            }
-            else
-            {
-                imgdefault.Visible = true;
-            }
-
-            con.Close();
-        }
-
-        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
-        {
-            int id = Convert.ToInt32(e.CommandArgument.ToString());
-            Response.Redirect("View2.aspx?id=" + id);
+            
         }
     }
 }
