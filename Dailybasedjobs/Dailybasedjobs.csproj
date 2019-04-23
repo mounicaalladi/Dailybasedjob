@@ -287,7 +287,10 @@
     <Content Include="Upload1\Capture1.PNG" />
     <Content Include="Upload1\cctv.jpg" />
     <Content Include="Upload1\Jellyfish.jpg" />
+    <Content Include="Upload1\searchEmptyState.png" />
     <Content Include="Upload1\Tulips.jpg" />
+    <Content Include="View2.aspx" />
+    <Content Include="View3.aspx" />
     <Content Include="Washing.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -620,6 +623,20 @@
     </Compile>
     <Compile Include="Tutors.aspx.designer.cs">
       <DependentUpon>Tutors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View2.aspx.cs">
+      <DependentUpon>View2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View2.aspx.designer.cs">
+      <DependentUpon>View2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View3.aspx.cs">
+      <DependentUpon>View3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View3.aspx.designer.cs">
+      <DependentUpon>View3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Washing.aspx.cs">
       <DependentUpon>Washing.aspx</DependentUpon>
