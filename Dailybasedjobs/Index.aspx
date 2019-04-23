@@ -90,7 +90,7 @@
 						<div class="icon-bx-wraper">
 							<div class="icon-content">
 								<div class="icon-md text-primary m-b20"><i class="ti-location-pin"></i></div>
-								<a href="company-manage-job.html" class="dez-tilte">Design, Art & Multimedia</a>
+								<a href="HomeServices.aspx" class="dez-tilte">Home Services</a>
 								<p class="m-a0">198 Open Positions</p>
 								<div class="rotate-icon"><i class="ti-location-pin"></i></div> 
 							</div>
@@ -100,7 +100,7 @@
 						<div class="icon-bx-wraper">
 							<div class="icon-content">
 								<div class="icon-md text-primary m-b20"><i class="ti-wand"></i></div>
-								<a href="company-manage-job.html" class="dez-tilte">Education Training</a>
+								<a href="Tutors.aspx" class="dez-tilte">Tutors</a>
 								<p class="m-a0">198 Open Positions</p>
 								<div class="rotate-icon"><i class="ti-wand"></i></div> 
 							</div>
@@ -110,7 +110,7 @@
 						<div class="icon-bx-wraper">
 							<div class="icon-content">
 								<div class="icon-md text-primary m-b20"><i class="ti-wallet"></i></div>
-								<a href="company-manage-job.html" class="dez-tilte">Accounting / Finance</a>
+								<a href="Caretakers.aspx" class="dez-tilte"> Caretakers</a>
 								<p class="m-a0">198 Open Positions</p>
 								<div class="rotate-icon"><i class="ti-wallet"></i></div> 
 							</div>
@@ -120,7 +120,7 @@
 						<div class="icon-bx-wraper">
 							<div class="icon-content">
 								<div class="icon-md text-primary m-b20"><i class="ti-cloud-up"></i></div>
-								<a href="company-manage-job.html" class="dez-tilte">Human Resource</a>
+								<a href="PackersAndMovers.aspx" class="dez-tilte">Packers&Movers</a>
 								<p class="m-a0">198 Open Positions</p>
 								<div class="rotate-icon"><i class="ti-cloud-up"></i></div> 
 							</div>
@@ -130,7 +130,7 @@
 						<div class="icon-bx-wraper">
 							<div class="icon-content">
 								<div class="icon-md text-primary m-b20"><i class="ti-bar-chart"></i></div>
-								<a href="company-manage-job.html" class="dez-tilte">Telecommunications</a>
+								<a href="Events.aspx" class="dez-tilte">Events</a>
 								<p class="m-a0">198 Open Positions</p>
 								<div class="rotate-icon"><i class="ti-bar-chart"></i></div> 
 							</div>
@@ -140,7 +140,7 @@
 						<div class="icon-bx-wraper">
 							<div class="icon-content">
 								<div class="icon-md text-primary m-b20"><i class="ti-tablet"></i></div>
-								<a href="company-manage-job.html" class="dez-tilte">Restaurant / Food Service</a>
+								<a href="Transport.aspx" class="dez-tilte">Transport</a>
 								<p class="m-a0">198 Open Positions</p>
 								<div class="rotate-icon"><i class="ti-tablet"></i></div> 
 							</div>
@@ -150,13 +150,13 @@
 						<div class="icon-bx-wraper">
 							<div class="icon-content">
 								<div class="icon-md text-primary m-b20"><i class="ti-camera"></i></div>
-								<a href="company-manage-job.html" class="dez-tilte">Construction / Facilities</a>
+								<a href="Mechanic.aspx" class="dez-tilte">Mechanic</a>
 								<p class="m-a0">198 Open Positions</p>
 								<div class="rotate-icon"><i class="ti-camera"></i></div> 
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6">
+					<%--<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="icon-bx-wraper">
 							<div class="icon-content">
 								<div class="icon-md text-primary m-b20"><i class="ti-panel"></i></div>
@@ -165,7 +165,7 @@
 								<div class="rotate-icon"><i class="ti-panel"></i></div> 
 							</div>
 						</div>
-					</div>
+					</div>--%>
 					<div class="col-lg-12 text-center m-t30">
 						<button class="site-button radius-xl">All Categories</button>
 					</div>
@@ -174,7 +174,7 @@
 		</div>
 		<!-- About Us END -->
 		<!-- Call To Action -->
-		<div class="section-full content-inner bg-gray">
+		<%--<div class="section-full content-inner bg-gray">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 section-head text-center">
@@ -265,7 +265,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>--%>
 		<!-- Call To Action END -->
 		<!-- Our Job -->
 		<div class="section-full bg-white content-inner-2">
