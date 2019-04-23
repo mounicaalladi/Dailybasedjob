@@ -15,7 +15,14 @@
 	<meta property="og:description" content="JobBoard - HTML Template" />
 	<meta property="og:image" content="social-image.png" />
 	<meta name="format-detection" content="telephone=no">
-	
+	 <link rel="stylesheet" type="text/css" href="css\animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css\font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css\fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="css\reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css\owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="css\owl.theme.default.css"/>
+    <link rel="stylesheet" type="text/css" href="css\flaticon.css"/>
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />

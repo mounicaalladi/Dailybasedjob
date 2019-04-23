@@ -75,7 +75,7 @@
 										<div class="job-time mr-auto">
 											<a href="javascript:void(0);"><span>
                                              <i class="fa fa-bookmark-o"></i>
-                                                <asp:Label ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Address") %>' runat="server" /> </span></a>
+                                                <asp:Label ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>' runat="server" /> </span></a>
 										</div>
 										<div class="salary-bx">
 											<span>         <asp:Button Text="view" ID="btnview" CssClass="btn-btn-info" CommandArgument='<%# Eval("id") %>' runat="server" />
