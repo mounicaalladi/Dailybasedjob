@@ -160,7 +160,7 @@
 					<div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
                         <div class="widget">
                             <img src="images/logo-white.png" width="180" class="m-b15" alt=""/>
-							<p class="text-capitalize m-b20">As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
+							<p class="text-capitalize m-b20">As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.</p>
                             <div class="subscribe-form m-b20">
 								<%--<form class="dzSubscribe" action="http://job-board.dexignzone.com/xhtml/script/mailchamp.php" method="post">
 									<div class="dzSubscribeMsg"></div>
@@ -185,18 +185,17 @@
                         <div class="widget border-0">
                             <h5 class="m-b30 text-white">Frequently Asked Questions</h5>
                             <ul class="list-2 list-line">
-                                <li><a href="javascript:void(0);">Privacy & Seurty</a></li>
-                                <li><a href="javascript:void(0);">Terms of Serice</a></li>
-                                <li><a href="javascript:void(0);">Communications</a></li>
-                                <li><a href="javascript:void(0);">Referral Terms</a></li>
-                                <li><a href="javascript:void(0);">Lending Licnses</a></li>
-								<li><a href="javascript:void(0);">Support</a></li>
-                                <li><a href="javascript:void(0);">How It Works</a></li>
-                                <li><a href="javascript:void(0);">For Employers</a></li>
-                                <li><a href="javascript:void(0);">Underwriting</a></li>
-                                  <li><a href="ContactUs.aspx">Contact Us</a></li>
-								<li><a href="javascript:void(0);">Lending Licnses</a></li>
-								<li><a href="javascript:void(0);">Support</a></li>
+                                 <li><a href="AboutUs.aspx">How It Works</a></li>
+
+                                <li><a href="Login.aspx">For Employers</a></li>
+
+                                <li><a href="Login.aspx">For Jobseekers</a></li>
+
+                                <li><a href="ContactUs.aspx">Contact Us</a></li>
+					
+								<li><a href="AboutUs.aspx"> About Us</a></li>
+
+                                 <li><a href="Index.aspx"> Home</a></li>
                             </ul>
                         </div>
                     </div>
