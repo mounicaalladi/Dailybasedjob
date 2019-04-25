@@ -36,31 +36,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/templete.css"/>
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css"/>
-    <script type="text/javascript" language="javascript">
-
-         function Validate() {
-
-             var UName = document.getElementById('txtuser');
-
-             var Password = document.getElementById('txtpassword');
-
-             if ((UName.value == '') || (Password.value == '')) {
-
-                 alert('UserName or Password should not be blank');
-
-                 return false;
-
-             }
-
-             else {
-
-                 return true;
-
-             }
-
-         }
-
-    </script>
+   
 </head>
 <body>
     <form id="form1" runat="server">
@@ -143,6 +119,31 @@ Login
 <script src="assets/js/form-validator.min.js"></script>
 <script src="assets/js/contact-form-script.js"></script>
 <script src="assets/js/main.js"></script>
+             <script type="text/javascript" language="javascript">
+
+         function Validate() {
+
+             var UName = document.getElementById('txtuser');
+
+             var Password = document.getElementById('txtpassword');
+
+             if ((UName.value == '') || (Password.value == '')) {
+
+                 alert('UserName or Password should not be blank');
+
+                 return false;
+
+             }
+
+             else {
+
+                 return true;
+
+             }
+
+         }
+
+    </script>
         </div>
     </form>
 </body>

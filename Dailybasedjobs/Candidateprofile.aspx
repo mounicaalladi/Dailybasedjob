@@ -114,7 +114,7 @@
                         <div class="job-bx job-profile">
                             <div class="job-bx-title clearfix">
                                 <h5 class="font-weight-700 pull-left text-uppercase">Basic Information</h5>
-                                <a href="index.html" class="site-button right-arrow button-sm float-right">Back</a>
+                                <%--<a href="index.html" class="site-button right-arrow button-sm float-right">Back</a>--%>
                             </div>
                             <div>
                                 <div class="row m-b30 ">
