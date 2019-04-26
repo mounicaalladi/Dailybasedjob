@@ -69,7 +69,7 @@
 												<label>Company Name</label>
 												<%--<input type="text" class="form-control" placeholder="Enter Company Name">--%>
                                                 <asp:TextBox ID="Textcname" class="form-control"  runat="server" />
-                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter Company Name"></asp:RequiredFieldValidator>
+                                                <asp:RequiredFieldValidator  ID="RequiredFieldValidator1" ControlToValidate="Textcname" BorderColor="Red" runat="server" ErrorMessage="Enter Company Name" ForeColor="#FF3300"/>
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
@@ -77,7 +77,7 @@
 												<label>Your Email</label>
 											<%--	<input type="email" class="form-control" placeholder="info@gmail.com">--%>
                                                 <asp:TextBox ID="txtemail" class="form-control" runat="server" />
-                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter Email"></asp:RequiredFieldValidator>
+                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtemail" BorderColor="Red" ForeColor="#FF3300" runat="server" ErrorMessage="Enter Email"></asp:RequiredFieldValidator>
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
@@ -85,7 +85,7 @@
 												<label>Website</label>
 												<%--<input type="text" class="form-control" placeholder="Website Link">--%>
                                                 <asp:TextBox ID="Texwebsite" class="form-control" runat="server" />
-                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Enter Website"></asp:RequiredFieldValidator>
+                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="Texwebsite" ErrorMessage="Enter Website"></asp:RequiredFieldValidator>
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
@@ -102,6 +102,7 @@
                                                     <asp:ListItem Text="select category" />
                                                  
                                                 </asp:DropDownList>
+                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="ddlcat" ErrorMessage="Select Category"></asp:RequiredFieldValidator>
 												<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Dailybasedjob %>" SelectCommand="SELECT [Subcategories] FROM [Subcategories]"></asp:SqlDataSource>
 												<%--<select>
 													<option>Web Designer</option>
@@ -119,7 +120,7 @@
 											<div class="form-group">
 												<label>Description:</label>
                                                 <asp:TextBox runat="server" class="form-control" TextMode="MultiLine" ID="txtdesc" />
-												   <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Enter Description"></asp:RequiredFieldValidator>
+												   <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="txtdesc" ErrorMessage="Enter Description"></asp:RequiredFieldValidator>
                                                 <%--<textarea class="form-control">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>--%>
 											</div>
 										</div>
@@ -134,7 +135,7 @@
 												<label>Phone</label>
 												<%--<input type="text" class="form-control" placeholder="+1 123 456 7890">--%>
                                                 <asp:TextBox ID="txtphone" class="form-control" runat="server" />
-                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Enter Phone No"></asp:RequiredFieldValidator>
+                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="txtphone" ErrorMessage="Enter Phone No"></asp:RequiredFieldValidator>
 											</div>
 										</div>
 										<%--<div class="col-lg-6 col-md-6">
@@ -157,7 +158,7 @@
 												<label>Zip</label>
 												<%--<input type="email" class="form-control" placeholder="504030">--%>
                                                 <asp:TextBox ID="Textzip" class="form-control" runat="server" />
-                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Enter Pincode"></asp:RequiredFieldValidator>
+                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="Textzip" ErrorMessage="Enter Pincode"></asp:RequiredFieldValidator>
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6">
@@ -165,7 +166,7 @@
 												<label>Address</label>
 												<%--<input type="email" class="form-control" placeholder="New york city">--%>
                                                 <asp:TextBox ID="Texaddress" TextMode="MultiLine" class="form-control" runat="server" />
-                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Enter Address"></asp:RequiredFieldValidator>
+                                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="Texaddress" ErrorMessage="Enter Address"></asp:RequiredFieldValidator>
 											</div>
 										</div>
 										<%--<div class="col-lg-12">
