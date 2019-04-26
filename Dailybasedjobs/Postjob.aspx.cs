@@ -18,6 +18,10 @@ namespace Dailybasedjobs
         //string filepath1;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["username"]==null)
+            {
+                Response.Redirect("~/Login.aspx");
+            }
             if(!IsPostBack)
             {
               
@@ -84,6 +88,7 @@ namespace Dailybasedjobs
             ddljobtags.DataBind();
             ddljobtags.Items.Insert(0, new ListItem("Select Category","0"));
         }
+
         protected void ddljobtags_SelectedIndexChanged(object sender, EventArgs e)
         {
             SqlDataAdapter sda = new SqlDataAdapter("select * from Subcategories where Categories='" + ddljobtags.SelectedValue.ToString() + "'", con);

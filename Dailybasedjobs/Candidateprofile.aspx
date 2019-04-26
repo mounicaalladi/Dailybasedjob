@@ -45,6 +45,14 @@
                                                 <input type="file"  class="update-flie" onchange="readURL(this);">
                                                 <i class="fa fa-camera"></i>
                                                 <%--<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">--%>
+
+
+
+
+
+
+
+
                                                 <%--                                            <input class="upload-link fa fa-camera" type="file" title="update" data-toggle="tooltip" data-placement="right" style="right:10px"  onchange="readURL(this);" />--%>
 
                                                 <%--<asp:FileUpload ID="FileUpload1"  CssClass="fa fa-camera"  runat="server" />--%>
@@ -114,7 +122,7 @@
                         <div class="job-bx job-profile">
                             <div class="job-bx-title clearfix">
                                 <h5 class="font-weight-700 pull-left text-uppercase">Basic Information</h5>
-                                <a href="index.html" class="site-button right-arrow button-sm float-right">Back</a>
+                                <%--<a href="index.html" class="site-button right-arrow button-sm float-right">Back</a>--%>
                             </div>
                             <div>
                                 <div class="row m-b30 ">
@@ -155,28 +163,28 @@
                                         <div class="form-group">
                                             <asp:Label Text="Languages" runat="server" />
                                             <asp:TextBox ID="txtlan" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Language" ControlToValidate="txtlan" runat="server" />
+                                           <%-- <asp:RequiredFieldValidator ErrorMessage="Enter Language" ControlToValidate="txtlan" runat="server" />--%>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <asp:Label Text="Age" runat="server" />
                                             <asp:TextBox ID="txtage" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Age" ControlToValidate="txtage" runat="server" />
+                                           <%-- <asp:RequiredFieldValidator ErrorMessage="Enter Age" ControlToValidate="txtage" runat="server" />--%>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <asp:Label Text="Current Salary" runat="server" />
                                             <asp:TextBox ID="txtcs" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Current Salary" ControlToValidate="txtcs" runat="server" />
+                                           <%-- <asp:RequiredFieldValidator ErrorMessage="Enter Current Salary" ControlToValidate="txtcs" runat="server" />--%>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <asp:Label Text="Expected Salary" runat="server" />
                                             <asp:TextBox ID="txtes" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Expected Salary" ControlToValidate="txtes" runat="server" />
+                                          <%--  <asp:RequiredFieldValidator ErrorMessage="Enter Expected Salary" ControlToValidate="txtes" runat="server" />--%>
                                         </div>
                                     </div>
                                     <%--<div class="col-lg-12 col-md-12">

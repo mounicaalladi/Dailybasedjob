@@ -29,7 +29,7 @@
 						<div class="col-md-12 col-lg-6 m-b20">
 							<h2 class="m-b5">About Us</h2>
 							<h3 class="fw4">We create unique experiences</h3>
-							<p class="m-b15"> As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.
+							<p class="m-b15"> As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.
                  Online recruitment classifieds,  a clear market leader in the Indian e-recruitment space,  a job site focused at the Middle East market, offline executive search  and a fresher hiring site. Additionally, Info Edge provides jobseekers value added services (Hotjobs Fast Forward) such as resume writing.</p>
 							<p class="m-b15"> which are required for Daily based jobs: Home services, Tutors, Events, Care Takers, Packers & Movers, Transport and Mechanics.  </p>
 							<%--<a href="javascript:void(0);" class="site-button">Read More</a>--%>
@@ -78,7 +78,7 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<h2 class="m-b10">Make a Difference with Your Online Resume!</h2>
-							<p class="m-b0">As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
+							<p class="m-b0">As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.</p>
 							<a href="Register.aspx" class="site-button m-t20 outline outline-2 radius-xl">Create an Account</a>
                            
 						</div>
@@ -91,7 +91,7 @@
 				<div class="container">
 					<div class="section-head text-black text-center">
 						<h2 class="text-uppercase m-b0">Our Latest Blog</h2>
-						<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
+						<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.</p>
 					</div>
 					<div class="blog-carousel owl-carousel owl-btn-center-lr owl-btn-3 owl-theme owl-btn-center-lr owl-btn-1">
 						<div class="item">
@@ -108,7 +108,7 @@
 										<h5 class="post-title font-20"><a href="blog-details.html">Do you have a job that the average person doesn even know exists?</a></h5>
 									</div>
 									<div class="dez-post-text">
-										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
+										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.</p>
 									</div>
 									<div class="dez-post-readmore blog-share"> 
 										<%--<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>--%>
@@ -130,7 +130,7 @@
 										<h5 class="post-title font-20"><a href="blog-details.html">Do you have a job that the average person doesn even know exists?</a></h5>
 									</div>
 									<div class="dez-post-text">
-										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
+										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.</p>
 									</div>
 									<div class="dez-post-readmore blog-share"> 
 										<%--<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>--%>
@@ -152,7 +152,7 @@
 										<h5 class="post-title font-20"><a href="blog-details.html">Do you have a job that the average person doesn even know exists?</a></h5>
 									</div>
 									<div class="dez-post-text">
-										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
+										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.</p>
 									</div>
 									<div class="dez-post-readmore blog-share"> 
 										<%--<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>--%>
@@ -174,7 +174,7 @@
 										<h5 class="post-title font-20"><a href="blog-details.html">Do you have a job that the average person doesn even know exists?</a></h5>
 									</div>
 									<div class="dez-post-text">
-										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment, matrimony, real estate, education and related services.</p>
+										<p>As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.</p>
 									</div>
 									<div class="dez-post-readmore blog-share"> 
 										<%--<a href="blog-details.html" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>--%>
