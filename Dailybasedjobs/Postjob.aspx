@@ -68,12 +68,14 @@
                                         <div class="form-group">
                                             <asp:Label Text="Job Title" runat="server" />
                                             <asp:TextBox ID="jobtitle" runat="server" class="form-control" placeholder="Enter Job Title" />
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter Job Title"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <asp:Label Text="Your email id" runat="server" />
                                             <asp:TextBox ID="email" runat="server" class="form-control" placeholder="info@gmail.com" />
+                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter Email ID"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -98,6 +100,7 @@
                                         <div class="form-group">
                                             <asp:Label Text="Mobile No" runat="server" />
                                             <asp:TextBox ID="txtmobileno" runat="server" class="form-control" placeholder="Mobileno" />
+                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Enter Mobile no"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
 
@@ -106,6 +109,7 @@
                                         <div class="form-group">
                                             <asp:Label Text="Location" runat="server" />
                                             <asp:TextBox ID="txtLocation" runat="server" class="form-control" placeholder="Location" />
+                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Enter Location"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
@@ -113,6 +117,7 @@
                                         <div class="form-group">
                                             <asp:Label Text="Address" runat="server" />
                                             <asp:TextBox ID="txtAddress" TextMode="MultiLine" runat="server" class="form-control" placeholder="Address" />
+                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Enter Address"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
 
