@@ -99,10 +99,10 @@
 								<a href="Managejob.aspx">Manage Job <i class="fa fa-chevron-down"></i></a>
 							
 									</li>
-                            	<li>
+                            	<%--<li>
 								<a href="Transactions.aspx">Transcations<i class="fa fa-chevron-down"></i></a>
 							
-									</li>
+									</li>--%>
                             	<li  >
 								<a href="Browsercandidate.aspx"> Browser Candidates<i class="fa fa-chevron-down"></i></a>
 							
