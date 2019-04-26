@@ -279,7 +279,6 @@
     <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.Html5.js" />
     <Content Include="Scripts\Vintasoft\Vintasoft.Imaging.Svg.js" />
     <Content Include="Scripts\Vintasoft\Vintasoft.Shared.js" />
-    <Content Include="Transactions.aspx" />
     <Content Include="Transport.aspx" />
     <Content Include="Tutors.aspx" />
     <Content Include="Upload1\4.jpg" />
@@ -602,13 +601,6 @@
     </Compile>
     <Compile Include="Savedjob.aspx.designer.cs">
       <DependentUpon>Savedjob.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Transactions.aspx.cs">
-      <DependentUpon>Transactions.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Transactions.aspx.designer.cs">
-      <DependentUpon>Transactions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transport.aspx.cs">
       <DependentUpon>Transport.aspx</DependentUpon>
