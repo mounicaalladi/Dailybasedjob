@@ -64,23 +64,32 @@
                     <!-- extra nav -->
                     <div class="extra-nav">
                         <div class="extra-cell">
-                            <a href="Login.aspx" class="site-button"><i class="fa fa-user"></i> Sign in</a>
-							<a href="#" title="READ MORE" rel="bookmark" data-toggle="modal" data-target="#car-details" class="site-button"><i class="fa fa-lock"></i></a>
+                            <a href="Employeerzone.aspx"  class="site-button">Employeer Zone</a>
+							<a href="Jobseekerzone.aspx" class="site-button">Jobseeker Zone </a>
                         </div>
                     </div>
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-							<li class="active">
+                            <li>
+								<a href="#">Location <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="#" class="dez-page">Hyderbad</a></li>
+									<li><a href="#" class="dez-page">Banglore</a></li>
+									<li><a href="#" class="dez-page">Pune</a></li>
+									<li><a href="#" class="dez-page">Chennai</a></li>
+								</ul>
+							</li>
+						<%--	<li class="active">
 								<a href="Index.aspx">Home</a>
 								<%--<ul class="sub-menu">
 									<li><a href="Index.aspx" class="dez-page">Home</a></li>
 								
-								</ul>--%>
-							</li>
-                            <li>
-								<a href="AboutUs.aspx">About Us<i class="fa fa-chevron-down"></i></a>
-                                </li>
+								</ul>
+							</li>--%>
+                           <%-- <li>
+								<a href="AboutUs.aspx">About Us</a>
+                                </li>--%>
 							<li>
 								<a href="#">Categories<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
@@ -133,12 +142,12 @@
 
 							</li>
 							<li>
-								<a href="#">Jobs <i class="fa fa-chevron-down"></i></a>
+								<a href="#">Sales </a>
 								
 							</li>
-							<li>
-								<a href="ContactUs.aspx">Contact Us <i class="fa fa-chevron-down"></i></a>
-                                </li>
+							<%--<li>
+								<a href="ContactUs.aspx">Contact Us </a>
+                                </li>--%>
 							
 						</ul>			
                     </div>
@@ -147,8 +156,6 @@
         </div>
         <!-- main header END -->
     </header>
-    <!-- header END -->
-    <!-- Content -->
    
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

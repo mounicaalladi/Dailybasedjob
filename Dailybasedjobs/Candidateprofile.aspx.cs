@@ -15,20 +15,22 @@ namespace Dailybasedjobs
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
         string filePath;
+        private object fn;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["username"] != null)
-            {
-                //if (!IsPostBack)
-                //{
-                //    FileUploadReader();
-                //    //img1.ImageUrl = "ImageHandler.ashx?imgID=" + role.Text;
-                //}
-                //else
-                //{
-                //    Response.Redirect("Index.aspx");
-                //}
-            }
+            //if (Session["username"] != null)
+            //{
+                if (!IsPostBack)
+                {
+                    FileUploadReader();
+                    //img1.ImageUrl = "ImageHandler.ashx?imgID=" + role.Text;
+                }
+                else
+                {
+                   // Response.Redirect("Index.aspx");
+                }
+            
 
 
         }
@@ -78,7 +80,8 @@ namespace Dailybasedjobs
 
         protected void btnsave_Click(object sender, EventArgs e)
         {
-            HttpPostedFile postedFile = Request.Files["FileUpload1"];
+            //string img1=img.FindControl[]
+            HttpPostedFile postedFile = Request.Files["PostedFile"];
             if (postedFile != null && postedFile.ContentLength > 0)
             {
                 string fn = postedFile.FileName;
@@ -88,16 +91,13 @@ namespace Dailybasedjobs
                 //FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
                 //image1 = "~/Upload1/" + str.ToString();
             }
-            SqlCommand cmd = new SqlCommand("insert into CandidateProfile(Name,Skills,Languages,Age,CurrentSalary,ExpectedSalary,Phone,Email,Pincode,Area,Picture,Address,Userid) values('" + txtyn.Text + "','" + txtsk.Text + "','" + txtlan.Text + "','" + txtage.Text + "','" + txtcs.Text + "','" + txtes.Text + "','" + Txtphone.Text + "','" + txtemail.Text + "','" + Txtpin.Text + "','" + Txtarea.Text + "','" + filePath.ToString() + "','" + Txtaddress.Text + "','" + TextID.Text + "')", con);
+
+            SqlCommand cmd = new SqlCommand("insert into CandidateProfile(Name,Skills,Languages,Age,CurrentSalary,ExpectedSalary,Phone,Email,Pincode,Area,Picture,Address,Userid) values('" + txtyn.Text + "','" + txtsk.Text + "','" + txtlan.Text + "','" + txtage.Text + "','" + txtcs.Text + "','" + txtes.Text + "','" + Txtphone.Text + "','" + txtemail.Text + "','" + Txtpin.Text + "','" + Txtarea.Text + "','" +  filePath.ToString() + "','" + Txtaddress.Text + "','" + TextID.Text + "')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
         }
 
-        //protected void btnlog_Click(object sender, EventArgs e)
-        //{
-        //    Session.Abandon();
-        //    Response.Redirect("Index.aspx");
-        //}
+       
     }
 }                                                                                                           

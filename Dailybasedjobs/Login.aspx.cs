@@ -61,19 +61,31 @@ namespace Dailybasedjobs
 
                 {
 
-                    Session["username"] = UserName;
+                   
 
                     if (dt.Rows[i]["role"].ToString() == "Admin")
-
+                    {
+                        Session["username"] = UserName;
                         Response.Redirect("~/Registeredmembers.aspx");
+                    }
+
+                        
 
                     else if (dt.Rows[i]["role"].ToString() == "JobProvider")
-
+                    {
+                        Session["username"] = UserName;
                         Response.Redirect("~/Companyprofile.aspx");
+                    }
+
+                       
 
                     else if (dt.Rows[i]["role"].ToString() == "JobSeeker")
-
+                    {
+                        Session["username"] = UserName;
                         Response.Redirect("~/Candidateprofile.aspx");
+                    }
+
+                       
 
 
                 }
