@@ -132,7 +132,7 @@
                                         <div class="form-group">
                                             <asp:Label Text="UserID" runat="server" />
                                             <asp:TextBox ID="TextID" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Userid" ControlToValidate="TextID" runat="server" />
+                                            <asp:RequiredFieldValidator ErrorMessage="Enter Userid" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="TextID" runat="server" />
                                         </div>
                                     </div>
 
@@ -141,7 +141,7 @@
                                             <%--<label>Your Name:</label>--%>
                                             <asp:Label Text="YourName" runat="server" />
                                             <%--<input type="text" class="form-control" placeholder="Alexander Weir">--%>
-                                            <asp:TextBox ID="txtyn" class="form-control" runat="server" />
+                                            <asp:TextBox ID="txtyn" class="form-control" BorderColor="Red" ForeColor="#FF3300" runat="server" />
 
                                         </div>
                                     </div>
@@ -149,7 +149,7 @@
                                         <div class="form-group">
                                             <asp:Label Text="Email" runat="server" />
                                             <asp:TextBox ID="txtemail" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Email" ControlToValidate="txtemail" runat="server" />
+                                            <asp:RequiredFieldValidator ErrorMessage="Enter Email" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="txtemail" runat="server" />
                                         </div>
                                     </div>
 
@@ -157,35 +157,35 @@
                                         <div class="form-group">
                                             <asp:Label Text="Skills" runat="server" />
                                             <asp:TextBox ID="txtsk" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Skills" ControlToValidate="txtsk" runat="server" />
+                                            <asp:RequiredFieldValidator ErrorMessage="Enter Skills" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="txtsk" runat="server" />
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <asp:Label Text="Languages" runat="server" />
                                             <asp:TextBox ID="txtlan" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Language" ControlToValidate="txtlan" runat="server" />
+                                           <%-- <asp:RequiredFieldValidator ErrorMessage="Enter Language" ControlToValidate="txtlan" runat="server" />--%>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <asp:Label Text="Age" runat="server" />
                                             <asp:TextBox ID="txtage" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Age" ControlToValidate="txtage" runat="server" />
+                                           <%-- <asp:RequiredFieldValidator ErrorMessage="Enter Age" ControlToValidate="txtage" runat="server" />--%>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <asp:Label Text="Current Salary" runat="server" />
                                             <asp:TextBox ID="txtcs" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Current Salary" ControlToValidate="txtcs" runat="server" />
+                                           <%-- <asp:RequiredFieldValidator ErrorMessage="Enter Current Salary" ControlToValidate="txtcs" runat="server" />--%>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <asp:Label Text="Expected Salary" runat="server" />
                                             <asp:TextBox ID="txtes" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Expected Salary" ControlToValidate="txtes" runat="server" />
+                                          <%--  <asp:RequiredFieldValidator ErrorMessage="Enter Expected Salary" ControlToValidate="txtes" runat="server" />--%>
                                         </div>
                                     </div>
                                     <%--<div class="col-lg-12 col-md-12">
@@ -205,7 +205,7 @@
                                     <div class="form-group">
                                         <asp:Label Text="Phone" runat="server" />
                                         <asp:TextBox ID="Txtphone" class="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator ErrorMessage="Enter Phone Number" ControlToValidate="Txtphone" runat="server" />
+                                        <asp:RequiredFieldValidator ErrorMessage="Enter Phone Number" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtphone" runat="server" />
                                     </div>
                                 </div>
                                 <%--<div class="col-lg-6 col-md-6">
@@ -218,14 +218,14 @@
                                     <div class="form-group">
                                         <asp:Label Text="Area" runat="server" />
                                         <asp:TextBox ID="Txtarea" class="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator ErrorMessage="Enter Area" ControlToValidate="Txtarea" runat="server" />
+                                        <asp:RequiredFieldValidator ErrorMessage="Enter Area" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtarea" runat="server" />
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <asp:Label Text="Pincode" runat="server" />
                                         <asp:TextBox ID="Txtpin" class="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator ErrorMessage="Enter Picode" ControlToValidate="Txtpin" runat="server" />
+                                        <asp:RequiredFieldValidator ErrorMessage="Enter Picode" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtpin" runat="server" />
                                     </div>
                                 </div>
                                 <%--<div class="col-lg-6 col-md-6">
@@ -238,7 +238,7 @@
                                     <div class="form-group">
                                         <asp:Label Text="Address" runat="server" />
                                         <asp:TextBox ID="Txtaddress" class="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator ErrorMessage="Enter Address" ControlToValidate="Txtaddress" runat="server" />
+                                        <asp:RequiredFieldValidator ErrorMessage="Enter Address" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtaddress" runat="server" />
                                     </div>
                                 </div>
                             </div>
