@@ -36,13 +36,14 @@
                                                 <%--<img alt="" src="images/team/pic1.jpg">--%>
                                                 <%-- <asp:Image ID="img1" runat="server" />--%>
                                                 <asp:Image ID="img" ClientIDMode="Static" runat="server" />
-                                                <%--    <asp:FileUpload ID="fileuploadcontrol" CssClass="form-control" runat="server" />
+                                         <%--   <asp:FileUpload ID="fileuploadcontrol" CssClass="form-control" Visible="false" runat="server" />--%>
+                                                <asp:Label id="lblimge" runat="server" />
                               
-											</div>
-                                                --%>
+											<%--</div>--%>
+                                                
                                             </a>
                                             <div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-                                                <input type="file"  class="update-flie" onchange="readURL(this);">
+                                                <input type="file"  class="update-flie" name="PostedFile">
                                                 <i class="fa fa-camera"></i>
                                                 <%--<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">--%>
 

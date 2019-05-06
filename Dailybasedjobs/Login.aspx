@@ -9,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
-	<meta name="robots" content="" />
+	<meta name="robots" content="" /> 
 	<meta name="description" content="JobBoard - HTML Template" />
 	<meta property="og:title" content="JobBoard - HTML Template" />
 	<meta property="og:description" content="JobBoard - HTML Template" />

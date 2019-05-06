@@ -114,10 +114,14 @@
     <Content Include="css\skin\skin-1.css" />
     <Content Include="css\style.css" />
     <Content Include="css\templete.css" />
+    <Content Include="css\xx %281%29.css" />
+    <Content Include="css\xx %282%29.css" />
+    <Content Include="css\xx %283%29.css" />
     <Content Include="DanceAndMusic.aspx" />
     <Content Include="Degree.aspx" />
     <Content Include="Electrician.aspx" />
     <Content Include="Employeeresume.aspx" />
+    <Content Include="Employeerzone.aspx" />
     <Content Include="Events.aspx" />
     <Content Include="Gardening.aspx" />
     <Content Include="HeavyWeightvehicles.aspx" />
@@ -166,6 +170,7 @@
     <Content Include="images\gallery\pic7.jpg" />
     <Content Include="images\gallery\pic8.jpg" />
     <Content Include="images\gallery\pic9.jpg" />
+    <Content Include="images\infosys.png" />
     <Content Include="images\lines.png" />
     <Content Include="images\loading.svg" />
     <Content Include="images\logo-white.png" />
@@ -204,6 +209,7 @@
     <Content Include="images\testimonials\pic3.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="Jobalerts.aspx" />
+    <Content Include="Jobseekerzone.aspx" />
     <Content Include="js\custom.js" />
     <Content Include="js\dz.ajax.js" />
     <Content Include="js\dz.carousel.js" />
@@ -430,6 +436,13 @@
     <Compile Include="Employeers.Master.designer.cs">
       <DependentUpon>Employeers.Master</DependentUpon>
     </Compile>
+    <Compile Include="Employeerzone.aspx.cs">
+      <DependentUpon>Employeerzone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employeerzone.aspx.designer.cs">
+      <DependentUpon>Employeerzone.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Events.aspx.cs">
       <DependentUpon>Events.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -488,6 +501,13 @@
     </Compile>
     <Compile Include="Jobalerts.aspx.designer.cs">
       <DependentUpon>Jobalerts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseekerzone.aspx.cs">
+      <DependentUpon>Jobseekerzone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobseekerzone.aspx.designer.cs">
+      <DependentUpon>Jobseekerzone.aspx</DependentUpon>
     </Compile>
     <Compile Include="LightweightVehicles.aspx.cs">
       <DependentUpon>LightweightVehicles.aspx</DependentUpon>

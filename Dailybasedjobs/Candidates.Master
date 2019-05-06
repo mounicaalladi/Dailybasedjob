@@ -47,7 +47,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" enctype="multipart/form-data">
         <div>
                   <div id="loading-area"></div>
 <div class="page-wraper">
@@ -69,7 +69,12 @@
 						<span></span>
 					</button>
                     <!-- extra nav -->
-                    
+                     <div class="extra-nav">
+                        <div class="extra-cell">
+                            <a href="Index.aspx" class="site-button"><i class="fa fa-lock"></i>  Sign Out</a>
+							<%--<a href="Index.aspx" title="READ MORE" rel="bookmark" data-toggle="modal" data-target="#car-details" class="site-button"><i class="fa fa-lock"></i> Sign Out</a>
+                        --%></div>
+                    </div>
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
@@ -92,8 +97,9 @@
 									<li><a href="jobs-change-password.html" class="dez-page">Change Password <span class="new-page">New</span></a></li>
 								</ul>--%>
 							</li>
+
 							<li>
-							<%--	<a href="view2.aspx">Saved Jobs </a>--%>
+								<a href="Savedjob.aspx">Saved Jobs </a>
 								<%--<ul class="sub-menu">
 									<li><a href="company-profile.html" class="dez-page">Company Profile <span class="new-page">New</span></a></li>
 									<li><a href="company-resume.html" class="dez-page">Employer Resume <span class="new-page">New</span></a></li>
@@ -104,7 +110,7 @@
 								</ul>--%>
 							</li>
 							<li>
-								<%--<a href="view3.aspx">Applied Jobs </a>--%>
+								<a href="Appliedjobs.aspx">Applied Jobs </a>
 								
 									</li>
                             <li>

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="page-content">
+  <%--   <div class="page-content">
 		<!-- Section Banner -->
 		<div class="dez-bnr-inr dez-bnr-inr-md" style="background-image:url(images/main-slider/slide2.jpg);">
             <div class="container">
@@ -165,13 +165,13 @@
 								<div class="rotate-icon"><i class="ti-panel"></i></div> 
 							</div>
 						</div>
-					</div>--%>
+					</div>
 					<div class="col-lg-12 text-center m-t30">
 						<button class="site-button radius-xl">All Categories</button>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>--%>
 		<!-- About Us END -->
 		<!-- Call To Action -->
 		<%--<div class="section-full content-inner bg-gray">
@@ -268,6 +268,252 @@
 		</div>--%>
 		<!-- Call To Action END -->
 		<!-- Our Job -->
+    
+     <!-- Content -->
+    <div class="page-content">
+		<!-- Section Banner -->
+		<div class="dez-bnr-inr dez-bnr-inr-md overlay-black-dark" style="background-image:url(images/main-slider/slide1.jpg);">
+            <div class="container">
+    <div class="row">
+        <div class="col-md-6" style="margin-top:85px!important;">
+                <div class="dez-bnr-inr-entry align-m text-white">
+					<div class=" job-search-form">
+						
+						<form>
+							<div class="input-group" style="width:145%;">
+								<input type="text" class="form-control" placeholder="Job Title, Keywords Or Company Name">
+								
+								<div class="input-group-prepend">
+									<button class="site-button">Search</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+				<div class="col-md-3" style="margin:15px 0px 7px 0px">
+					<div class="quote-bx">
+					<div class="quote-info">
+						<h4>Make a Difference with Your Online Resume!</h4>
+						<p>Your resume in minutes with JobBoard resume assistant is ready!</p>
+						<a href="register.html" class="site-button">Create an Account</a>
+					</div>
+				</div>
+			</div>
+				<div class="col-md-3" style="margin:15px 0px 7px 0px">
+					<div class="quote-bx">
+					<div class="quote-info">
+						<h4>Make a Difference with Your Online Resume!</h4>
+						<p>Your resume in minutes with JobBoard resume assistant is ready!</p>
+						<a href="register.html" class="site-button">Create an Account</a>
+					</div>
+				</div>
+			</div>
+			
+			
+       
+    </div>
+            </div>
+            </div>
+		</div>
+		
+		<!-- Section Banner END -->
+        <!-- About Us -->
+		<div class="section-full job-categories content-inner-2 bg-white">
+			<div class="container">
+				<div class="section-head text-center">
+					<h2 class="m-b5">Top Companies</h2>
+					
+				</div>
+			
+				<div class="row sp20">
+					<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						<div class="col-lg-2 col-md-8 col-sm-8">
+						
+							<img src="images/infosys.png" alt="infosys">
+						</div>	
+						
+
+					
+				
+					
+				</div>
+			
+			</div>
+		</div>
+
+		<!--company reviews-->
+		<div class="section-full content-inner-2 overlay-white-middle">
+			<div class="container">
+				<div class="section-head text-black text-center">
+					<h2 class="text-uppercase m-b0">Company Reviews</h2>
+					
+				</div>
+				<div class="blog-carousel owl-carousel owl-btn-center-lr owl-btn-3 owl-theme owl-btn-center-lr owl-btn-1">
+					<div class="item">
+						<div class="blog-post blog-grid blog-style-1">
+							
+							<div class="dez-info">
+								 
+								<div class="dez-post-title ">
+									<h5 class="post-title font-20"><a href="blog-details.html">Its really a good company</a></h5>
+								</div>
+								<div class="dez-post-text">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+								</div>
+								<div class="dez-post-readmore blog-share"> 
+									<a href="#" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="blog-post blog-grid blog-style-1">
+							
+							<div class="dez-info">
+								 
+								<div class="dez-post-title ">
+									<h5 class="post-title font-20"><a href="blog-details.html">Its really a good company</a></h5>
+								</div>
+								<div class="dez-post-text">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+								</div>
+								<div class="dez-post-readmore blog-share"> 
+									<a href="#" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="blog-post blog-grid blog-style-1">
+							
+							<div class="dez-info">
+								 
+								<div class="dez-post-title ">
+									<h5 class="post-title font-20"><a href="blog-details.html">Its really a good company</a></h5>
+								</div>
+								<div class="dez-post-text">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+								</div>
+								<div class="dez-post-readmore blog-share"> 
+									<a href="#" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="blog-post blog-grid blog-style-1">
+							
+							<div class="dez-info">
+								 
+								<div class="dez-post-title ">
+									<h5 class="post-title font-20"><a href="blog-details.html">Its really a good company</a></h5>
+								</div>
+								<div class="dez-post-text">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+								</div>
+								<div class="dez-post-readmore blog-share"> 
+									<a href="#" title="READ MORE" rel="bookmark" class="site-button-link"><span class="fw6">READ MORE</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+  
 		<div class="section-full bg-white content-inner-2">
 			<div class="container">
 				<div class="d-flex job-title-bx section-head">
@@ -279,7 +525,1288 @@
 						<a href="error-404.html" class="site-button button-sm">Browse All Jobs <i class="fa fa-long-arrow-right"></i></a>
 					</div>
 				</div>
-				<div class="row">
+                <asp:DataList runat="server" ID="DataList1" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                            <%-- <i class="fa fa-bookmark-o"></i>--%>
+                                                <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                               </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                        <%--   <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                        --%>       <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+			       <asp:DataList runat="server" ID="DataList2" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList3" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList4" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList5" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList6" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList7" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList8" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList9" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList10" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList11" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList12" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList13" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList14" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList15" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList16" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList17" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList18" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList19" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		       <asp:DataList runat="server" ID="DataList20" Width="100%" BorderStyle="None" OnItemCommand="DataList1_ItemCommand" BorderWidth="3px" CellPadding="3" CssClass="auto-style1" RepeatColumns="1" RepeatDirection="Horizontal" DataKeyField="id">
+        <ItemTemplate>
+            <div class="row">
+					<div class="col-lg-9">
+						<ul class="post-job-bx browse-job">
+							<li>
+								<div class="post-bx">
+									<div class="d-flex m-b30">
+										<div class="job-post-company">
+											<span><%--<img alt="" src="images/logo/icon1.png"/>--%>
+                                                <asp:Image  ID="img1" ImageUrl='<%# Bind("Image") %>' Height="50px" Width="50px" runat="server" />
+											</span>
+										</div>
+										<div class="job-post-info">
+											<h4>
+                                                <asp:Label Text='<%# Bind("Jobtitle") %>' ID="txttitle" runat="server" />
+                                               </h4>
+											<ul>
+												<li><i class="fa fa-map-marker"></i>
+                                                    <asp:Label ID="txtlocation" Text='<%# Bind("Location") %>'  runat="server" />
+                                                   </li>
+												
+												<li><i class="fa fa-clock-o"></i> 
+                                                    <asp:Label ID="txtcompanyname" Text='<%# Bind("Companyname") %>' runat="server" />
+                                                 </li>
+											</ul>
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="job-time mr-auto">
+											<a href="javascript:void(0);"><span>
+                                             <i class="fa fa-bookmark-o"></i>
+                                              <%--  <asp:Label  ID="txtAddress" TextMode="MultiLine" Text='<%# Bind("Description") %>'  runat="server" />
+                                            --%>   </span></a>
+										</div>
+										<div class="salary-bx">
+								      <ul>
+                                                                     
+                                                                       <li><%--<a href="#">View</a>--%>
+                                                                           <asp:TextBox ID="txtexp" TextMode="MultiLine" placeholder="Explanation"  runat="server" />
+                                                                               <%--<asp:Button Text="Submit" ID="btnsubmit" CommandName="Explanation" runat="server" CommandArgument='<%# Eval("id") %>' />
+       --%>
+                                                                       </li>
+                                                                        <li><%--<a href="#">Apply</a>--%>
+                                                                        <asp:button text="Apply" ID="btnapply" CssClass="btn btn-info" CommandName="Apply"  CommandArgument='<%# Eval("id") %>'  runat="server" />
+                                                                            
+                                                                           
+                                                                        </li>
+                                                                    </ul>     
+										</div>
+									</div>
+									<label class="like-btn">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+                                  </label>
+								
+								</div>
+							</li>
+							</ul>
+</div>
+                    </div>
+  
+        </ItemTemplate>
+    </asp:DataList>
+		
+             <%--   <div class="row">
 					<div class="col-lg-9">
 						<ul class="post-job-bx browse-job">
 							<li>
@@ -484,12 +2011,12 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>--%>
 			</div>
 		</div>
 		<!-- Our Job END -->	
 		<!-- Call To Action -->
-		<div class="section-full p-tb70 overlay-black-dark text-white text-center bg-img-fix" style="background-image:url(images/background/bg4.jpg);">
+	<%--	<div class="section-full p-tb70 overlay-black-dark text-white text-center bg-img-fix" style="background-image:url(images/background/bg4.jpg);">
 			<div class="container">
 				<div class="section-head text-center text-white">
 					<h2 class="m-b5">Testimonials</h2>
@@ -622,7 +2149,7 @@
 								<li><a href="#" class="m-r10 text-white"><i class="fa fa-instagram"></i></a></li>
 								<li><a href="#" class="m-r10 text-white"><i class="fa fa-twitter"></i></a></li>
 							</ul>--%>
-						</div>
+					<%--	</div>
 					</div>
 					<div class="col-lg-6 col-md-6 p-a0">
 						<div class="lead-form browse-job text-left">
@@ -643,6 +2170,6 @@
 				</div>	
 			</div>
 		</div>
-	</div>
+	</div>--%>--%>
 	<!-- Modal Box End -->
 </asp:Content>

@@ -13,5 +13,12 @@ namespace Dailybasedjobs
         {
 
         }
+
+       
+        protected void btnlogout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Index.aspx");
+        }
     }
 }
