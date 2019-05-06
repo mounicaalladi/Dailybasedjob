@@ -50,53 +50,59 @@
 									  <div class="tab-content">
 										<div id="home" class=" tab-pane active"><br>
 										  <h3>SIGN IN</h3>
-										  <form action=""></form>
+										  <form action=""> </form>
 										<div class="form-group">
-										  <label for="email">Email:</label>
-										  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-										</div>
-										<div class="form-group">
-										  <label for="pwd">Password:</label>
-										  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-										</div>
-										<div class="form-group form-check">
-										  <label class="form-check-label">
-											<input class="form-check-input" type="checkbox" name="remember"> Remember me
-										  </label>
-										</div>
-										<button type="submit" class="btn btn-primary">SIGN IN</button>
+                                            <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtEmail1" />
+										  	</div>
+                                            	<div class="form-group">
+                                            <asp:Label Text="Password" ID="lbpwd1" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
+										 	</div>
+                                       
+                                            <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	  
+
 									  </form>
 										</div>
 										<div id="menu1" class=" tab-pane fade" style="height: 363px"><br>
 										  <h3>SIGN UP</h3>
 										  <form action="">
-										  <!--<div class="form-group">
-										  <label for="name">Full Name:</label>
-										  <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
-										</div>-->
+										 <div class="form-group">
+                                            <asp:Label Text="Username" ID="lbusname" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtusname" />
+										 	</div>
 										<div class="form-group">
-										  <label for="email">Email:</label>
-										  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-										</div>
+                                            <asp:Label Text="Email" ID="lbEmail" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtEmail" />
+										  	</div>
+                                            	<div class="form-group">
+                                            <asp:Label Text="Password" ID="lbpswd" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
+										 	</div>
 										<div class="form-group">
-										  <label for="pwd">Password:</label>
-										  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                            <asp:Label Text="Confirmpswd" ID="lbcnfrmpwd" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtcnfrmpwd" TextMode="Password" />
+										  	</div>
+                                            	<div class="form-group">
+                                            <asp:Label Text="Contactno" ID="lbcontactno" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtcontactno" />
+										 	</div>
+										<div class="form-group">
+                                            <asp:Label Text="Image" ID="Label4" runat="server" />
+                                         <asp:FileUpload ID="FileUpload1" runat="server" />
+										  	</div>
+										<div class="form-group form-check">
+										  <label class="form-check-label">
+											<input class="form-check-input" type="checkbox" name="remember"> Remember me
+										  </label>
 										</div>
-										
-										<button type="submit" class="btn btn-primary">SIGN UP</button>
-										
-									  </form>
+                                            <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	  </form>
 										</div>
 										<br>
 									  </div>
 									</div>
 									</div>
 									</div>
-
-
-
-
-
 
 					</div>
 				</div>
