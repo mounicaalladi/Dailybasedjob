@@ -23,7 +23,7 @@ namespace Dailybasedjobs
             //{
                 if (!IsPostBack)
                 {
-                    FileUploadReader();
+                    //FileUploadReader();
                     //img1.ImageUrl = "ImageHandler.ashx?imgID=" + role.Text;
                 }
                 else
@@ -35,24 +35,24 @@ namespace Dailybasedjobs
 
         }
 
-        private void FileUploadReader()
-        {
+        //private void FileUploadReader()
+        //{
 
-            SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
-            con.Open();
-            SqlDataReader dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                TextID.Text = dr["id"].ToString();
-                lblname.Text = dr["username"].ToString();
-                img.ImageUrl = dr["image"].ToString();
+        //    //SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
+        //    //con.Open();
+        //    //SqlDataReader dr = com.ExecuteReader();
+        //    //while (dr.Read())
+        //    //{
+        //    //    TextID.Text = dr["id"].ToString();
+        //    //    lblname.Text = dr["username"].ToString();
+        //    //    img.ImageUrl = dr["image"].ToString();
 
-                //string url = dr["image"].ToString();
-                //img.ImageUrl = url;
+        //    //    //string url = dr["image"].ToString();
+        //    //    //img.ImageUrl = url;
 
-            }
-            con.Close();
-        }
+        //    //}
+        //    //con.Close();
+        //}
 
 
 

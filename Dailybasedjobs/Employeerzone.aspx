@@ -50,42 +50,78 @@
 									  <div class="tab-content">
 										<div id="home" class=" tab-pane active"><br>
 										  <h3>SIGN IN</h3>
-										  <form action=""></form>
-										<div class="form-group">
-										  <label for="email">Email:</label>
-										  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-										</div>
-										<div class="form-group">
-										  <label for="pwd">Password:</label>
-										  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-										</div>
-										<div class="form-group form-check">
-										  <label class="form-check-label">
-											<input class="form-check-input" type="checkbox" name="remember"> Remember me
-										  </label>
-										</div>
-										<button type="submit" class="btn btn-primary">SIGN IN</button>
-									  </form>
+										 
+											<div class="form-group row">
+                                                <div class="col-md-5">
+                                                     <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
+                                              </div>
+                                                <div class="col-md-6">
+                                                     <asp:TextBox runat="server" ID="txtEmail1" />
+										  	
+                                                </div>
+                                            </div>
+                                            	<div class="form-group row">
+                                                    <div class="col-md-5">
+                                                         <asp:Label Text="Password" ID="lbpwd1" runat="server" />
+                                     
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
+                                                    </div>
+                                                  
+										 	</div>
+                                       
+                                            <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	
+									
 										</div>
 										<div id="menu1" class=" tab-pane fade" style="height: 363px"><br>
 										  <h3>SIGN UP</h3>
-										  <form action="">
-										  <!--<div class="form-group">
-										  <label for="name">Full Name:</label>
-										  <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
-										</div>-->
-										<div class="form-group">
-										  <label for="email">Email:</label>
-										  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-										</div>
-										<div class="form-group">
-										  <label for="pwd">Password:</label>
-										  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-										</div>
+										 
+							 <div class="form-group row">
+                                            <div class="col-md-5">
+                                                 <asp:Label Text="Companyname" ID="lbusname" runat="server" />
+                                            </div>
+                                           <div class="col-md-6">
+                                             <asp:TextBox runat="server" ID="txtusname" />
+                                           </div>
+                                           
+										 	</div>
+                                            <div class="form-group row">
+                                        <div class="col-md-5">
+                                            <asp:Label Text="Organization" ID="lborg" runat="server" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <asp:TextBox runat="server" ID="txtorg"  />
+                                        </div>
+                                        
+									</div>
+										<div class="form-group row">
+                                            <div class="col-md-5">
+                                                 <asp:Label Text="Email" ID="lbEmail" runat="server" />
+                                            </div>
+                                           <div class="col-md-6">
+                                               <asp:TextBox runat="server" ID="txtEmail" />
+                                           </div>
+                                            
+										  	</div>
+                                            	<div class="form-group row">
+                                                    <div class="col-md-5">
+                                                      <asp:Label Text="Password" ID="lbpswd" runat="server" />
+                                                    </div>
+                                            <div class="col-md-6">
+                                                <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
+										 	
+                                            </div>
+                                            </div>
+									
+                                            <br />
+                                            <div style="text-align:center">
+                                            <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	 
+									
+                                            </div>
+                                            
 										
-										<button type="submit" class="btn btn-primary">SIGN UP</button>
-										
-									  </form>
+							
 										</div>
 										<br>
 									  </div>
