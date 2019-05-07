@@ -29,11 +29,11 @@
 
 									<div class="row" style="background:#0006; width:75%;">
 									
-									  <br>
+									  <br />
 									  
 									  <!-- Nav pills -->
 									  <div class="col-md-12">
-											<br>
+											<br />
 										<div class="sss">
 									  <ul class="nav nav-tabs justify-content-center" >
 										<li class="nav-item">
@@ -48,9 +48,9 @@
 									
 									  <!-- Tab panes -->
 									  <div class="tab-content">
-										<div id="home" class=" tab-pane active"><br>
+										<div id="home" class=" tab-pane active"><br/>
 										  <h3>SIGN IN</h3>
-										  <form action=""> </form>
+										  <form action=""> 
 										<div class="form-group">
                                             <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
                                             <asp:TextBox runat="server" ID="txtEmail1" />
@@ -79,41 +79,42 @@
                                             <asp:Label Text="Password" ID="lbpswd" runat="server" />
                                             <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
 										 	</div>
-										<div class="form-group">
-                                            <asp:Label Text="Confirmpswd" ID="lbcnfrmpwd" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtcnfrmpwd" TextMode="Password" />
-										  	</div>
-                                            	<div class="form-group">
-                                            <asp:Label Text="Contactno" ID="lbcontactno" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtcontactno" />
+                                              <div class="form-group">
+                                            <asp:Label Text="City" ID="lblcity" runat="server" />
+                                                  <asp:DropDownList ID="ddlcity" runat="server">
+                                                       <asp:ListItem Text="Select city" />
+                                                       <asp:ListItem Text="Ahmedabad" />
+                                                      <asp:ListItem Text="Bangalore" />
+                                                      <asp:ListItem Text="Chennai" />
+                                                      <asp:ListItem Text="Delhi" />
+                                                      <asp:ListItem Text="Hyderabad" />
+                                                      <asp:ListItem Text="Kolkata" />
+                                                      <asp:ListItem Text="Mumbai" />
+                                                      <asp:ListItem Text="Pune" />
+                                                      <asp:ListItem Text="Surat" />
+                                                      <asp:ListItem Text="Visakhapatnam" />
+                                                      </asp:DropDownList>
 										 	</div>
-										<div class="form-group">
-                                            <asp:Label Text="Image" ID="Label4" runat="server" />
-                                         <asp:FileUpload ID="FileUpload1" runat="server" />
-										  	</div>
-										<div class="form-group form-check">
-										  <label class="form-check-label">
-											<input class="form-check-input" type="checkbox" name="remember"> Remember me
-										  </label>
-										</div>
+										
                                             <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	  </form>
 										</div>
-										<br>
+										<br />
 									  </div>
 									</div>
 									</div>
 									</div>
-
+                    </div>
 					</div>
 				</div>
-			</div>
+
+			
+
 			<!-- Login Page END -->
-		</div>
-		
-		
-	</div>
+	
+</div>		
+	
     <!-- Content END -->
-   
+   	</div>
 
 <div class="container-fluid">
 	<div class="row text-center mt-5 " style="margin-bottom: 10px;">
