@@ -7,17 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Dailybasedjobs
 {
-    public partial class Candidates : System.Web.UI.MasterPage
+    public partial class admin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void sout_Click(object sender, EventArgs e)
-        {
-            Session.Abandon();
-            Response.Redirect("Index.aspx");
         }
     }
 }

@@ -71,7 +71,8 @@
                     <!-- extra nav -->
                      <div class="extra-nav">
                         <div class="extra-cell">
-                            <a href="Index.aspx" class="site-button"><i class="fa fa-lock"></i>  Sign Out</a>
+                            <%--<a href="Index.aspx" class="site-button"><i class="fa fa-lock"></i>  Sign Out</a>--%>
+                            <asp:Button Text="Sign Out" ID="sout" OnClick="sout_Click" class="site-button"  runat="server" />
 							<%--<a href="Index.aspx" title="READ MORE" rel="bookmark" data-toggle="modal" data-target="#car-details" class="site-button"><i class="fa fa-lock"></i> Sign Out</a>
                         --%></div>
                     </div>

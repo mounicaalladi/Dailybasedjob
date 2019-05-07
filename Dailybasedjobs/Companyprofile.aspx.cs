@@ -45,7 +45,7 @@ namespace Dailybasedjobs
             while (dr.Read())
             {
                 lblname.Text = dr["username"].ToString();
-                img1.ImageUrl = dr["image"].ToString();
+                img.ImageUrl = dr["image"].ToString();
                 //string url = dr["image"].ToString();
                 //img.ImageUrl = url;
 
@@ -61,16 +61,16 @@ namespace Dailybasedjobs
 
         protected void btnupt_Click(object sender, EventArgs e)
         {
-            if (FileUpload1.HasFile)
-            {
-                string str = FileUpload1.FileName;
-                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
-                string Image = "~/Upload1/" + str.ToString();
-            }
-            SqlCommand cmd = new SqlCommand("insert into CompanyProfile(CompanyName,Email,Website,FoundedDate,Category,Description,Phone,Pincode,Address,Facebook,Twitter,Google,Linkedin) values('" + Textcname.Text + "','" + txtemail.Text + "','" + Texwebsite.Text + "','" + txtfoundate.Text + "','" + ddlcat.SelectedItem.ToString() + "','"+txtdesc.Text+"','" + txtphone.Text + "','" + Textzip.Text + "','" + Texaddress.Text + "','"+txtfb.Text+"','"+txttwter.Text+"','"+txtgoogle.Text+"','"+txtlin.Text+"')", con);
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
+            //if (FileUpload1.HasFile)
+            //{
+            //    string str = FileUpload1.FileName;
+            //    FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
+            //    string Image = "~/Upload1/" + str.ToString();
+            //}
+            //SqlCommand cmd = new SqlCommand("insert into CompanyProfile(CompanyName,Email,Website,FoundedDate,Category,Description,Phone,Pincode,Address,Facebook,Twitter,Google,Linkedin) values('" + Textcname.Text + "','" + txtemail.Text + "','" + Texwebsite.Text + "','" + txtfoundate.Text + "','" + ddlcat.SelectedItem.ToString() + "','"+txtdesc.Text+"','" + txtphone.Text + "','" + Textzip.Text + "','" + Texaddress.Text + "','"+txtfb.Text+"','"+txttwter.Text+"','"+txtgoogle.Text+"','"+txtlin.Text+"')", con);
+            //con.Open();
+            //cmd.ExecuteNonQuery();
+            //con.Close();
         }
 
        

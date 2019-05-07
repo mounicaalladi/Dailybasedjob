@@ -17,12 +17,13 @@
 										<div class="canditate-des">
 											<a href="javascript:void(0);">
 												<%--<img alt="" src="images/logo/icon3.jpg">--%>
-                                                <asp:Image ID="img1" runat="server" />
+                                                <asp:Image ID="img" ClientIDMode="Static" runat="server" />
+                                                 <asp:Label id="lblimge" runat="server" />
 											</a>
 											<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
 												<%--<input type="file" class="update-flie">--%>
-                                               <asp:FileUpload ID="FileUpload1" runat="server"></asp:FileUpload>                
-												<i class="fa fa-pencil"></i>
+                                               <input type="file"  class="update-flie" name="PostedFile"/>
+                                                <i class="fa fa-camera"></i>
                                             </div>
 										</div>
 										<div class="candidate-title">
