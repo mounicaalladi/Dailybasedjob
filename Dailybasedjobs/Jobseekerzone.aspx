@@ -48,57 +48,97 @@
 										</ul>
 									</div>
 									
-									  <!-- Tab panes -->
+										  <!-- Tab panes -->
 									  <div class="tab-content">
 										<div id="home" class=" tab-pane active"><br>
 										  <h3>SIGN IN</h3>
-										  <form action=""> </form>
-										<div class="form-group">
-                                            <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtEmail1" />
-										  	</div>
-                                            	<div class="form-group">
-                                            <asp:Label Text="Password" ID="lbpwd1" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
+										 
+											<div class="form-group row">
+                                                <div class="col-md-4">
+                                                     <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
+                                              </div>
+                                                <div class="col-md-7">
+                                                     <asp:TextBox runat="server" ID="txtEmail1" />
+										  	
+                                                </div>
+                                            </div>
+                                            	<div class="form-group row">
+                                                    <div class="col-md-4">
+                                                         <asp:Label Text="Password" ID="lbpwd1" runat="server" />
+                                     
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                            <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
+                                                    </div>
+                                                  
 										 	</div>
-                                       
-                                            <asp:Button Text="Signin" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	  
-
-									  </form>
+                                       <div style="text-align:center">
+                                            <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	
+									
+                                       </div>
+                                           
 										</div>
 										<div id="menu1" class=" tab-pane fade" style="height: 363px"><br>
 										  <h3>SIGN UP</h3>
-										  <form action="">
-										 <div class="form-group">
-                                            <asp:Label Text="Username" ID="lbusname" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtusname" />
+										 
+							 <div class="form-group row">
+                                            <div class="col-md-4">
+                                                 <asp:Label Text="Username" ID="lbusname" runat="server" />
+                                            </div>
+                                           <div class="col-md-7">
+                                             <asp:TextBox runat="server" ID="txtusname" />
+                                           </div>
+                                           
 										 	</div>
-										<div class="form-group">
-                                            <asp:Label Text="Email" ID="lbEmail" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtEmail" />
+                                            <div class="form-group row">
+                                        <div class="col-md-4">
+                                            <asp:Label Text="City" ID="lbcity" runat="server" />
+                                        </div>
+                                        <div class="col-md-7">
+                                            
+                                            <asp:DropDownList ID="ddlcity" runat="server">
+                                                <asp:ListItem Text="--Select City--" />
+                                                <asp:ListItem Text="Ahmedabad" />
+                                                <asp:ListItem Text="Bangalore" />
+                                                <asp:ListItem Text="Chennai" />
+                                                 <asp:ListItem Text="Delhi" />
+                                                <asp:ListItem Text="Hyderabad" />
+                                                <asp:ListItem Text="Kolkata" />
+                                                <asp:ListItem Text="Mumbai" />
+                                                <asp:ListItem Text="Pune" />
+                                                <asp:ListItem Text="Surat" />
+                                                <asp:ListItem Text="Visakhapatnam" />
+                                            </asp:DropDownList>
+                                        </div>
+                                        
+									</div>
+										<div class="form-group row">
+                                            <div class="col-md-4">
+                                                 <asp:Label Text="Email" ID="lbEmail" runat="server" />
+                                            </div>
+                                           <div class="col-md-7">
+                                               <asp:TextBox runat="server" ID="txtEmail" />
+                                           </div>
+                                            
 										  	</div>
-                                            	<div class="form-group">
-                                            <asp:Label Text="Password" ID="lbpswd" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
-										 	</div>
-										<div class="form-group">
-                                            <asp:Label Text="Confirmpswd" ID="lbcnfrmpwd" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtcnfrmpwd" TextMode="Password" />
-										  	</div>
-                                            	<div class="form-group">
-                                            <asp:Label Text="Contactno" ID="lbcontactno" runat="server" />
-                                            <asp:TextBox runat="server" ID="txtcontactno" />
-										 	</div>
-										<div class="form-group">
-                                            <asp:Label Text="Image" ID="Label4" runat="server" />
-                                         <asp:FileUpload ID="FileUpload1" runat="server" />
-										  	</div>
-										<div class="form-group form-check">
-										  <label class="form-check-label">
-											<input class="form-check-input" type="checkbox" name="remember"> Remember me
-										  </label>
-										</div>
-                                            <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	  </form>
+                                            	<div class="form-group row">
+                                                    <div class="col-md-4">
+                                                      <asp:Label Text="Password" ID="lbpswd" runat="server" />
+                                                    </div>
+                                            <div class="col-md-7">
+                                                <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
+										 	
+                                            </div>
+                                            </div>
+									
+                                            <br />
+                                            <div style="text-align:center">
+                                            <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	 
+									
+                                            </div>
+                                            
+										
+							
 										</div>
 										<br>
 									  </div>
@@ -106,7 +146,7 @@
 									</div>
 									</div>
 
-					</div>
+                        </div>
 				</div>
 			</div>
 			<!-- Login Page END -->

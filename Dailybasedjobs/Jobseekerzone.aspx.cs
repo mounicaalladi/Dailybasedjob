@@ -36,7 +36,7 @@ namespace Dailybasedjobs
             con.Close();
             if (dt.Rows.Count > 0)
             {
-                Response.Redirect("Companyprofile.aspx");
+                Response.Redirect("Candidateprofile.aspx");
             }
             else
             {

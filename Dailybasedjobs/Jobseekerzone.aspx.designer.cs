@@ -76,6 +76,24 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.TextBox txtusname;
         
         /// <summary>
+        /// lbcity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbcity;
+        
+        /// <summary>
+        /// ddlcity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlcity;
+        
+        /// <summary>
         /// lbEmail control.
         /// </summary>
         /// <remarks>
@@ -110,24 +128,6 @@ namespace Dailybasedjobs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPswd;
-        
-        /// <summary>
-        /// lblcity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblcity;
-        
-        /// <summary>
-        /// ddlcity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlcity;
         
         /// <summary>
         /// btnsignup control.

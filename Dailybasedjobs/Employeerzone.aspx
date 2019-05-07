@@ -52,20 +52,20 @@
 										  <h3>SIGN IN</h3>
 										 
 											<div class="form-group row">
-                                                <div class="col-md-5">
+                                                <div class="col-md-4">
                                                      <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
                                               </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-7">
                                                      <asp:TextBox runat="server" ID="txtEmail1" />
 										  	
                                                 </div>
                                             </div>
                                             	<div class="form-group row">
-                                                    <div class="col-md-5">
+                                                    <div class="col-md-4">
                                                          <asp:Label Text="Password" ID="lbpwd1" runat="server" />
                                      
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-7">
                                                             <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
                                                     </div>
                                                   
@@ -80,37 +80,37 @@
 										  <h3>SIGN UP</h3>
 										 
 							 <div class="form-group row">
-                                            <div class="col-md-5">
+                                            <div class="col-md-4">
                                                  <asp:Label Text="Companyname" ID="lbusname" runat="server" />
                                             </div>
-                                           <div class="col-md-6">
+                                           <div class="col-md-7">
                                              <asp:TextBox runat="server" ID="txtusname" />
                                            </div>
                                            
 										 	</div>
                                             <div class="form-group row">
-                                        <div class="col-md-5">
+                                        <div class="col-md-4">
                                             <asp:Label Text="Organization" ID="lborg" runat="server" />
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-7">
                                             <asp:TextBox runat="server" ID="txtorg"  />
                                         </div>
                                         
 									</div>
 										<div class="form-group row">
-                                            <div class="col-md-5">
+                                            <div class="col-md-4">
                                                  <asp:Label Text="Email" ID="lbEmail" runat="server" />
                                             </div>
-                                           <div class="col-md-6">
+                                           <div class="col-md-7">
                                                <asp:TextBox runat="server" ID="txtEmail" />
                                            </div>
                                             
 										  	</div>
                                             	<div class="form-group row">
-                                                    <div class="col-md-5">
+                                                    <div class="col-md-4">
                                                       <asp:Label Text="Password" ID="lbpswd" runat="server" />
                                                     </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-7">
                                                 <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
 										 	
                                             </div>
@@ -122,19 +122,12 @@
 									
                                             </div>
                                             
-										
-							
 										</div>
 										<br>
 									  </div>
 									</div>
 									</div>
 									</div>
-
-
-
-
-
 
 					</div>
 				</div>
@@ -146,7 +139,7 @@
 	</div>
     <!-- Content END -->
    
-</div>
+
 <div class="container-fluid">
 	<div class="row text-center mt-5 " style="margin-bottom: 10px;">
 		<div class="col-md-4">

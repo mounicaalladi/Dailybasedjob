@@ -74,44 +74,20 @@
                         <ul class="nav navbar-nav">
 							<li class="active">
 								<a href="Companyprofile.aspx">Company Profile<i class="fa fa-chevron-down"></i></a>
-								<%--<ul class="sub-menu">
-									<li><a href="Index.aspx" class="dez-page">Home</a></li>
-								
-								</ul>--%>
+							
+							</li>
+							
+							<li>
+								<a href="Postjob.aspx">Post A Job </a>
+							
 							</li>
 							<li>
-								<a href="Employeeresume.aspx">Employees Resume  <i class="fa fa-chevron-down"></i></a>
-								<%--<ul class="sub-menu">
-									<li><a href="jobs-profile.html" class="dez-page">My Profile<span class="new-page">New</span></a></li>
-									<li><a href="jobs-my-resume.html" class="dez-page">My Resume <span class="new-page">New</span></a></li>
-									<li><a href="jobs-applied-job.html" class="dez-page">Applied Job <span class="new-page">New</span></a></li>
-									<li><a href="jobs-alerts.html" class="dez-page">Jobs Alerts <span class="new-page">New</span></a></li>
-									<li><a href="jobs-saved-jobs.html" class="dez-page">Saved Job <span class="new-page">New</span></a></li>
-									<li><a href="jobs-cv-manager.html" class="dez-page">CV Manager <span class="new-page">New</span></a></li>
-									<li><a href="jobs-change-password.html" class="dez-page">Change Password <span class="new-page">New</span></a></li>
-								</ul>--%>
-							</li>
-							<li>
-								<a href="Postjob.aspx">Post A Job <i class="fa fa-chevron-down"></i></a>
-								<%--<ul class="sub-menu">
-									<li><a href="company-profile.html" class="dez-page">Company Profile <span class="new-page">New</span></a></li>
-									<li><a href="company-resume.html" class="dez-page">Employer Resume <span class="new-page">New</span></a></li>
-									<li><a href="company-post-jobs.html" class="dez-page">Post A Jobs <span class="new-page">New</span></a></li>
-									<li><a href="company-manage-job.html" class="dez-page">Manage jobs <span class="new-page">New</span></a></li>
-									<li><a href="company-transactions.html" class="dez-page">Transactions <span class="new-page">New</span></a></li>
-									<li><a href="browse-candidates.html" class="dez-page">Browse Candidates</a></li>
-								</ul>--%>
-							</li>
-							<li>
-								<a href="Managejob.aspx">Manage Job <i class="fa fa-chevron-down"></i></a>
+								<a href="Managejob.aspx">Manage Job</a>
 							
 									</li>
-                            	<%--<li>
-								<a href="Transactions.aspx">Transcations<i class="fa fa-chevron-down"></i></a>
-							
-									</li>--%>
-                            	<li  >
-								<a href="Browsercandidate.aspx"> Browser Candidates<i class="fa fa-chevron-down"></i></a>
+                            	
+                            	<li>
+								<a href="Browsercandidate.aspx"> Shortedlist Candidates</a>
 							
 									</li>
 									
