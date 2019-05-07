@@ -70,9 +70,11 @@
                                                     </div>
                                                   
 										 	</div>
-                                       
+                                       <div style="text-align:center">
                                             <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	
 									
+                                       </div>
+                                           
 										</div>
 										<div id="menu1" class=" tab-pane fade" style="height: 363px"><br>
 										  <h3>SIGN UP</h3>
