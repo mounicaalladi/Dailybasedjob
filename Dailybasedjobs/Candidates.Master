@@ -85,18 +85,7 @@
 								
 								</ul>--%>
 							</li>
-							<li>
-								<a href="Myresume.aspx">My Resume </a>
-								<%--<ul class="sub-menu">
-									<li><a href="jobs-profile.html" class="dez-page">My Profile<span class="new-page">New</span></a></li>
-									<li><a href="jobs-my-resume.html" class="dez-page">My Resume <span class="new-page">New</span></a></li>
-									<li><a href="jobs-applied-job.html" class="dez-page">Applied Job <span class="new-page">New</span></a></li>
-									<li><a href="jobs-alerts.html" class="dez-page">Jobs Alerts <span class="new-page">New</span></a></li>
-									<li><a href="jobs-saved-jobs.html" class="dez-page">Saved Job <span class="new-page">New</span></a></li>
-									<li><a href="jobs-cv-manager.html" class="dez-page">CV Manager <span class="new-page">New</span></a></li>
-									<li><a href="jobs-change-password.html" class="dez-page">Change Password <span class="new-page">New</span></a></li>
-								</ul>--%>
-							</li>
+							
 
 							<li>
 								<a href="Savedjob.aspx">Saved Jobs </a>
