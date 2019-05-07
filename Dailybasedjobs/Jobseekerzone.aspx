@@ -29,97 +29,93 @@
 
                         <div class="container">
 
-                            <div class="row" style="background: #0006; width: 75%;">
+									<div class="row" style="background:#0006; width:75%;">
+									
+									  <br>
+									  
+									  <!-- Nav pills -->
+									  <div class="col-md-12">
+											<br>
+										<div class="sss">
+									  <ul class="nav nav-tabs justify-content-center" >
+										<li class="nav-item">
+										  <a class="nav-link " data-toggle="tab" href="#home">SIGN IN</a>
+										</li>
+										<li class="nav-item">
+										  <a class="nav-link" data-toggle="tab" href="#menu1">SIGN UP</a>
+										</li>
+										
+										</ul>
+									</div>
+									
+									  <!-- Tab panes -->
+									  <div class="tab-content">
+										<div id="home" class=" tab-pane active"><br>
+										  <h3>SIGN IN</h3>
+										  <form action=""> </form>
+										<div class="form-group">
+                                            <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtEmail1" />
+										  	</div>
+                                            	<div class="form-group">
+                                            <asp:Label Text="Password" ID="lbpwd1" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
+										 	</div>
+                                       
+                                            <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	  
 
-                                <br>
+									  </form>
+										</div>
+										<div id="menu1" class=" tab-pane fade" style="height: 363px"><br>
+										  <h3>SIGN UP</h3>
+										  <form action="">
+										 <div class="form-group">
+                                            <asp:Label Text="Username" ID="lbusname" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtusname" />
+										 	</div>
+										<div class="form-group">
+                                            <asp:Label Text="Email" ID="lbEmail" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtEmail" />
+										  	</div>
+                                            	<div class="form-group">
+                                            <asp:Label Text="Password" ID="lbpswd" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
+										 	</div>
+										<div class="form-group">
+                                            <asp:Label Text="Confirmpswd" ID="lbcnfrmpwd" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtcnfrmpwd" TextMode="Password" />
+										  	</div>
+                                            	<div class="form-group">
+                                            <asp:Label Text="Contactno" ID="lbcontactno" runat="server" />
+                                            <asp:TextBox runat="server" ID="txtcontactno" />
+										 	</div>
+										<div class="form-group">
+                                            <asp:Label Text="Image" ID="Label4" runat="server" />
+                                         <asp:FileUpload ID="FileUpload1" runat="server" />
+										  	</div>
+										<div class="form-group form-check">
+										  <label class="form-check-label">
+											<input class="form-check-input" type="checkbox" name="remember"> Remember me
+										  </label>
+										</div>
+                                            <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	  </form>
+										</div>
+										<br>
+									  </div>
+									</div>
+									</div>
+									</div>
 
-                                <!-- Nav pills -->
-                                <div class="col-md-12">
-                                    <br>
-                                    <div class="sss">
-                                        <ul class="nav nav-tabs justify-content-center">
-                                            <li class="nav-item">
-                                                <a class="nav-link " data-toggle="tab" href="#home">SIGN IN</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#menu1">SIGN UP</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-
-                                    <!-- Tab panes -->
-                                    <div class="tab-content">
-                                        <div id="home" class=" tab-pane active">
-                                            <br>
-                                            <h3>SIGN IN</h3>
-                                            <form action="" target="_self">
-                                            <div class="form-group">
-                                                <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
-                                                <asp:TextBox runat="server" ID="txtEmail1" />
-                                            </div>
-                                            <div class="form-group">
-                                                <asp:Label Text="Password" ID="lbpwd1" runat="server" />
-                                                <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password" />
-                                            </div>
-
-                                            <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />
-
-                                            </form>
-                                        </div>
-                                        <div id="menu1" class=" tab-pane fade" style="height: 363px">
-                                            <br>
-                                            <h3>SIGN UP</h3>
-                                            <form action="" target="_self">
-                                                <div class="form-group">
-                                                    <asp:Label Text="Username" ID="lbusname" runat="server" />
-                                                    <asp:TextBox runat="server" ID="txtusname" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <asp:Label Text="Email" ID="lbEmail" runat="server" />
-                                                    <asp:TextBox runat="server" ID="txtEmail" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <asp:Label Text="Password" ID="lbpswd" runat="server" />
-                                                    <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <asp:Label Text="Confirmpswd" ID="lbcnfrmpwd" runat="server" />
-                                                    <asp:TextBox runat="server" ID="txtcnfrmpwd" TextMode="Password" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <asp:Label Text="Contactno" ID="lbcontactno" runat="server" />
-                                                    <asp:TextBox runat="server" ID="txtcontactno" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <asp:Label Text="Image" ID="Label4" runat="server" />
-                                                    <asp:FileUpload ID="FileUpload1" runat="server" />
-                                                </div>
-                                                <div class="form-group form-check">
-                                                    <label class="form-check-label">
-                                                        <input class="form-check-input" type="checkbox" name="remember">
-                                                        Remember me
-                                                    </label>
-                                                </div>
-                                                <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />
-                                            </form>
-                                        </div>
-                                        <br>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- Login Page END -->
-    </div>
-
-
-    </div>
+					</div>
+				</div>
+			</div>
+			<!-- Login Page END -->
+		</div>
+		
+		
+	</div>
     <!-- Content END -->
-
+   
 
     <div class="container-fluid">
         <div class="row text-center mt-5 " style="margin-bottom: 10px;">
