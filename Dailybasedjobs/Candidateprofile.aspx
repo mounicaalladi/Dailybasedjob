@@ -43,7 +43,7 @@
                                                 
                                             </a>
                                             <div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-                                                <input type="file"  class="update-flie" name="PostedFile">
+                                                <input type="file"  class="update-flie" name="PostedFile"/>
                                                 <i class="fa fa-camera"></i>
                                                 <%--<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">--%>
 

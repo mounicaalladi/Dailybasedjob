@@ -13,22 +13,22 @@ namespace Dailybasedjobs {
     public partial class Companyprofile {
         
         /// <summary>
-        /// img1 control.
+        /// img control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image img1;
+        protected global::System.Web.UI.WebControls.Image img;
         
         /// <summary>
-        /// FileUpload1 control.
+        /// lblimge control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.WebControls.Label lblimge;
         
         /// <summary>
         /// lblname control.
