@@ -48,13 +48,13 @@ namespace Dailybasedjobs
             SqlCommand cmd1 = new SqlCommand("select * from Jobseekerzone where Username='" + txtusname.Text + "' or EmailId='" + txtEmail.Text + "' ", con);
             con.Open();
             SqlDataAdapter sd = new SqlDataAdapter(cmd1);
-            DataTable dt1 = new DataTable();
-            sd.Fill(dt1);
+            DataTable dt11 = new DataTable();
+            sd.Fill(dt11);
 
             int i = cmd1.ExecuteNonQuery();
 
 
-            if (dt1.Rows.Count > 0)
+            if (dt11.Rows.Count > 0)
             {
 
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Email already Exists')</script>");

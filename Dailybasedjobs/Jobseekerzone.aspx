@@ -62,7 +62,7 @@
                                             <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
 										 	</div>
                                        
-                                            <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	  
+                                            <asp:Button Text="Signin" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	  
 
 									  </form>
 										</div>
