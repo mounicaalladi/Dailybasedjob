@@ -14,7 +14,7 @@ namespace Dailybasedjobs
     public partial class Candidateprofile : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
-        string filePath="";
+      
       
         protected void Page_Load(object sender, EventArgs e)
         {
