@@ -20,6 +20,7 @@ namespace Dailybasedjobs
             if (!IsPostBack)
             {
                 Tags();
+                imageread();
 
             }
         }
@@ -33,6 +34,18 @@ namespace Dailybasedjobs
             ddljobtags.DataTextField = "Categories";
             ddljobtags.DataValueField = "Categories";
             ddljobtags.DataBind();
+        }
+
+        private void imageread()
+        {
+            SqlCommand com = new SqlCommand("select * from CompanyProfile where CompanyName='" + Session["CompanyName"].ToString() + "'", con);
+            con.Open();
+            SqlDataReader dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                img1.ImageUrl = dr["Photo"].ToString();
+            }
+            con.Close();
         }
 
         protected void btnsubmit_Click(object sender, EventArgs e)
