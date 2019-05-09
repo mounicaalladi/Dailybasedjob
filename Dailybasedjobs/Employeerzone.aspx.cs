@@ -54,7 +54,7 @@ namespace Dailybasedjobs
 
         protected void btnSignin_Click(object sender, EventArgs e)
         {
-            //string securepass = FormsAuthentication.HashPasswordForStoringInConfigFile(txtpwd1.Text, "SHA1");
+            string securepass = FormsAuthentication.HashPasswordForStoringInConfigFile(txtpwd1.Text, "SHA1");
             SqlCommand cmd4 = new SqlCommand("select * from Employerzone where (EmailId=@User COLLATE Latin1_General_CS_AS or Companyname=@User COLLATE Latin1_General_CS_AS)  and Password=@password COLLATE Latin1_General_CS_AS", con);
             cmd4.Parameters.AddWithValue("@User", txtEmail1.Text);
             cmd4.Parameters.AddWithValue("@Password", txtpwd1.Text);
@@ -66,8 +66,9 @@ namespace Dailybasedjobs
             con.Close();
             if (dt.Rows.Count > 0)
             {
+                Session["Emp"] = "Username";
                 Response.Redirect("Candidateprofile.aspx");
-                Session["Emp"]= "EmailId";
+                
             }
             else
             {

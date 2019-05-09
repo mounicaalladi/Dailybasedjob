@@ -37,7 +37,7 @@ namespace Dailybasedjobs
             if (dt.Rows.Count > 0)
             {
                 Response.Redirect("Candidateprofile.aspx");
-                Session["Seeker"] = "EmailId";
+                Session["Seeker"] = "Username";
             }
             else
             {
@@ -63,12 +63,7 @@ namespace Dailybasedjobs
             }
             else
             {
-                //if (FileUpload1.HasFile)
-                //{
-                //    string str = FileUpload1.FileName;
-                //    FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
-                //    string Image1 = "~/Upload1/" + str.ToString();
-                //}
+              
                 SqlCommand cmd = new SqlCommand("insert into Jobseekerzone(Username,EmailId,Password,City) values('" + txtusname.Text + "','" + txtEmail.Text + "','" + txtPswd.Text +"','"+ddlcity.SelectedItem.ToString()+"')", con);
 
                 cmd.ExecuteNonQuery();
