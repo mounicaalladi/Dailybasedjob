@@ -103,15 +103,6 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// txtfoundate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtfoundate;
-        
-        /// <summary>
         /// ddlcat control.
         /// </summary>
         /// <remarks>

@@ -15,7 +15,7 @@ namespace Dailybasedjobs
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Emp"]== null)
+            if (Session["Emp"]!= null)
             {
                 if (!IsPostBack)
                 {

@@ -119,13 +119,7 @@
                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="Texwebsite" ErrorMessage="Enter Website"></asp:RequiredFieldValidator>
 											</div>
 										</div>
-										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>Founded Date </label>
-												<%--<input type="email" class="form-control" placeholder="17/12/2018">--%>
-                                                <asp:TextBox ID="txtfoundate" class="form-control" TextMode="Date" runat="server" />
-											</div>
-										</div>
+									
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Category</label>
