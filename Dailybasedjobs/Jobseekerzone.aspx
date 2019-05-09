@@ -116,11 +116,12 @@
                                             <div class="col-md-4">
                                                  <asp:Label Text="Email" ID="lbEmail" runat="server" />
 
-                                                  <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="lbEmail1" runat="server" />
-                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Emial" ControlToValidate="lbEmail1" runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
-                                            </div>
+                                                 </div>
                                            <div class="col-md-7">
                                                <asp:TextBox runat="server" ID="txtEmail" />
+                                                <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
+                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Email" ControlToValidate="txtEmail" runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+                                            
                                            </div>
                                             
 										  	</div>
@@ -128,12 +129,12 @@
                                                     <div class="col-md-4">
                                                       <asp:Label Text="Password" ID="lbpswd" runat="server" />
 
-                                                          <asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="lbpswd" runat="server" />
-                                                        <asp:RangeValidator ErrorMessage="Minimum 6 Characters required" ControlToValidate="lbpswd" runat="server" MaximumValue="8" MinimumValue="6" />
-                                                    </div>
+                                                          </div>
                                             <div class="col-md-7">
                                                 <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
-										 	
+										 	<asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="txtPswd" runat="server" />
+                                                        <asp:RangeValidator ErrorMessage="Minimum 6 Characters required" ControlToValidate="txtPswd" runat="server" />
+                                                    
                                             </div>
                                             </div>
 									
