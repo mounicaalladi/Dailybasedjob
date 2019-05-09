@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Candidates.master.cs" Inherits="Dailybasedjobs.Candidates" %>
+﻿f<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Candidates.master.cs" Inherits="Dailybasedjobs.Candidates" %>
 
 <!DOCTYPE html>
 
