@@ -14,80 +14,43 @@ namespace Dailybasedjobs
     public partial class Postjob : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
-        //string filePath;
-        //string filepath1;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["username"]==null)
+            if (!IsPostBack)
             {
-                Response.Redirect("~/Login.aspx");
+                Tags();
+
             }
-            if(!IsPostBack)
-            {
-              
-                Datareader();
-                categorybind();
-                //insertimage();
-                //showimage();
-            }
-            
         }
 
-        private void Datareader()
+        private void Tags()
         {
-            SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
-            con.Open();
-            SqlDataReader dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                lblname.Text = dr["username"].ToString();
-                img1.ImageUrl = dr["image"].ToString();
-                //string url = dr["image"].ToString();
-                //img.ImageUrl = url;
-
-            }
-            con.Close();
-
-        }
-
-        //private void insertimage()
-        //{
-
-        //    SqlCommand cmd = new SqlCommand("update Register set image='"+img1.ToString()+ "' where username='" + Session["username"].ToString() + "'",con);
-        //    con.Open();
-        //    cmd.ExecuteNonQuery();
-        //    con.Close();
-        //}
-
-        //private void showimage()
-        //{
-        //    SqlCommand com = new SqlCommand("select * from Register where username='" + Session["username"].ToString() + "'", con);
-        //    con.Open();
-        //    SqlDataReader dr = com.ExecuteReader();
-        //    while (dr.Read())
-        //    {
-        //        //lblname.Text = dr["username"].ToString();
-        //        img1.ImageUrl = dr["image"].ToString();
-        //        //string url = dr["image"].ToString();
-        //        //img.ImageUrl = url;
-
-        //    }
-        //    con.Close();
-        //}
-
-      
-
-        private void categorybind()
-        {
-            SqlDataAdapter sda = new SqlDataAdapter("select * from Categories",con);
+            SqlDataAdapter sda = new SqlDataAdapter("select * from Subcategories", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             ddljobtags.DataSource = dt;
             ddljobtags.DataTextField = "Categories";
             ddljobtags.DataValueField = "Categories";
             ddljobtags.DataBind();
-            ddljobtags.Items.Insert(0, new ListItem("Select Category","0"));
         }
+
+        protected void btnsubmit_Click(object sender, EventArgs e)
+        {
+            if (FileUpload2.HasFile)
+            {
+                FileUpload2.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + FileUpload2.FileName));
+            }                
+                SqlCommand cmd = new SqlCommand("insert into PostJob(Jobtitle,Email,Tags,Subjobtag,Mobile,Location,Address,Fileupload) values('" + jobtitle.Text + "','" + email.Text + "','" + ddljobtags.SelectedItem.Text + "','" + ddlsubjobtype.SelectedItem.Text + "','" + txtmobileno.Text + "','" + txtLocation.Text + "','" + txtAddress.Text + "','" + "~/Upload1/" +  "')", con);
+                con.Open(); 
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                cmd.ExecuteNonQuery();
+                con.Close();                       
+        }
+
+        
 
         protected void ddljobtags_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -98,49 +61,8 @@ namespace Dailybasedjobs
             ddlsubjobtype.DataTextField = "Subcategories";
             ddlsubjobtype.DataValueField = "Subcategories";
             ddlsubjobtype.DataBind();
-            ddlsubjobtype.Items.Insert(0, new ListItem("Select Subcategories", "0"));
         }
 
-        protected void btnsubmit_Click(object sender, EventArgs e)
-        {
-            if (FileUpload1.HasFile)
-            {
-                string str = FileUpload1.FileName;
-                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
-                string Image = "~/Upload1/" + str.ToString();
-            }
-            if (FileUpload2.HasFile)
-            {
-                string str = FileUpload2.FileName;
-                FileUpload2.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + str));
-                string Image = "~/Upload1/" + str.ToString();
-            }
-            //HttpPostedFile postedFile = Request.Files["FileUpload1"];
-            //if (postedFile != null && postedFile.ContentLength > 0)
-            //{
-            //    string fn = postedFile.FileName;
-            //    string filePath = Server.MapPath("~/Upload1/") + fn;
-            //    postedFile.SaveAs(filePath);
-
-            //}
-            //HttpPostedFile postedFile2 = Request.Files["FileUpload2"];
-            //if (postedFile2 != null && postedFile2.ContentLength > 0)
-            //{
-            //    string fn = postedFile2.FileName;
-            //    string filePath1 = Server.MapPath("~/Upload1/") + fn;
-            //    postedFile2.SaveAs(filePath1);
-
-            //}
-
-            SqlCommand cmd = new SqlCommand("insert into PostJob(Jobtitle,Email,Tags,Subjobtag,Mobile,Location,Address,Companyname,Image,Fileupload) values('"+jobtitle.Text+"','"+email.Text+"','"+ddljobtags.SelectedValue.ToString()+"','"+ddlsubjobtype.SelectedValue.ToString()+"','"+txtmobileno.Text+"','"+txtLocation.Text+"','"+txtAddress.Text+"','"+lblname.Text+ "', '" + "~/Upload1/" + FileUpload1.FileName + "', '" + "~/Upload1/" + FileUpload2.FileName + "')", con);
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
-            //lbl.Text = "password successfully changed";
-        }
-
-        
-
-      
+       
     }
 }
