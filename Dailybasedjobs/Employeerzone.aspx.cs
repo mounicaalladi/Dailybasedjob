@@ -40,7 +40,7 @@ namespace Dailybasedjobs
             {
 
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Email already Exists')</script>");
-
+              
             }
             else
             {
@@ -67,6 +67,7 @@ namespace Dailybasedjobs
             if (dt.Rows.Count > 0)
             {
                 Response.Redirect("Candidateprofile.aspx");
+                Session["Emp"]= "EmailId";
             }
             else
             {

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Candidates.Master" AutoEventWireup="true" CodeBehind="Candidateprofile.aspx.cs" Inherits="Dailybasedjobs.Candidateprofile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Candidates.Master" EnableEventValidation="true" AutoEventWireup="true" CodeBehind="Candidateprofile.aspx.cs" Inherits="Dailybasedjobs.Candidateprofile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script>
@@ -17,6 +17,15 @@
             }
         }
     </script>
+     <script>
+        $(function () {
+            $('#FileUpload2').click(function () {
+                var lbl = $("#lblName2");
+                var filename = $('#FileUpload2').val();
+                lbl.text(filename);
+            });
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Content -->
@@ -33,59 +42,22 @@
                                     <div class="candidate-detail text-center">
                                         <div class="canditate-des">
                                             <a href="javascript:void(0);">
-                                                <%--<img alt="" src="images/team/pic1.jpg">--%>
-                                                <%-- <asp:Image ID="img1" runat="server" />--%>
-                                                <asp:Image ID="img" ClientIDMode="Static" runat="server" />
-                                         <%--   <asp:FileUpload ID="fileuploadcontrol" CssClass="form-control" Visible="false" runat="server" />--%>
+
+                                              <asp:Image ID="img" ClientIDMode="Static" runat="server" />
                                                 <asp:Label id="lblimge" runat="server" />
-                              
-											<%--</div>--%>
-                                                
+                                    
                                             </a>
                                             <div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-                                                <input type="file"  class="update-flie" name="PostedFile"/>
+                                                  <asp:FileUpload class="update-flie" ID="FileUpload2"  onchange="readURL(this);" runat="server" />
                                                 <i class="fa fa-camera"></i>
-                                                <%--<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">--%>
-
-
-
-
-
-
-
-
-                                                <%--                                            <input class="upload-link fa fa-camera" type="file" title="update" data-toggle="tooltip" data-placement="right" style="right:10px"  onchange="readURL(this);" />--%>
-
-                                                <%--<asp:FileUpload ID="FileUpload1"  CssClass="fa fa-camera"  runat="server" />--%>
-                                                <%-- <asp:LinkButton   ID="save" CausesValidation="false" runat="server" />   --%>
-                                            </div>
-
-                                            <%--<div class="upload-link" title="update" id="theDiv" data-toggle="tooltip" data-placement="right" runat="server">--%>
-
-                                            <%--                                                 <asp:Image ID="imgPreview" ImageUrl='<%#
-
-                            "ImageHandler.ashx?imgID="+ Eval("ImageID") %>' runat="server"
-
-                                Height="80px" Width="80px" />--%>
-                                            <%--                                                
-              <div class="upload-link" title="update"   data-toggle="tooltip" data-placement="right" runat="server">
-											<%--<input type="file" name="FileUpload1" class="update-flie" runat="server" >--%>
-
-                                            <%--    <asp:Button   ID="save" CssClass="fa fa-camera" CausesValidation="false"  OnClick="save_Click" runat="server"  />--%>
-
-                                            <%--		</div>
-                                            --%>
-                                            <%-- <asp:FileUpload ID="FileUpload1" CssClass="form-control"  runat="server" />
-                                                  <asp:button text="ChooseFile" ID="btnFileupload" runat="server" Visible="False" />--%>
-
-                                            <%--	<input type="file" class="update-flie">--%>
-                                            <%--<i class="fa fa-camera"></i>--%>
+                                                    <asp:FileUpload runat="server" ID="FileUploadImage" />
                                         </div>
+   </div>
 
                                     <div class="candidate-title">
                                         <div class="">
                                             <h4 class="m-b5"><a href="javascript:void(0);"><asp:Label ID="lblname" runat="server" /></a></h4>
-                                            <p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>
+                                         <%--   <p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>--%>
 
                                         </div>
                                     </div>
@@ -132,8 +104,8 @@
                                         <div class="form-group">
                                             <asp:Label Text="UserID" runat="server" />
                                             <asp:TextBox ID="TextID" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Userid" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="TextID" runat="server" />
-                                        </div>
+                                          <%--  <asp:RequiredFieldValidator ErrorMessage="Enter Userid" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="TextID" runat="server" />
+                                   --%>     </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
@@ -149,16 +121,16 @@
                                         <div class="form-group">
                                             <asp:Label Text="Email" runat="server" />
                                             <asp:TextBox ID="txtemail" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Email" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="txtemail" runat="server" />
-                                        </div>
+                                        <%--    <asp:RequiredFieldValidator ErrorMessage="Enter Email" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="txtemail" runat="server" />
+                                      --%>  </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <asp:Label Text="Skills" runat="server" />
                                             <asp:TextBox ID="txtsk" class="form-control" runat="server" />
-                                            <asp:RequiredFieldValidator ErrorMessage="Enter Skills" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="txtsk" runat="server" />
-                                        </div>
+                                        <%--    <asp:RequiredFieldValidator ErrorMessage="Enter Skills" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="txtsk" runat="server" />
+                                    --%>    </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
@@ -205,8 +177,8 @@
                                     <div class="form-group">
                                         <asp:Label Text="Phone" runat="server" />
                                         <asp:TextBox ID="Txtphone" class="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator ErrorMessage="Enter Phone Number" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtphone" runat="server" />
-                                    </div>
+                                      <%--  <asp:RequiredFieldValidator ErrorMessage="Enter Phone Number" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtphone" runat="server" />
+                                --%>    </div>
                                 </div>
                                 <%--<div class="col-lg-6 col-md-6">
 											<div class="form-group">
@@ -218,15 +190,15 @@
                                     <div class="form-group">
                                         <asp:Label Text="Area" runat="server" />
                                         <asp:TextBox ID="Txtarea" class="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator ErrorMessage="Enter Area" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtarea" runat="server" />
-                                    </div>
+<%--                                        <asp:RequiredFieldValidator ErrorMessage="Enter Area" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtarea" runat="server" />
+                                    --%></div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <asp:Label Text="Pincode" runat="server" />
                                         <asp:TextBox ID="Txtpin" class="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator ErrorMessage="Enter Picode" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtpin" runat="server" />
-                                    </div>
+                                     <%--   <asp:RequiredFieldValidator ErrorMessage="Enter Picode" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtpin" runat="server" />
+                                  --%>  </div>
                                 </div>
                                 <%--<div class="col-lg-6 col-md-6">
 											<div class="form-group">
@@ -238,8 +210,8 @@
                                     <div class="form-group">
                                         <asp:Label Text="Address" runat="server" />
                                         <asp:TextBox ID="Txtaddress" class="form-control" runat="server" />
-                                        <asp:RequiredFieldValidator ErrorMessage="Enter Address" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtaddress" runat="server" />
-                                    </div>
+                                  <%--      <asp:RequiredFieldValidator ErrorMessage="Enter Address" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtaddress" runat="server" />
+                            --%>        </div>
                                 </div>
                             </div>
                             <%--<button class="site-button m-b30">Save Setting</button>--%>
@@ -254,5 +226,46 @@
     <!-- Browse Jobs END -->
     </div>
     <asp:Label ID="role" runat="server" />
+    	<div class="modal fade lead-form-modal" id="car-details" tabindex="-1" role="dialog" >
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body row m-a0 clearfix">
+					<div class="col-lg-6 col-md-6 overlay-primary-dark d-flex p-a0" style="background-image:url(images/background/bg3.jpg);  background-position:center; background-size:cover;">
+						<div class="form-info text-white align-self-center">
+							<h3 class="m-b15">Login To You Now</h3>
+							<p class="m-b15">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry.</p>
+							<ul class="list-inline m-a0">
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 p-a0">
+						<div class="lead-form browse-job text-left">
+							<form>
+								<h3 class="m-t0">Profile Upload Photo</h3>
+								<div class="form-group">
+                                    <asp:FileUpload ID="FileUpload1" runat="server" />
+								</div>	
+								<%--<div class="form-group">
+									<input value="" class="form-control" placeholder="Mobile Number"/>
+								</div>--%>
+								<div class="clearfix">
+                                    <asp:Button Text="Upload" ID="btnupload" OnClick="btnupload_Click" runat="server" />
+									
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
     <!-- Content END-->
 </asp:Content>

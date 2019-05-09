@@ -37,6 +37,7 @@ namespace Dailybasedjobs
             if (dt.Rows.Count > 0)
             {
                 Response.Redirect("Candidateprofile.aspx");
+                Session["Seeker"] = "EmailId";
             }
             else
             {
