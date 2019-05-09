@@ -329,99 +329,99 @@
 				<div class="row sp20">
 					<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						<div class="col-lg-2 col-md-8 col-sm-8">
 						
-							<img src="images/infosys.png" alt="infosys">
+							<img src="images/infosys.png" alt="infosys"/>
 						</div>	
 						
 

@@ -58,7 +58,7 @@
                 <div class="job-bx submit-resume">
                     <div class="job-bx-title clearfix">
                         <h5 class="font-weight-700 pull-left text-uppercase">Post A Job</h5>
-                        <a href="company-profile.html" class="site-button right-arrow button-sm float-right">Back</a>
+                  
                     </div>
                   
                            
@@ -68,21 +68,19 @@
                                         <div class="form-group">
                                             <asp:Label Text="Job Title" runat="server" />
                                             <asp:TextBox ID="jobtitle" runat="server" class="form-control" placeholder="Enter Job Title" />
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter Job Title"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <asp:Label Text="Your email id" runat="server" />
                                             <asp:TextBox ID="email" runat="server" class="form-control" placeholder="info@gmail.com" />
-                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter Email ID"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <asp:Label Text="Job Tags" runat="server" />
-                                            <asp:DropDownList ID="ddljobtags" class="form-control" data-tagcomplete-id="1555043536764" OnSelectedIndexChanged="ddljobtags_SelectedIndexChanged" AutoPostBack="true" EnableTheming="true" runat="server">
-                                                <asp:ListItem Text="Select Value" />
+                                            <asp:DropDownList ID="ddljobtags" class="form-control" AutoPostBack="true" runat="server" OnSelectedIndexChanged="ddljobtags_SelectedIndexChanged">
+                                                <asp:ListItem Text="Select" />                                              
                                             </asp:DropDownList>
                                             <%--<asp:TextBox ID="jobtags" runat="server" class="form-control tags_input" placeholder="html,css,bootstrap,photoshop" data-tagcomplete-id="1555043536764" />--%>
                                         </div>
@@ -90,9 +88,8 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <asp:Label Text="Sub Job Tags" runat="server" />
-                                            <asp:DropDownList ID="ddlsubjobtype" runat="server" AutoPostBack="true" class="form-control">
-
-                                                <asp:ListItem Text="Select" />
+                                            <asp:DropDownList ID="ddlsubjobtype" runat="server" class="form-control">
+                                                 <asp:ListItem Text="Select" />
                                             </asp:DropDownList>
                                         </div>
                                     </div>
@@ -100,7 +97,6 @@
                                         <div class="form-group">
                                             <asp:Label Text="Mobile No" runat="server" />
                                             <asp:TextBox ID="txtmobileno" runat="server" class="form-control" placeholder="Mobileno" />
-                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Enter Mobile no"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
 
@@ -108,8 +104,7 @@
 
                                         <div class="form-group">
                                             <asp:Label Text="Location" runat="server" />
-                                            <asp:TextBox ID="txtLocation" runat="server" class="form-control" placeholder="Location" />
-                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Enter Location"></asp:RequiredFieldValidator>
+                                            <asp:TextBox ID="txtLocation" runat="server" class="form-control" placeholder="Location" />                                             
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
@@ -117,7 +112,7 @@
                                         <div class="form-group">
                                             <asp:Label Text="Address" runat="server" />
                                             <asp:TextBox ID="txtAddress" TextMode="MultiLine" runat="server" class="form-control" placeholder="Address" />
-                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Enter Address"></asp:RequiredFieldValidator>
+                                             
                                         </div>
                                     </div>
 
@@ -135,11 +130,8 @@
 
                                 </div>
 
-                                <asp:Button Text="Upload" runat="server" ID="btnsubmit" OnClick="btnsubmit_Click" class="site-button m-b30" />
-                           
-
+                                <asp:Button Text="Upload" runat="server" ID="btnsubmit" class="site-button m-b30" OnClick="btnsubmit_Click" />
 </div>
-
                 </div>
             </div>
         </div>

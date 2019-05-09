@@ -21,10 +21,6 @@ namespace Dailybasedjobs
             Response.Redirect("Index.aspx");
         }
 
-        protected void sign_Click(object sender, EventArgs e)
-        {
-            Session.Abandon();
-            Response.Redirect("Index.aspx");
-        }
+        
     }
 }

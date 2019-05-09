@@ -12,7 +12,7 @@
                         <div class="text-white max-w400 align-self-center">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="images/logo-white2.png" alt=""></a>
+                                    <img src="images/logo-white2.png" alt=""/></a>
                             </div>
                             <h2 class="m-b10">Login To You Now</h2>
                             <p class="m-b30">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry.</p>
@@ -115,6 +115,9 @@
 										<div class="form-group row">
                                             <div class="col-md-4">
                                                  <asp:Label Text="Email" ID="lbEmail" runat="server" />
+
+                                                  <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="lbEmail1" runat="server" />
+                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Emial" ControlToValidate="lbEmail1" runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
                                             </div>
                                            <div class="col-md-7">
                                                <asp:TextBox runat="server" ID="txtEmail" />
@@ -124,6 +127,9 @@
                                             	<div class="form-group row">
                                                     <div class="col-md-4">
                                                       <asp:Label Text="Password" ID="lbpswd" runat="server" />
+
+                                                          <asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="lbpswd" runat="server" />
+                                                        <asp:RangeValidator ErrorMessage="Minimum 6 Characters required" ControlToValidate="lbpswd" runat="server" MaximumValue="8" MinimumValue="6" />
                                                     </div>
                                             <div class="col-md-7">
                                                 <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
