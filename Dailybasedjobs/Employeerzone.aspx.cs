@@ -23,33 +23,7 @@ namespace Dailybasedjobs
 
      
 
-        protected void btnsignup_Click(object sender, EventArgs e)
-        {
-
-            SqlCommand cmd1 = new SqlCommand("select * from Employerzone where Companyname='" + txtusname.Text + "' or EmailId='" + txtEmail.Text + "' ", con);
-            con.Open();
-            SqlDataAdapter sd = new SqlDataAdapter(cmd1);
-            DataTable dt1 = new DataTable();
-            sd.Fill(dt1);
-
-            int i = cmd1.ExecuteNonQuery();
-
-
-            if (dt1.Rows.Count > 0)
-            {
-
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Email already Exists')</script>");
-              
-            }
-            else
-            {
-                
-                SqlCommand cmd = new SqlCommand("insert into Employerzone(Companyname,EmailId,Password,Organization) values('" + txtusname.Text + "','" + txtEmail.Text + "','" + txtPswd.Text + "','" +txtorg.Text+"')", con);
-
-                cmd.ExecuteNonQuery();
-            }
-            con.Close();
-        }
+       
 
         protected void btnSignin_Click(object sender, EventArgs e)
         {
@@ -75,5 +49,33 @@ namespace Dailybasedjobs
             }
         }
 
+       
+
+        protected void btnsign_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd1 = new SqlCommand("select * from Employerzone where Companyname='" + txtusname.Text + "' or EmailId='" + txtEmail.Text + "' ", con);
+            con.Open();
+            SqlDataAdapter sd = new SqlDataAdapter(cmd1);
+            DataTable dt1 = new DataTable();
+            sd.Fill(dt1);
+
+            int i = cmd1.ExecuteNonQuery();
+
+
+            if (dt1.Rows.Count > 0)
+            {
+
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Email already Exists')</script>");
+
+            }
+            else
+            {
+
+                SqlCommand cmd = new SqlCommand("insert into Employerzone(Companyname,EmailId,Password,Organization) values('" + txtusname.Text + "','" + txtEmail.Text + "','" + txtPswd.Text + "','" + txtorg.Text + "')", con);
+
+                cmd.ExecuteNonQuery();
+            }
+            con.Close();
+        }
     }
 }

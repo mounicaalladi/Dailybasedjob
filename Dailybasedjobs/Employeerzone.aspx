@@ -36,7 +36,7 @@
 											<br>
 										<div class="sss">
 									  <ul class="nav nav-tabs justify-content-center" >
-										<li class="nav-item">
+										<li class="nav-item" >
 										  <a class="nav-link " data-toggle="tab" href="#home">SIGN IN</a>
 										</li>
 										<li class="nav-item">
@@ -48,7 +48,8 @@
 									
 									  <!-- Tab panes -->
 									  <div class="tab-content">
-										<div id="home" class=" tab-pane active"><br>
+										<div id="home" class=" tab-pane active" id="contentOne-1" ><br>
+                                            
 										  <h3>SIGN IN</h3>
 										 
 											<div class="form-group row">
@@ -56,8 +57,8 @@
                                                      <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
                                                     </div>
                                                 <div class="col-md-7">
-                                                     <asp:TextBox runat="server" ID="txtEmail1" />
-										  	<asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="txtEmail1" runat="server" />
+                                                     <asp:TextBox runat="server" ID="txtEmail1" AutoComplete="off"  />
+										  	<asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ValidationGroup="signin" ControlToValidate="txtEmail1" runat="server" />
                                                   <%--  <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Emial" ControlToValidate="txtEmail1" runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
                                               --%>
                                                 </div>
@@ -67,15 +68,15 @@
                                                          <asp:Label Text="Password" ID="lbpwd1" runat="server" />
                                                         </div>
                                                     <div class="col-md-7">
-                                                            <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
-                                                        <asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="txtpwd1" runat="server" />
+                                                            <asp:TextBox runat="server" ID="txtpwd1" AutoComplete="off" TextMode="Password"  />
+                                                        <asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ValidationGroup="signin" ForeColor="Red" ControlToValidate="txtpwd1" runat="server" />
                                                       <%--  <asp:RangeValidator ErrorMessage="Minimum 6 Characters required" ControlToValidate="txtpwd1" runat="server" MaximumValue="8" MinimumValue="6" />
                                                   --%>  
                                                     </div>
                                                   
 										 	</div>
                                        <div style="text-align:center">
-                                            <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	
+                                            <asp:Button Text="Sign In" ID="btnSignin" ValidationGroup="signin" OnClick="btnSignin_Click" runat="server" />	
 									
                                        </div>
                                            
@@ -83,12 +84,13 @@
 										<div id="menu1" class=" tab-pane fade" style="height: 363px"><br>
 										  <h3>SIGN UP</h3>
 										 
-							 <div class="form-group row">
+							                <div class="form-group row">
                                             <div class="col-md-4">
                                                  <asp:Label Text="Companyname" ID="lbusname" runat="server" />
                                             </div>
                                            <div class="col-md-7">
-                                             <asp:TextBox runat="server" ID="txtusname" />
+                                             <asp:TextBox runat="server" ID="txtusname" AutoComplete="off" />
+                                               <asp:RequiredFieldValidator ErrorMessage="errormessage" ValidationGroup="register" ControlToValidate="txtusname" runat="server" />
                                            </div>
                                            
 										 	</div>
@@ -97,7 +99,8 @@
                                             <asp:Label Text="Organization" ID="lborg" runat="server" />
                                         </div>
                                         <div class="col-md-7">
-                                            <asp:TextBox runat="server" ID="txtorg"  />
+                                            <asp:TextBox runat="server" ID="txtorg" AutoComplete="off"/>
+                                            <asp:RequiredFieldValidator ErrorMessage="errormessage" ValidationGroup="register" ControlToValidate="txtorg" runat="server" />
                                         </div>
                                         
 									</div>
@@ -106,7 +109,8 @@
                                                  <asp:Label Text="Email" ID="lbEmail" runat="server" />
                                             </div>
                                            <div class="col-md-7">
-                                               <asp:TextBox runat="server" ID="txtEmail" />
+                                               <asp:TextBox runat="server" ID="txtEmail" AutoComplete="off" />
+                                               <asp:RequiredFieldValidator ErrorMessage="errormessage" ControlToValidate="txtEmail" ValidationGroup="register" runat="server" />
                                            </div>
                                             
 										  	</div>
@@ -115,15 +119,25 @@
                                                       <asp:Label Text="Password" ID="lbpswd" runat="server" />
                                                     </div>
                                             <div class="col-md-7">
-                                                <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
-										 	
+                                                <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" AutoComplete="off" />
+                                                <asp:RequiredFieldValidator ErrorMessage="errormessage" ControlToValidate="txtPswd" ValidationGroup="register" runat="server" />
+                                            
                                             </div>
                                             </div>
-									
+									<div class="form-group row">
+                                            <div class="col-md-4">
+                                                 <asp:Label Text="Phone No." ID="Label1" runat="server" />
+                                            </div>
+                                           <div class="col-md-7">
+                                               <asp:TextBox runat="server" ID="txtPhoneno" AutoComplete="off" />
+                                               <asp:RequiredFieldValidator ErrorMessage="errormessage" ControlToValidate="txtPhoneno" ValidationGroup="register" runat="server" />
+                                           </div>
+                                            
+										  	</div>
+                                          
                                             <br />
                                             <div style="text-align:center">
-                                            <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	 
-									
+                                                <asp:Button Text="Signup" ID="btnsign" OnClick="btnsign_Click" ValidationGroup="register" runat="server" />
                                             </div>
                                             
 										</div>
