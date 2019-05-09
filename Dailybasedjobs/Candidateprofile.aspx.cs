@@ -36,7 +36,7 @@ namespace Dailybasedjobs
 
         private void DataReader()
         {
-            SqlCommand cmd = new SqlCommand("select * from Jobseekerzone where  Username='" + txtname.Text + "' and ( EmailId='"+Session["Seeker"] + "' or Username='"+txtname.Text+"'  )", con);
+            SqlCommand cmd = new SqlCommand("select * from Jobseekerzone where ( EmailId='"+Session["Seeker"] + "' or Username='" + Session["Seeker"] + "'  )", con);
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
