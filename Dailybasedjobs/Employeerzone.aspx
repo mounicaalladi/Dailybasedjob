@@ -134,12 +134,13 @@
 									</div>
 
 					</div>
+
 				</div>
 			</div>
 			<!-- Login Page END -->
 		</div>
 		
-		
+            <asp:Label ID="lbname" Visible="false" runat="server" />
 	</div>
     <!-- Content END -->
    

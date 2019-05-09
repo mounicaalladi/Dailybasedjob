@@ -15,7 +15,7 @@ namespace Dailybasedjobs
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Emp"] != null)
+            if (Session["Emp"]== null)
             {
                 if (!IsPostBack)
                 {
@@ -33,12 +33,12 @@ namespace Dailybasedjobs
         private void FileUploadReader()
         {
 
-            SqlCommand com = new SqlCommand("select * from Employerzone where CompanyName='" + Session["Emp"].ToString() + "'", con);
+            SqlCommand com = new SqlCommand("select * from Employerzone where (Companyname='"+Session["Emp"].ToString()+"' or EmailId='" + Session["Emp"].ToString() + "') ", con);
             con.Open();
             SqlDataReader dr = com.ExecuteReader();
             while (dr.Read())
             {
-                lblname.Text = dr["CompanyName"].ToString();
+                txtname.Text = dr["Companyname"].ToString();
 
             }
             con.Close();

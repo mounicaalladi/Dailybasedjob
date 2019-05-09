@@ -56,7 +56,7 @@
 
                                     <div class="candidate-title">
                                         <div class="">
-                                            <h4 class="m-b5"><a href="javascript:void(0);"><asp:Label ID="lblname" runat="server" /></a></h4>
+                                            <h4 class="m-b5"><a href="javascript:void(0);"><asp:Label ID="txtname" runat="server" /></a></h4>
                                          <%--   <p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>--%>
 
                                         </div>
@@ -210,7 +210,7 @@
     </div>
     <!-- Browse Jobs END -->
     </div>
-    <asp:Label ID="role" runat="server" />
+    <asp:Label ID="lbname" Visible="false" runat="server" />
     	
     <!-- Content END-->
 </asp:Content>

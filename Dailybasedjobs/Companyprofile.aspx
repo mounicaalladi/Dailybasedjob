@@ -55,7 +55,7 @@
 
                                     <div class="candidate-title">
                                         <div class="">
-                                            <h4 class="m-b5"><a href="javascript:void(0);"><asp:Label ID="lblname" runat="server" /></a></h4>
+                                            <h4 class="m-b5"><a href="javascript:void(0);"><asp:Label ID="txtname" runat="server" /></a></h4>
                                          <%--   <p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>--%>
 
                                         </div>
@@ -169,21 +169,7 @@
                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" BorderColor="Red" ForeColor="#FF3300" ControlToValidate="txtphone" ErrorMessage="Enter Phone No"></asp:RequiredFieldValidator>
 											</div>
 										</div>
-										<%--<div class="col-lg-6 col-md-6">
-											<%--<div class="form-group">
-												<label>Email</label>
-												<input type="email" class="form-control" placeholder="exemple@gmail.com">
-                                                <asp:TextBox ID="TextBox1" runat="server" />
-											</div>
-										</div>--%>
-							<%--			
-										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>Area</label>
-												<%--<input type="email" class="form-control" placeholder="Delhi">
-                                                <asp:TextBox ID="Txtarea" class="form-control" runat="server" />
-											</div>
-										</div>--%>
+									
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
 												<label>Zip</label>
@@ -250,4 +236,5 @@
 		</div>
     </div>
     <!-- Content END-->
+   
 </asp:Content>

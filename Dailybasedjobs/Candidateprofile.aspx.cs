@@ -18,39 +18,33 @@ namespace Dailybasedjobs
       
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Seeker"]!= null)
-            {
+            //if (Session["Seeker"]!= null)
+            //{
                 if (!IsPostBack)
                 {
-                    FileUploadReader();
-                   
+                    DataReader();
+
+
                 }
                 else
                 {
                     Response.Redirect("Index.aspx");
                 }
-            }
-            
-
+           // }
+           
         }
 
-        private void FileUploadReader()
+        private void DataReader()
         {
-
-            SqlCommand com = new SqlCommand("select * from Jobseekerzone where Username='" + Session["Seeker"].ToString() + "'", con);
+            SqlCommand cmd = new SqlCommand("select * from Jobseekerzone where  Username='" + txtname.Text + "' and ( EmailId='"+Session["Seeker"] + "' or Username='"+txtname.Text+"'  )", con);
             con.Open();
-            SqlDataReader dr = com.ExecuteReader();
+            SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-               
-                lblname.Text = dr["Username"].ToString();
-                //img.ImageUrl = dr["image"].ToString();
-
+                txtname.Text = dr["Username"].ToString();
             }
             con.Close();
         }
-
-
 
         protected void btnsave_Click(object sender, EventArgs e)
         {

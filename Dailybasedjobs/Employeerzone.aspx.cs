@@ -18,11 +18,10 @@ namespace Dailybasedjobs
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
 
-        
-       
+     
 
         protected void btnsignup_Click(object sender, EventArgs e)
         {
@@ -75,5 +74,6 @@ namespace Dailybasedjobs
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('check userid/password')</script>");
             }
         }
+
     }
 }
