@@ -52,7 +52,7 @@
                                                 <i class="fa fa-camera"></i>
                                                   
                                         </div>
-   </div>
+                                      </div>
 
                                     <div class="candidate-title">
                                         <div class="">
@@ -175,12 +175,7 @@
                                       <%--  <asp:RequiredFieldValidator ErrorMessage="Enter Phone Number" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtphone" runat="server" />
                                 --%>    </div>
                                 </div>
-                                <%--<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>Email Address:</label>
-												<input type="text" class="form-control" placeholder="info@example.com">
-											</div>
-										</div>--%>
+                             
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <asp:Label Text="Area" runat="server" />
@@ -195,12 +190,7 @@
                                      <%--   <asp:RequiredFieldValidator ErrorMessage="Enter Picode" ForeColor="#FF3300" BorderColor="Red" ControlToValidate="Txtpin" runat="server" />
                                   --%>  </div>
                                 </div>
-                                <%--<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>City:</label>
-												<input type="text" class="form-control" placeholder="London">
-											</div>
-										</div>--%>
+                            
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <asp:Label Text="Address" runat="server" />

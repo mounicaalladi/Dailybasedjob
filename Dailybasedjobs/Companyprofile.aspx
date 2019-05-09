@@ -1,5 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Employeers.Master" AutoEventWireup="true" CodeBehind="Companyprofile.aspx.cs" Inherits="Dailybasedjobs.Companyprofile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+       <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(150);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+     <script>
+        $(function () {
+            $('#FileUpload2').click(function () {
+                var lbl = $("#lblName2");
+                var filename = $('#FileUpload2').val();
+                lbl.text(filename);
+            });
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <!-- Content -->
@@ -15,22 +40,27 @@
 								<div class="candidate-info company-info">
 									<div class="candidate-detail text-center">
 										<div class="canditate-des">
-											<a href="javascript:void(0);">
-												<%--<img alt="" src="images/logo/icon3.jpg">--%>
-                                                <asp:Image ID="img" ClientIDMode="Static" runat="server" />
-                                                 <asp:Label id="lblimge" runat="server" />
-											</a>
-											<div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
-												<%--<input type="file" class="update-flie">--%>
-                                               <input type="file"  class="update-flie" name="PostedFile"/>
+											   <a href="javascript:void(0);">
+
+                                              <asp:Image ID="img" ClientIDMode="Static" runat="server" />
+                                                <asp:Label id="lblimge" runat="server" />
+                                    
+                                            </a>
+                                            <div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
+                                                  <asp:FileUpload class="update-flie" ID="FileUpload2"  onchange="readURL(this);" runat="server" />
                                                 <i class="fa fa-camera"></i>
-                                            </div>
-										</div>
-										<div class="candidate-title">
-											<h4 class="m-b5">
-                                                <asp:Label ID="lblname" runat="server" /></h4>
-										</div>
+                                                  
+                                        </div>
+                                     </div>
+
+                                    <div class="candidate-title">
+                                        <div class="">
+                                            <h4 class="m-b5"><a href="javascript:void(0);"><asp:Label ID="lblname" runat="server" /></a></h4>
+                                         <%--   <p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>--%>
+
+                                        </div>
 									</div>
+                                </div>
 									<ul>
 										<li><a href="company-profile.html" class="active">
 											<i class="fa fa-user-o" aria-hidden="true"></i> 
