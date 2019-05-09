@@ -49,13 +49,13 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.TextBox txtpwd1;
         
         /// <summary>
-        /// btnSignin control.
+        /// btnsign control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSignin;
+        protected global::System.Web.UI.WebControls.Button btnsign;
         
         /// <summary>
         /// lbusname control.

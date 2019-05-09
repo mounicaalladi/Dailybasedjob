@@ -66,8 +66,8 @@ namespace Dailybasedjobs
             con.Close();
             if (dt.Rows.Count > 0)
             {
-                Session["Emp"] = "Username";
-                Response.Redirect("Candidateprofile.aspx");
+                Session["Emp"] =txtEmail1.Text;
+                Response.Redirect("Companyprofile.aspx");
                 
             }
             else

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Index.Master" AutoEventWireup="true" CodeBehind="Jobseekerzone.aspx.cs" Inherits="Dailybasedjobs.Jobseekerzone" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Index.Master" EnableEventValidation="true" AutoEventWireup="true" CodeBehind="Jobseekerzone.aspx.cs" Inherits="Dailybasedjobs.Jobseekerzone" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -73,8 +73,8 @@
                                                   
 										 	</div>
                                        <div style="text-align:center">
-                                            <asp:Button Text="Sign In" ID="btnSignin" OnClick="btnSignin_Click" runat="server" />	
-									
+                                         
+                                           <asp:Button Text="Signin" ID="btnsign" OnClick="btnsign_Click" runat="server" />
                                        </div>
                                            
 										</div>
@@ -119,9 +119,9 @@
                                                  </div>
                                            <div class="col-md-7">
                                                <asp:TextBox runat="server" ID="txtEmail" />
-                                                <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
+                                           <%--     <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
                                                     <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Email" ControlToValidate="txtEmail" runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
-                                            
+                                          --%>  
                                            </div>
                                             
 										  	</div>
@@ -132,9 +132,9 @@
                                                           </div>
                                             <div class="col-md-7">
                                                 <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
-										 	<asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="txtPswd" runat="server" />
+										 	<%--<asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="txtPswd" runat="server" />
                                                         <asp:RangeValidator ErrorMessage="Minimum 6 Characters required" ControlToValidate="txtPswd" runat="server" />
-                                                    
+                                          --%>          
                                             </div>
                                             </div>
 									

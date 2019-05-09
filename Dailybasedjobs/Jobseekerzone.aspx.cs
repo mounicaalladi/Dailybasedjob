@@ -21,29 +21,7 @@ namespace Dailybasedjobs
         }
 
 
-        protected void btnSignin_Click(object sender, EventArgs e)
-        {
-
-            string securepass = FormsAuthentication.HashPasswordForStoringInConfigFile(txtpwd1.Text, "SHA1");
-            SqlCommand cmd4 = new SqlCommand("select * from Jobseekerzone where (EmailId=@User COLLATE Latin1_General_CS_AS or Username=@User COLLATE Latin1_General_CS_AS)  and Password=@password COLLATE Latin1_General_CS_AS", con);
-            cmd4.Parameters.AddWithValue("@User", txtEmail1.Text);
-            cmd4.Parameters.AddWithValue("@Password", txtpwd1.Text);
-            SqlDataAdapter sdq = new SqlDataAdapter(cmd4);
-            DataTable dt = new DataTable();
-            sdq.Fill(dt);
-            con.Open();
-            int i = cmd4.ExecuteNonQuery();
-            con.Close();
-            if (dt.Rows.Count > 0)
-            {
-                Response.Redirect("Candidateprofile.aspx");
-                Session["Seeker"] = "Username";
-            }
-            else
-            {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('check userid/password')</script>");
-            }
-        }
+      
         protected void btnsignup_Click(object sender, EventArgs e)
         {
             SqlCommand cmd1 = new SqlCommand("select * from Jobseekerzone where Username='" + txtusname.Text + "' or EmailId='" + txtEmail.Text + "' ", con);
@@ -73,6 +51,28 @@ namespace Dailybasedjobs
 
         }
 
-      
+        protected void btnsign_Click(object sender, EventArgs e)
+        {
+            string securepass = FormsAuthentication.HashPasswordForStoringInConfigFile(txtpwd1.Text, "SHA1");
+            SqlCommand cmd4 = new SqlCommand("select * from Jobseekerzone where (EmailId=@User COLLATE Latin1_General_CS_AS or Username=@User COLLATE Latin1_General_CS_AS)  and Password=@password COLLATE Latin1_General_CS_AS", con);
+            cmd4.Parameters.AddWithValue("@User", txtEmail1.Text);
+            cmd4.Parameters.AddWithValue("@Password", txtpwd1.Text);
+            SqlDataAdapter sdq = new SqlDataAdapter(cmd4);
+            DataTable dt = new DataTable();
+            sdq.Fill(dt);
+            con.Open();
+            int i = cmd4.ExecuteNonQuery();
+            con.Close();
+            if (dt.Rows.Count > 0)
+            {
+                Session["Seeker"] = txtEmail1.Text;
+                Response.Redirect("Candidateprofile.aspx");
+                
+            }
+            else
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('check userid/password')</script>");
+            }
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace Dailybasedjobs
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["username"] == null)
+            if (Session["Emp"] != null)
             {
                 if (!IsPostBack)
                 {
@@ -33,12 +33,12 @@ namespace Dailybasedjobs
         private void FileUploadReader()
         {
 
-            SqlCommand com = new SqlCommand("select * from Employeerzone where Username='" + Session["Emp"].ToString() + "'", con);
+            SqlCommand com = new SqlCommand("select * from Employerzone where CompanyName='" + Session["Emp"].ToString() + "'", con);
             con.Open();
             SqlDataReader dr = com.ExecuteReader();
             while (dr.Read())
             {
-                lblname.Text = dr["Username"].ToString();
+                lblname.Text = dr["CompanyName"].ToString();
 
             }
             con.Close();
@@ -53,7 +53,7 @@ namespace Dailybasedjobs
             if (FileUpload2.HasFile)
             {
                 strname = FileUpload2.FileName.ToString();
-                FileUpload2.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + strname));
+                FileUpload2.PostedFile.SaveAs(Server.MapPath("~/Upload1/"+ strname));
             }
             SqlCommand cmd = new SqlCommand("insert into CompanyProfile(CompanyName,Email,Website,Category,Description,Phone,Pincode,Address,Facebook,Twitter,Google,Linkedin,logo) values('" + Textcname.Text + "','" + txtemail.Text + "','" + Texwebsite.Text + "','" + ddlcat.SelectedItem.ToString() + "','" + txtdesc.Text + "','" + txtphone.Text + "','" + Textzip.Text + "','" + Texaddress.Text + "','" + txtfb.Text + "','" + txttwter.Text + "','" + txtgoogle.Text + "','" + txtlin.Text + "','"+"~/Upload1/" + strname+"')", con);
             con.Open();

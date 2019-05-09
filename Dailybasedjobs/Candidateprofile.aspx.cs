@@ -18,12 +18,12 @@ namespace Dailybasedjobs
       
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Username"] == null)
+            if (Session["Seeker"]!= null)
             {
                 if (!IsPostBack)
                 {
                     FileUploadReader();
-
+                   
                 }
                 else
                 {
