@@ -90,28 +90,7 @@
                                            </div>
                                            
 										 	</div>
-                                            <div class="form-group row">
-                                        <div class="col-md-4">
-                                            <asp:Label Text="City" ID="lbcity" runat="server" />
-                                        </div>
-                                        <div class="col-md-7">
-                                            
-                                            <asp:DropDownList ID="ddlcity" runat="server">
-                                                <asp:ListItem Text="--Select City--" />
-                                                <asp:ListItem Text="Ahmedabad" />
-                                                <asp:ListItem Text="Bangalore" />
-                                                <asp:ListItem Text="Chennai" />
-                                                 <asp:ListItem Text="Delhi" />
-                                                <asp:ListItem Text="Hyderabad" />
-                                                <asp:ListItem Text="Kolkata" />
-                                                <asp:ListItem Text="Mumbai" />
-                                                <asp:ListItem Text="Pune" />
-                                                <asp:ListItem Text="Surat" />
-                                                <asp:ListItem Text="Visakhapatnam" />
-                                            </asp:DropDownList>
-                                        </div>
-                                        
-									</div>
+                                   
 										<div class="form-group row">
                                             <div class="col-md-4">
                                                  <asp:Label Text="Email" ID="lbEmail" runat="server" />
@@ -119,9 +98,10 @@
                                                  </div>
                                            <div class="col-md-7">
                                                <asp:TextBox runat="server" ID="txtEmail" />
-                                           <%--     <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
-                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Email" ControlToValidate="txtEmail" runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
-                                          --%>  
+
+                                              <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
+                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Email" ControlToValidate="txtEmail" runat="server" ForeColor="#FF3300" ValidationExpression="<%--\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*--%> [a-z,A-Z{0,10}@swankinnovation.com]" />
+                                            
                                            </div>
                                             
 										  	</div>
@@ -137,7 +117,28 @@
                                           --%>          
                                             </div>
                                             </div>
-									
+                                            <div class="form-group row">
+                                                    <div class="col-md-4">
+                                                      <asp:Label Text="Password" ID="Phoneno" runat="server" />
+
+                                                          </div>
+                                            <div class="col-md-7">
+                                                <asp:TextBox runat="server" ID="txtphone" TextMode="Password" />
+										 	<%--<asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="txtPswd" runat="server" />
+                                                        <asp:RangeValidator ErrorMessage="Minimum 6 Characters required" ControlToValidate="txtPswd" runat="server" />
+                                          --%>          
+                                            </div>
+                                            </div>
+									         <div class="form-group row">
+                                        <div class="col-md-4">
+                                            <asp:Label Text="City" ID="lbcity" runat="server" />
+                                        </div>
+                                        <div class="col-md-7">
+                                            
+                                            <asp:TextBox runat="server" ID="txtcity" />
+                                        </div>
+                                        
+									</div>
                                             <br />
                                             <div style="text-align:center">
                                             <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	 

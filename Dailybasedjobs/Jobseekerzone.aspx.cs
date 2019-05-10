@@ -42,7 +42,7 @@ namespace Dailybasedjobs
             else
             {
               
-                SqlCommand cmd = new SqlCommand("insert into Jobseekerzone(Username,EmailId,Password,City) values('" + txtusname.Text + "','" + txtEmail.Text + "','" + txtPswd.Text +"','"+ddlcity.SelectedItem.ToString()+"')", con);
+                SqlCommand cmd = new SqlCommand("insert into Jobseekerzone(Username,EmailId,Password,Phoneno,City) values('" + txtusname.Text + "','" + txtEmail.Text + "','" + txtPswd.Text +"','"+txtphone.Text+"','"+ txtcity.Text+"')", con);
 
                 cmd.ExecuteNonQuery();
             }

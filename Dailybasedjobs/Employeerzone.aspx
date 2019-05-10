@@ -59,8 +59,8 @@
                                                 <div class="col-md-7">
                                                      <asp:TextBox runat="server" ID="txtEmail1" AutoComplete="off"  />
 										  	<asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ValidationGroup="signin" ControlToValidate="txtEmail1" runat="server" />
-                                                  <%--  <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Emial" ControlToValidate="txtEmail1" runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
-                                              --%>
+                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Emial" ControlToValidate="txtEmail1" ValidationGroup="signin" runat="server" ForeColor="#FF3300" ValidationExpression="[a-z,A-Z{0,10}@swankinnovation.com]" />
+                                              
                                                 </div>
                                             </div>
                                             	<div class="form-group row">
@@ -104,6 +104,16 @@
                                         </div>
                                         
 									</div>
+                                            	<div class="form-group row">
+                                            <div class="col-md-4">
+                                                 <asp:Label Text="Phone No." ID="Label1" runat="server" />
+                                            </div>
+                                           <div class="col-md-7">
+                                               <asp:TextBox runat="server" ID="txtPhoneno" AutoComplete="off" />
+                                               <asp:RequiredFieldValidator ErrorMessage="errormessage" ControlToValidate="txtPhoneno" ValidationGroup="register" runat="server" />
+                                           </div>
+                                            
+										  	</div>
 										<div class="form-group row">
                                             <div class="col-md-4">
                                                  <asp:Label Text="Email" ID="lbEmail" runat="server" />
@@ -111,6 +121,7 @@
                                            <div class="col-md-7">
                                                <asp:TextBox runat="server" ID="txtEmail" AutoComplete="off" />
                                                <asp:RequiredFieldValidator ErrorMessage="errormessage" ControlToValidate="txtEmail" ValidationGroup="register" runat="server" />
+                                           
                                            </div>
                                             
 										  	</div>
@@ -124,20 +135,11 @@
                                             
                                             </div>
                                             </div>
-									<div class="form-group row">
-                                            <div class="col-md-4">
-                                                 <asp:Label Text="Phone No." ID="Label1" runat="server" />
-                                            </div>
-                                           <div class="col-md-7">
-                                               <asp:TextBox runat="server" ID="txtPhoneno" AutoComplete="off" />
-                                               <asp:RequiredFieldValidator ErrorMessage="errormessage" ControlToValidate="txtPhoneno" ValidationGroup="register" runat="server" />
-                                           </div>
-                                            
-										  	</div>
+								
                                           
                                             <br />
                                             <div style="text-align:center">
-                                                <asp:Button Text="Signup" ID="btnsign" OnClick="btnsign_Click" ValidationGroup="register" runat="server" />
+                                                <asp:Button Text="Signup" ID="btnsign" OnClick="btnsign_Click1" ValidationGroup="register" runat="server" />
                                             </div>
                                             
 										</div>

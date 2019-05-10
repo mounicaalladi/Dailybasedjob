@@ -51,8 +51,11 @@ namespace Dailybasedjobs
 
        
 
-        protected void btnsign_Click(object sender, EventArgs e)
+   
+        protected void btnsign_Click1(object sender, EventArgs e)
         {
+           
+
             SqlCommand cmd1 = new SqlCommand("select * from Employerzone where Companyname='" + txtusname.Text + "' or EmailId='" + txtEmail.Text + "' ", con);
             con.Open();
             SqlDataAdapter sd = new SqlDataAdapter(cmd1);
@@ -61,21 +64,43 @@ namespace Dailybasedjobs
 
             int i = cmd1.ExecuteNonQuery();
 
-
-            if (dt1.Rows.Count > 0)
+            string mail = txtEmail.Text;
+            int s1 = mail.IndexOf("@gmail.com");
+            int s2 = mail.IndexOf("@yahoo.com");
+            int s3 = mail.IndexOf("@hotmail.com");
+            int s4 = mail.IndexOf("@orkut.com");
+            if ((s1 > 1 && s2 < 1 && s3 < 1 && s4 < 1) || (s1 < 1 && s2 > 1 && s3 < 1 && s4 < 1) || (s1 < 1 && s2 < 1 && s3 > 1 && s4 < 1) || (s1 < 1 && s2 < 1 && s3 < 1 && s4 > 1))
             {
-
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Email already Exists')</script>");
 
             }
             else
             {
+                if (dt1.Rows.Count > 0)
+                {
 
-                SqlCommand cmd = new SqlCommand("insert into Employerzone(Companyname,EmailId,Password,Organization) values('" + txtusname.Text + "','" + txtEmail.Text + "','" + txtPswd.Text + "','" + txtorg.Text + "')", con);
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Email already Exists')</script>");
 
-                cmd.ExecuteNonQuery();
+                }
+                else
+                {
+
+                    SqlCommand cmd = new SqlCommand("insert into Employerzone(Companyname,Organization,Phoneno,EmailId,Password) values('" + txtusname.Text + "','" + txtorg.Text + "','" + txtPhoneno.Text + "','" + txtEmail.Text + "','" + txtPswd.Text + "')", con);
+
+                  int i1=cmd.ExecuteNonQuery();
+                    if(i1 > 0)
+                    {
+                        Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert( 'Your companyname is registered:"+txtusname.Text+"' )</script>");
+
+
+                    }
+
+                }
+                con.Close();
             }
-            con.Close();
         }
+
+
+           
     }
 }
