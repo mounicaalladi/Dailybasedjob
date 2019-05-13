@@ -48,7 +48,7 @@
 									
 									  <!-- Tab panes -->
 									  <div class="tab-content">
-										<div id="home" class=" tab-pane active" id="contentOne-1" ><br>
+										<div id="home" class=" tab-pane active" ><br>
                                             
 										  <h3>SIGN IN</h3>
 										 
@@ -59,9 +59,8 @@
                                                 <div class="col-md-7">
                                                      <asp:TextBox runat="server" ID="txtEmail1" AutoComplete="off"  />
 										  	<asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ValidationGroup="signin" ControlToValidate="txtEmail1" runat="server" />
-                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Emial" ControlToValidate="txtEmail1" ValidationGroup="signin" runat="server" ForeColor="#FF3300" ValidationExpression="[a-z,A-Z{0,10}@swankinnovation.com]" />
-                                              
-                                                </div>
+                                                 <asp:RegularExpressionValidator ErrorMessage="Invalid email id" ControlToValidate="txtEmail1" runat="server" ID="regurlarexpression" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+                                              </div>
                                             </div>
                                             	<div class="form-group row">
                                                     <div class="col-md-4">
