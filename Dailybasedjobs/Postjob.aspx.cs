@@ -38,7 +38,7 @@ namespace Dailybasedjobs
 
         private void imageread()
         {
-            SqlCommand com = new SqlCommand("select * from CompanyProfile where CompanyName='" + Session["CompanyName"].ToString() + "'", con);
+            SqlCommand com = new SqlCommand("select * from CompanyProfile where CompanyName='""'", con);
             con.Open();
             SqlDataReader dr = com.ExecuteReader();
             while (dr.Read())

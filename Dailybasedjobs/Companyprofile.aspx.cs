@@ -22,10 +22,11 @@ namespace Dailybasedjobs
                     FileUploadReader();
 
                 }
-                else
-                {
-                    Response.Redirect("Index.aspx");
-                }
+               
+            }
+            else
+            {
+                Response.Redirect("Index.aspx");
             }
         }
 
