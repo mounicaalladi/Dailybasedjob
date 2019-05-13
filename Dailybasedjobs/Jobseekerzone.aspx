@@ -99,8 +99,8 @@
                                            <div class="col-md-7">
                                                <asp:TextBox runat="server" ID="txtEmail" />
 
-                                              <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ControlToValidate="txtEmail" runat="server" />
-                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Email" ControlToValidate="txtEmail" runat="server" ForeColor="#FF3300" ValidationExpression="<%--\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*--%> [a-z,A-Z{0,10}@swankinnovation.com]" />
+                                              <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ValidationGroup="Signup"  ControlToValidate="txtEmail" runat="server" />
+                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Email" ControlToValidate="txtEmail" ValidationGroup="Signup"  runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)* <%--[a-z,A-Z{0,10}@swankinnovation.com]--%>" />
                                             
                                            </div>
                                             
@@ -135,13 +135,13 @@
                                         </div>
                                         <div class="col-md-7">
                                             
-                                            <asp:TextBox runat="server" ID="txtcity" />
+                                            <asp:TextBox runat="server"  ID="txtcity" />
                                         </div>
                                         
 									</div>
                                             <br />
                                             <div style="text-align:center">
-                                            <asp:Button Text="Sign Up" ID="btnsignup" OnClick="btnsignup_Click" runat="server" />	 
+                                            <asp:Button Text="Sign Up" ID="btnsignup" ValidationGroup="Signup" OnClick="btnsignup_Click" runat="server" />	 
 									
                                             </div>
                                             
