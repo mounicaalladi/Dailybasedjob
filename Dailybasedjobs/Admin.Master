@@ -81,7 +81,7 @@
 								</ul>--%>
 							</li>
 							<li>
-								<a href="Registeredmembers.aspx">Registered Members<i class="fa fa-chevron-down"></i></a>
+								<a href="Registeredmembers.aspx">Registered Members</a>
 								<%--<ul class="sub-menu">
 									<li><a href="jobs-profile.html" class="dez-page">My Profile<span class="new-page">New</span></a></li>
 									<li><a href="jobs-my-resume.html" class="dez-page">My Resume <span class="new-page">New</span></a></li>
