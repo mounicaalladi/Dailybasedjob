@@ -58,7 +58,7 @@
                                                      <asp:Label Text="EmailId" ID="lbEmail1" runat="server" />
                                               </div>
                                                 <div class="col-md-7">
-                                                     <asp:TextBox runat="server" ID="txtEmail1" />
+                                                     <asp:TextBox runat="server" ID="txtEmail1" AutoComplete="off" />
 										  	
                                                 </div>
                                             </div>
@@ -68,7 +68,7 @@
                                      
                                                     </div>
                                                     <div class="col-md-7">
-                                                            <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password"  />
+                                                            <asp:TextBox runat="server" ID="txtpwd1" TextMode="Password" AutoComplete="off" />
                                                     </div>
                                                   
 										 	</div>
@@ -86,7 +86,7 @@
                                                  <asp:Label Text="Username" ID="lbusname" runat="server" />
                                             </div>
                                            <div class="col-md-7">
-                                             <asp:TextBox runat="server" ID="txtusname" />
+                                             <asp:TextBox runat="server" ID="txtusname" AutoComplete="off" />
                                            </div>
                                            
 										 	</div>
@@ -97,10 +97,10 @@
 
                                                  </div>
                                            <div class="col-md-7">
-                                               <asp:TextBox runat="server" ID="txtEmail" />
+                                               <asp:TextBox runat="server" ID="txtEmail" AutoComplete="off" />
 
                                               <asp:RequiredFieldValidator ErrorMessage="Please Enter Email" ForeColor="Red" ValidationGroup="Signup"  ControlToValidate="txtEmail" runat="server" />
-                                                    <asp:RegularExpressionValidator ErrorMessage="Please Enter Correct Email" ControlToValidate="txtEmail" ValidationGroup="Signup"  runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)* <%--[a-z,A-Z{0,10}@swankinnovation.com]--%>" />
+                                                    <asp:RegularExpressionValidator  ErrorMessage="Please Enter Correct Email" ControlToValidate="txtEmail" ValidationGroup="Signup"  runat="server" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
                                             
                                            </div>
                                             
@@ -111,7 +111,7 @@
 
                                                           </div>
                                             <div class="col-md-7">
-                                                <asp:TextBox runat="server" ID="txtPswd" TextMode="Password" />
+                                                <asp:TextBox runat="server" ID="txtPswd" AutoComplete="off" TextMode="Password" />
 										 	<%--<asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="txtPswd" runat="server" />
                                                         <asp:RangeValidator ErrorMessage="Minimum 6 Characters required" ControlToValidate="txtPswd" runat="server" />
                                           --%>          
@@ -123,7 +123,7 @@
 
                                                           </div>
                                             <div class="col-md-7">
-                                                <asp:TextBox runat="server" ID="txtphone" TextMode="Password" />
+                                                <asp:TextBox runat="server" ID="txtphone" AutoComplete="off"  />
 										 	<%--<asp:RequiredFieldValidator ErrorMessage="Please Enter Password" ForeColor="Red" ControlToValidate="txtPswd" runat="server" />
                                                         <asp:RangeValidator ErrorMessage="Minimum 6 Characters required" ControlToValidate="txtPswd" runat="server" />
                                           --%>          
@@ -135,7 +135,7 @@
                                         </div>
                                         <div class="col-md-7">
                                             
-                                            <asp:TextBox runat="server"  ID="txtcity" />
+                                            <asp:TextBox runat="server"  ID="txtcity" AutoComplete="off" />
                                         </div>
                                         
 									</div>

@@ -278,6 +278,7 @@
     <Content Include="plugins\wow\wow.js" />
     <Content Include="Plumbing.aspx" />
     <Content Include="Postedjob.aspx" />
+    <Content Include="PostedJobs.aspx" />
     <Content Include="Postjob.aspx" />
     <Content Include="PrimaryLevel.aspx" />
     <Content Include="Register.aspx" />
@@ -593,6 +594,13 @@
     </Compile>
     <Compile Include="Postedjob.aspx.designer.cs">
       <DependentUpon>Postedjob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostedJobs.aspx.cs">
+      <DependentUpon>PostedJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostedJobs.aspx.designer.cs">
+      <DependentUpon>PostedJobs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Postjob.aspx.cs">
       <DependentUpon>Postjob.aspx</DependentUpon>
