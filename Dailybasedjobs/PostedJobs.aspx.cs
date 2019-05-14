@@ -13,5 +13,10 @@ namespace Dailybasedjobs
         {
 
         }
+
+        protected void gd1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
