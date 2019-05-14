@@ -14,8 +14,8 @@
                                 <a href="index.html">
                                     <img src="images/logo-white2.png" alt=""/></a>
                             </div>
-                            <h2 class="m-b10">Login To You Now</h2>
-                            <p class="m-b30">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry.</p>
+                            <h2 class="m-b10">Login To Know</h2>
+                            <p class="m-b30">Login to know your account information.</p>
                             <ul class="list-inline m-a0">
                                 <li><a href="#" class="m-r10 text-white"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#" class="m-r10 text-white"><i class="fa fa-google-plus"></i></a></li>
@@ -119,7 +119,7 @@
                                             </div>
                                             <div class="form-group row">
                                                     <div class="col-md-4">
-                                                      <asp:Label Text="Password" ID="Phoneno" runat="server" />
+                                                      <asp:Label Text="Phoneno" ID="Phoneno" runat="server" />
 
                                                           </div>
                                             <div class="col-md-7">

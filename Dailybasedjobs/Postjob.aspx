@@ -3,6 +3,31 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+       <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(150);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+     <script>
+        $(function () {
+            $('#FileUpload2').click(function () {
+                var lbl = $("#lblName2");
+                var filename = $('#FileUpload2').val();
+                lbl.text(filename);
+            });
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
@@ -10,24 +35,29 @@
             <div class="col-xl-3 col-lg-4 m-b30">
                 <div class="sticky-top">
                     <div class="candidate-info company-info">
-                        <div class="candidate-detail text-center">
-                            <div class="canditate-des">
-                                <a href="javascript:void(0);"><%--<img alt="" src="images/logo/icon3.jpg">--%>
+                       	<div class="candidate-detail text-center">
+										<div class="canditate-des">
+											   <a href="javascript:void(0);">
 
-                                    <asp:Image ID="img1" ClientIDMode="Static" runat="server" />
-                                </a>
-                                <div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
-                                    <%--<input type="file" class="update-flie">--%>
-                                    <asp:FileUpload ID="FileUpload1" runat="server" />
-                                    <i class="fa fa-pencil"></i>
+                                              <asp:Image ID="img1" ClientIDMode="Static" runat="server" />
+                                                <asp:Label id="lblimge" runat="server" />
+                                    
+                                            </a>
+                                            <div class="upload-link" title="update" data-toggle="tooltip" data-placement="right">
+                                                  <asp:FileUpload class="update-flie" ID="FileUpload1"  onchange="readURL(this);" runat="server" />
+                                                <i class="fa fa-camera"></i>
+                                                  
+                                        </div>
+                                     </div>
 
+                                    <div class="candidate-title">
+                                        <div class="">
+                                            <h4 class="m-b5"><a href="javascript:void(0);"><asp:Label ID="txtname" runat="server" /></a></h4>
+                                         <%--   <p class="m-b0"><a href="javascript:void(0);">Web developer</a></p>--%>
+
+                                        </div>
+									</div>
                                 </div>
-                            </div>
-                            <div class="candidate-title">
-                                <h4 class="m-b5">
-                                    <asp:Label ID="lblname" runat="server" /></h4>
-                            </div>
-                        </div>
                         <ul>
                             <li><a href="company-profile.html">
                                 <i class="fa fa-user-o" aria-hidden="true"></i>
@@ -73,7 +103,7 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <asp:Label Text="Your email id" runat="server" />
-                                            <asp:TextBox ID="email" runat="server" class="form-control" placeholder="info@gmail.com" />
+                                            <asp:TextBox ID="email" runat="server" class="form-control" placeholder="info@innovation.com" />
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -89,7 +119,7 @@
                                         <div class="form-group">
                                             <asp:Label Text="Sub Job Tags" runat="server" />
                                             <asp:DropDownList ID="ddlsubjobtype" runat="server" class="form-control">
-                                                 <asp:ListItem Text="Select" />
+                                                
                                             </asp:DropDownList>
                                         </div>
                                     </div>
@@ -135,6 +165,7 @@
                 </div>
             </div>
         </div>
+    <asp:TextBox ID="txtaddress1" Visible="false" runat="server" />
 </asp:Content>
 
 

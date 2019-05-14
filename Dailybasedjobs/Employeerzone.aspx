@@ -110,7 +110,8 @@
                                            <div class="col-md-7">
                                                <asp:TextBox runat="server" ID="txtPhoneno" AutoComplete="off" />
                                                <asp:RequiredFieldValidator ErrorMessage="errormessage" ControlToValidate="txtPhoneno" ValidationGroup="register" runat="server" />
-                                           </div>
+                                               <asp:RegularExpressionValidator  ErrorMessage="Invalid Mobile No" ForeColor="Red" ValidationExpression="^[0-9]\d{2,4}-\d{6,8}$" ValidationGroup="register" ControlToValidate="txtPhoneno" runat="server" />
+                                               </div>
                                             
 										  	</div>
 										<div class="form-group row">

@@ -17,11 +17,41 @@ namespace Dailybasedjobs
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                Tags();
-                imageread();
 
+            if (Session["Emp"] != null)
+            {
+                if (!IsPostBack)
+                {
+                    Tags();
+                    imageread();
+                    RemoveDuplicateItems(ddljobtags);
+                    ddlsubjobtype.Items.Insert(0, new ListItem("--Select Subcategory--", "0"));
+                    ddljobtags.SelectedIndex = 0;
+                }
+
+            }
+            else
+            {
+                Response.Redirect("Index.aspx");
+            }
+            
+        }
+        void RemoveDuplicateItems(DropDownList ddljobtags)
+        {
+            for (int i = 0; i < ddljobtags.Items.Count; i++)
+            {
+                ddljobtags.SelectedIndex = i;
+                string str = ddljobtags.SelectedItem.ToString();
+                for (int counter = i + 1; counter < ddljobtags.Items.Count; counter++)
+                {
+                    ddljobtags.SelectedIndex = counter;
+                    string compareStr = ddljobtags.SelectedItem.ToString();
+                    if (str == compareStr)
+                    {
+                        ddljobtags.Items.RemoveAt(counter);
+                        counter = counter - 1;
+                    }
+                }
             }
         }
 
@@ -34,16 +64,20 @@ namespace Dailybasedjobs
             ddljobtags.DataTextField = "Categories";
             ddljobtags.DataValueField = "Categories";
             ddljobtags.DataBind();
+            ddljobtags.Items.Insert(0, new ListItem("--SELECT CATEGORY*--", "0"));
         }
 
         private void imageread()
         {
-            SqlCommand com = new SqlCommand("select * from CompanyProfile where CompanyName='"+ lblname.Text+ "'", con);
+            SqlCommand com = new SqlCommand("select * from CompanyProfile", con);
             con.Open();
             SqlDataReader dr = com.ExecuteReader();
             while (dr.Read())
             {
-                img1.ImageUrl = dr["Photo"].ToString();
+                txtname.Text = dr["CompanyName"].ToString();
+
+                img1.ImageUrl = dr["logo"].ToString();
+                txtaddress1.Text = dr["Description"].ToString();
             }
             con.Close();
         }
@@ -54,11 +88,9 @@ namespace Dailybasedjobs
             {
                 FileUpload2.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + FileUpload2.FileName));
             }                
-                SqlCommand cmd = new SqlCommand("insert into PostJob(Jobtitle,Email,Tags,Subjobtag,Mobile,Location,Address,Fileupload) values('" + jobtitle.Text + "','" + email.Text + "','" + ddljobtags.SelectedItem.Text + "','" + ddlsubjobtype.SelectedItem.Text + "','" + txtmobileno.Text + "','" + txtLocation.Text + "','" + txtAddress.Text + "','" + "~/Upload1/" +  "')", con);
+                SqlCommand cmd = new SqlCommand("insert into PostJob(Jobtitle,Email,Tags,Subjobtag,Mobile,Location,Address,[Companyname],[Image],Fileupload,[Description]) values('" + jobtitle.Text + "','" + email.Text + "','" + ddljobtags.SelectedItem.Text + "','" + ddlsubjobtype.SelectedItem.Text + "','" + txtmobileno.Text + "','" + txtLocation.Text + "','" + txtAddress.Text + "','"+ txtname.Text + "','"+ img1.ImageUrl+"','" + "~/Upload1/" + FileUpload2.FileName+ "','"+txtaddress1.Text+"')", con);
                 con.Open(); 
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
+                
                 cmd.ExecuteNonQuery();
                 con.Close();                       
         }
@@ -67,13 +99,14 @@ namespace Dailybasedjobs
 
         protected void ddljobtags_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlDataAdapter sda = new SqlDataAdapter("select * from Subcategories where Categories='" + ddljobtags.SelectedValue.ToString() + "'", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select Distinct(Subcategories) from Subcategories where Categories='" + ddljobtags.SelectedValue.ToString() + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             ddlsubjobtype.DataSource = dt;
             ddlsubjobtype.DataTextField = "Subcategories";
             ddlsubjobtype.DataValueField = "Subcategories";
             ddlsubjobtype.DataBind();
+            ddlsubjobtype.Items.Insert(0, new ListItem("--Select Subcategory--", "0"));
         }
 
        

@@ -22,6 +22,15 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.Image img1;
         
         /// <summary>
+        /// lblimge control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblimge;
+        
+        /// <summary>
         /// FileUpload1 control.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,13 @@ namespace Dailybasedjobs {
         protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// lblname control.
+        /// txtname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblname;
+        protected global::System.Web.UI.WebControls.Label txtname;
         
         /// <summary>
         /// jobtitle control.
@@ -119,5 +128,14 @@ namespace Dailybasedjobs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnsubmit;
+        
+        /// <summary>
+        /// txtaddress1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtaddress1;
     }
 }
