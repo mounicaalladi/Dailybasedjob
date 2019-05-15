@@ -14,29 +14,29 @@ namespace Dailybasedjobs
     public partial class Candidateprofile : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dailybasedjob"].ConnectionString);
-      
-      
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //if (Session["Seeker"]!= null)
             //{
-                if (!IsPostBack)
-                {
-                    DataReader();
+            if (!IsPostBack)
+            {
+                DataReader();
+                imageread();
 
+            }
+            else
+            {
+                Response.Redirect("Index.aspx");
+            }
+            // }
 
-                }
-                else
-                {
-                    Response.Redirect("Index.aspx");
-                }
-           // }
-           
         }
 
         private void DataReader()
         {
-            SqlCommand cmd = new SqlCommand("select * from Jobseekerzone where ( EmailId='"+Session["Seeker"] + "' or Username='" + Session["Seeker"] + "'  )", con);
+            SqlCommand cmd = new SqlCommand("select * from Jobseekerzone where ( EmailId='" + Session["Seeker"] + "' or Username='" + Session["Seeker"] + "'  )", con);
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -48,7 +48,7 @@ namespace Dailybasedjobs
 
         protected void btnsave_Click(object sender, EventArgs e)
         {
-           
+
             string strname = ""; // ADDED
             if (FileUpload2.HasFile)
             {
@@ -59,9 +59,21 @@ namespace Dailybasedjobs
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-          
-        }
 
-       
+        }
+        private void imageread()
+        {
+            SqlCommand com = new SqlCommand("select * from CandidateProfile", con);
+            con.Open();
+            SqlDataReader dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+
+
+                img.ImageUrl = dr["Picture"].ToString();
+
+
+            }
+        }
     }
 }                                                                                                           
