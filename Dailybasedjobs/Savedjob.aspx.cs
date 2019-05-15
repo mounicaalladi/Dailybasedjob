@@ -91,7 +91,7 @@ namespace Dailybasedjobs
 
         private void usernamebind()
         {
-            SqlCommand com = new SqlCommand("select * from CandidateProfile where Name='" + Session["username"].ToString() + "'", con);
+            SqlCommand com = new SqlCommand("select * from CandidateProfile ", con);
             con.Open();
             SqlDataReader dr = com.ExecuteReader();
             while (dr.Read())
@@ -102,6 +102,7 @@ namespace Dailybasedjobs
             }
             con.Close();
         }
+
         private void Username()
         {
             SqlCommand cmd = new SqlCommand("select * from PostJob where  Email='" + Session["username"].ToString() + "'",con);

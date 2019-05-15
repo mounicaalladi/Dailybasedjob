@@ -11,7 +11,8 @@
 										<div class="canditate-des">
 											<a href="javascript:void(0);">
 												
-                                                <asp:Image ID="image1" runat="server" />
+                                                <asp:Image ID="img" ClientIDMode="Static" runat="server" />
+                                                <asp:Label id="lblimge" runat="server" />
 											</a>
 											<div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
 												<input type="file" class="update-flie">
