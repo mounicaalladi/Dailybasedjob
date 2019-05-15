@@ -242,15 +242,7 @@
                         </ul>
                     </ItemTemplate>
                 </asp:DataList>
-                <%--<div class="pagination-bx m-t30">
-								<ul class="pagination">
-									<li class="previous"><a href="javascript:void(0);"><i class="ti-arrow-left"></i> Prev</a></li>
-									<li class="active"><a href="javascript:void(0);">1</a></li>
-									<li><a href="javascript:void(0);">2</a></li>
-									<li><a href="javascript:void(0);">3</a></li>
-									<li class="next"><a href="javascript:void(0);">Next <i class="ti-arrow-right"></i></a></li>
-								</ul>
-							</div>--%>
+               
             </div>
         </div>
     </div>
