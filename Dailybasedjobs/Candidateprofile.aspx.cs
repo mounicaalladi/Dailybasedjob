@@ -18,20 +18,21 @@ namespace Dailybasedjobs
       
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["Seeker"]!= null)
-            //{
+            if (Session["Seeker"]!= null)
+            {
                 if (!IsPostBack)
                 {
                     DataReader();
 
 
                 }
-                else
-                {
-                    Response.Redirect("Index.aspx");
-                }
-           // }
-           
+                
+           }
+            else
+            {
+                Response.Redirect("Index.aspx");
+            }
+
         }
 
         private void DataReader()
