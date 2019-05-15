@@ -30,7 +30,7 @@
 							<h2 class="m-b5">About Us</h2>
 							<h3 class="fw4">We create unique experiences</h3>
 							<p class="m-b15"> As one of the very of the few profitable pure play internet Daily Based jobs in the Country, Info Edge is India’s premier online classifieds company in recruitment,real estate, education and related services.
-                 Online recruitment classifieds,  a clear market leader in the Indian e-recruitment space,  a job site focused at the Middle East market, offline executive search  and a fresher hiring site. Additionally, Info Edge provides jobseekers value added services (Hotjobs Fast Forward) such as resume writing.</p>
+                                             Online recruitment classifieds,  a clear market leader in the Indian e-recruitment space,  a job site focused at the Middle East market, offline executive search  and a fresher hiring site. Additionally, Info Edge provides jobseekers value added services (Daily Fast Forward) such as resume writing.</p>
 							<p class="m-b15"> which are required for Daily based jobs: Home services, Tutors, Events, Care Takers, Packers & Movers, Transport and Mechanics.  </p>
 							<%--<a href="javascript:void(0);" class="site-button">Read More</a>--%>
 						</div>

@@ -84,11 +84,11 @@ namespace Dailybasedjobs
 
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
-            if (FileUpload2.HasFile)
-            {
-                FileUpload2.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + FileUpload2.FileName));
-            }                
-                SqlCommand cmd = new SqlCommand("insert into PostJob(Jobtitle,Email,Tags,Subjobtag,Mobile,Location,Address,[Companyname],[Image],Fileupload,[Description]) values('" + jobtitle.Text + "','" + email.Text + "','" + ddljobtags.SelectedItem.Text + "','" + ddlsubjobtype.SelectedItem.Text + "','" + txtmobileno.Text + "','" + txtLocation.Text + "','" + txtAddress.Text + "','"+ txtname.Text + "','"+ img1.ImageUrl+"','" + "~/Upload1/" + FileUpload2.FileName+ "','"+txtaddress1.Text+"')", con);
+            //if (FileUpload2.HasFile)
+            //{
+            //    FileUpload2.PostedFile.SaveAs(Server.MapPath("~/Upload1/" + FileUpload2.FileName));
+            //}                
+                SqlCommand cmd = new SqlCommand("insert into PostJob(Jobtitle,Email,Tags,Subjobtag,Mobile,Location,Address,Companyname,Image,Description,Fromto,Todate) values('" + jobtitle.Text + "','" + email.Text + "','" + ddljobtags.SelectedItem.Text + "','" + ddlsubjobtype.SelectedItem.Text + "','" + txtmobileno.Text + "','" + txtLocation.Text + "','" + txtAddress.Text + "','"+ txtname.Text + "','"+ img1.ImageUrl+"','" + txtaddress1.Text+"','"+txtfr.Text+"','"+txtdato.Text+"')", con);
                 con.Open(); 
                 
                 cmd.ExecuteNonQuery();

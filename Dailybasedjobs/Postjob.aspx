@@ -146,22 +146,41 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-12 col-md-12">
+                                     <div class="col-lg-12 col-md-12">
+
+                                        <div class="form-group">
+                                    <asp:Label Text="From Date" ID="lblfr" runat="server" />
+                                    <asp:TextBox TextMode="Date" ID="txtfr" class="form-control" runat="server" />
+                                            </div>
+                                         </div>
+
+
+                                     <div class="col-lg-12 col-md-12">
+
+                                        <div class="form-group">
+                                    <asp:Label Text="To Date" ID="lblto" runat="server" />
+                                            <asp:TextBox TextMode="Date"    id="txtdato" class="form-control"  runat="server" />
+                                    </div>
+                                         </div>
+
+                                  <%-- <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <label>Upload File</label>
                                             <div class="custom-file">
                                                 <p class="m-a0"><i class="fa fa-upload"></i>
                                                     <asp:FileUpload ID="FileUpload2" runat="server" /></p>
 
-                                                <%--<asp:TextBox ID="customFile" runat="server" class="site-button form-control" />--%>
+                                                <%--<asp:TextBox ID="customFile" runat="server" class="site-button form-control" />
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>--%>
 
                                 </div>
+        
 
                                 <asp:Button Text="Upload" runat="server" ID="btnsubmit" class="site-button m-b30" OnClick="btnsubmit_Click" />
 </div>
+    
                 </div>
             </div>
         </div>
